@@ -37,6 +37,10 @@ gem 'oauth'
 
 gem 'oauth-plugin'
 
+gem 'pry'
+
+gem "binding_of_caller"
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
@@ -45,9 +49,6 @@ gem 'oauth-plugin'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
-
-# Use debugger
-# gem 'debugger', group: [:development, :test]
 
 gem "rspec-rails", :group => [:test, :development]
 group :test do

@@ -42,6 +42,8 @@ GEM
     better_errors (1.1.0)
       coderay (>= 1.0.0)
       erubis (>= 2.6.6)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     builder (3.2.2)
     capybara (2.4.4)
       mime-types (>= 1.16)
@@ -59,6 +61,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    debug_inspector (0.0.2)
     diff-lcs (1.2.5)
     erubis (2.7.0)
     execjs (2.2.2)
@@ -216,6 +219,7 @@ PLATFORMS
 DEPENDENCIES
   bcrypt
   better_errors
+  binding_of_caller
   capybara
   coffee-rails (~> 4.0.0)
   factory_girl_rails
@@ -225,6 +229,7 @@ DEPENDENCIES
   jquery-rails
   oauth
   oauth-plugin
+  pry
   quickbooks-ruby!
   rails (= 4.1.8)
   rspec-rails

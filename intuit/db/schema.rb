@@ -11,7 +11,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141215155912) do
+ActiveRecord::Schema.define(version: 20141215193535) do
+
+  create_table "companies", force: true do |t|
+    t.string   "access_token"
+    t.string   "access_secret"
+    t.string   "company_id"
+    t.datetime "expires_at"
+    t.datetime "reconnect_at"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "name"
+  end
 
   create_table "vendors", force: true do |t|
     t.string   "name"
