@@ -92,6 +92,14 @@ class VendorsController < ApplicationController
     end
   end
 
+  def logout
+    session[:qb_request_token] = nil
+    session[:token] = nil
+    session[:secret] = nil
+    session[:realm_id] = nil
+    redirect_to root_url
+  end
+
   private
 
     def set_qb_service

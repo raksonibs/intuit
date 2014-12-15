@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     end
   end
 
+  get 'logout', to: 'vendors#logout', as: :logout
+
   root to: 'vendors#index'
 
 end

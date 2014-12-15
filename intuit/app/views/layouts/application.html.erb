@@ -8,8 +8,11 @@
   </head>
   <body>
 
- <% unless session[:token] %>
+    <% if !session[:token] %>
       <ipp:connectToIntuit></ipp:connectToIntuit>
+    <% else %>
+      <p> Logout here: </p>
+      <%= link_to "Logout", logout_path %>
     <% end %>
 
     <% if notice %>
