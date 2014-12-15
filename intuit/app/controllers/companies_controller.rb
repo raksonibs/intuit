@@ -1,6 +1,5 @@
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :edit, :update, :destroy]
-  before_action :set_qb_service, only: [:create, :edit, :update, :destroy]
 
   def index
     @companies = Company.all
@@ -30,21 +29,29 @@ class CompaniesController < ApplicationController
     session[:secret] = at.secret
     session[:realm_id] = params['realmId']
 
-    oauth_client = OAuth::AccessToken.new($qb_oauth_consumer, session[:token], session[:secret])
-    @company_service = Quickbooks::Service::CompanyInfo.new
-    @company_service.access_token = oauth_client
-    @company_service.company_id = session[:realm_id]
-
+    set_qb_services
+    
     @company = @company_service.query().entries.first
 
-    Company.where({
+    company = Company.where({
       name: @company.company_name,
+      company_id: @company.id
+    }).first_or_create
+
+    company.update_attributes({
       access_token: at.token,
       expires_at: Date.today + 6.months,
       reconnect_at: Date.today + 5.months,
-      company_id: @company.id,
       access_secret: at.secret
-    }).first_or_create
+    })
+
+    # NTD: Is it always service first as interface?
+    # should create all attributes on creation so no need for reconnect
+    company.employee_number = @employee_service.query().max_results
+
+    company.save!
+
+    session[:company_id] = @company.id
 
     redirect_to root_url, notice: "Your QuickBooks account has been successfully linked."
   end
@@ -107,11 +114,19 @@ class CompaniesController < ApplicationController
 
   private
 
-    def set_qb_service
+    def set_qb_services
       oauth_client = OAuth::AccessToken.new($qb_oauth_consumer, session[:token], session[:secret])
       @company_service = Quickbooks::Service::CompanyInfo.new
       @company_service.access_token = oauth_client
       @company_service.company_id = session[:realm_id]
+
+      @company_service = Quickbooks::Service::CompanyInfo.new
+      @company_service.access_token = oauth_client
+      @company_service.company_id = session[:realm_id]
+
+      @employee_service = Quickbooks::Service::Employee.new
+      @employee_service.access_token = oauth_client
+      @employee_service.company_id = session[:realm_id]
     end
     # Use callbacks to share common setup or constraints between actions.
     def set_company

@@ -11,7 +11,8 @@
     <% if !session[:token] %>
       <ipp:connectToIntuit></ipp:connectToIntuit>
     <% else %>
-      <p> Logout here: </p>
+      <p> Logout here: </p> <br>
+      Company Name: <%= current_company.name %> <br>
       <%= link_to "Logout", companies_logout_path %>
     <% end %>
 
