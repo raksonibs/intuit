@@ -24,8 +24,8 @@ class VendorsController < ApplicationController
 
   def authenticate
     callback = oauth_callback_vendors_url
-    token = $qb_oauth_consumer.get_request_token(oauth_callback:callback)
-    session[:db_request_token] = Marshal.dump(token)
+    token = $qb_oauth_consumer.get_request_token(:oauth_callback => callback)
+    session[:qb_request_token] = Marshal.dump(token)
     redirect_to("https://appcenter.intuit.com/Connect/Begin?oauth_token=#{token.token}") and return
   end
 
@@ -63,7 +63,7 @@ class VendorsController < ApplicationController
   def update
     Quickbooks.logger = Rails.logger 
     Quickbooks.log = true 
-    
+
     respond_to do |format|
       if @vendor.update(vendor_params)
         #this line checkts over the vendor service, checking all entriies. where is @vendor_service readily available though?
