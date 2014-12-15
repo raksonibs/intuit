@@ -1,0 +1,6 @@
+== README
+
+A simple rails app to connect to intuit to retrieve data from their qbo online and reference offline information as well.
+
+Done using quickbooks gem as well as employing quickbooks api endpoints.
+
