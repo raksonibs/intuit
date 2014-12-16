@@ -35,7 +35,7 @@ class CompaniesController < ApplicationController
 
     company = Company.where({
       name: @company.company_name,
-      company_id: @company.id
+      company_id: @company.id.to_s
     }).first_or_create
 
     company.update_attributes({
@@ -51,7 +51,7 @@ class CompaniesController < ApplicationController
 
     company.save!
 
-    session[:company_id] = @company.id
+    session[:company_id] = @company.id.to_s
 
     redirect_to root_url, notice: "Your QuickBooks account has been successfully linked."
   end

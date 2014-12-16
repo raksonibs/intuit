@@ -63,5 +63,6 @@ group :test do
   # Drivers
   gem 'capybara-webkit'
   gem 'selenium-webdriver'
+  gem 'vcr'
 end
 
