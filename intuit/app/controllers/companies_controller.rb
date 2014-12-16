@@ -75,9 +75,6 @@ class CompaniesController < ApplicationController
   end
 
   def update
-    Quickbooks.logger = Rails.logger 
-    Quickbooks.log = true 
-
     respond_to do |format|
       if @company.update(company_params)
         #this line checkts over the company service, checking all entriies. where is @company_service readily available though?
@@ -116,10 +113,6 @@ class CompaniesController < ApplicationController
 
     def set_qb_services
       oauth_client = OAuth::AccessToken.new($qb_oauth_consumer, session[:token], session[:secret])
-      @company_service = Quickbooks::Service::CompanyInfo.new
-      @company_service.access_token = oauth_client
-      @company_service.company_id = session[:realm_id]
-
       @company_service = Quickbooks::Service::CompanyInfo.new
       @company_service.access_token = oauth_client
       @company_service.company_id = session[:realm_id]

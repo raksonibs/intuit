@@ -6,3 +6,5 @@ $qb_oauth_consumer = OAuth::Consumer.new(Figaro.env.qb_key, Figaro.env.qb_secret
 })
 
 Quickbooks.sandbox_mode = true
+Quickbooks.logger = Rails.logger 
+Quickbooks.log = true 

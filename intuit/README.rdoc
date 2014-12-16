@@ -3,4 +3,4 @@
 - going to have to qbo for canada and us different (international)
 - sandbox broken
 - right now qbo log form rails log checkout out log/development.log
-
+- guardfile runs specs
