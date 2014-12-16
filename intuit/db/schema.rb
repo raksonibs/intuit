@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20141215203331) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "companies", force: true do |t|
     t.string   "access_token"
     t.string   "access_secret"
