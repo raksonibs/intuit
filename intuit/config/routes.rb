@@ -18,5 +18,7 @@ Rails.application.routes.draw do
       get :logout
     end
   end
+  
+  get '/companies/blue-dot' => 'companies#bluedot'
 
 end

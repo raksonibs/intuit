@@ -9,7 +9,9 @@
   <body>
 
     <% if !session[:token] %>
-      <ipp:connectToIntuit></ipp:connectToIntuit>
+      <div class="connect-intuit">
+        <ipp:connectToIntuit></ipp:connectToIntuit>
+      </div>
     <% else %>
       <p> Logout here: </p> <br>
       Company Name: <%= current_company.name %> <br>
@@ -22,10 +24,11 @@
 
     <%= yield %>
 
-    <script type="text/javascript" src="https://appcenter.intuit.com/Content/IA/intuit.ipp.anywhere.js"></script>
+    <script  type="text/javascript"
+     src="https://appcenter.intuit.com/Content/IA/intuit.ipp.anywhere-1.3.0.js"></script>
 
     <script>
-        intuit.ipp.anywhere.setup({menuProxy: '/path/to/blue-dot', grantUrl: '<%= authenticate_companies_url %>'});
+        intuit.ipp.anywhere.setup({menuProxy: '<%= companies_blue_dot_url %>', grantUrl: '<%= authenticate_companies_url %>'});
     </script>
   </body>
 </html>

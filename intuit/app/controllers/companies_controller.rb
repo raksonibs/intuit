@@ -15,6 +15,37 @@ class CompaniesController < ApplicationController
   def edit
   end
 
+  def bluedot
+    intuit_account = Company.find(params['realmId'])
+
+    unless intuit_account
+      render(:text => "You are not connected to Intuit.") and return
+    end
+
+    html = Rails.cache.read("cache-key")
+    if !html.blank?
+      render(:text => html) and return
+    end
+
+    # nope, contact Intuit
+    access_token = intuit_account.access_token
+    access_secret = intuit_account.access_secret
+    consumer = OAuth::AccessToken.new($qb_oauth_consumer, access_token, access_secret)
+    response = consumer.request(:get, "https://appcenter.intuit.com/api/v1/Account/AppMenu")
+    if response && response.body
+      html = response.body
+
+      # cache this if we have a valid IntuitAccount
+      if intuit_account
+        Rails.cache.write("cache-key", html)
+      end
+      render(:text => html) and return
+    else
+      Rails.logger.info("Error fetching Intuit Menu proxy code: #{response.inspect}")
+    end
+    render(:text => "error") and return
+  end
+
   def authenticate
     callback = oauth_callback_companies_url
     token = $qb_oauth_consumer.get_request_token(:oauth_callback => callback)
