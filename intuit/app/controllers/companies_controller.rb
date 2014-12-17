@@ -51,7 +51,10 @@ class CompaniesController < ApplicationController
     token = $qb_oauth_consumer.get_request_token(:oauth_callback => callback)
     session[:qb_request_token] = Marshal.dump(token)
     @token = token
-    redirect_to("https://appcenter.intuit.com/Connect/Begin?oauth_token=#{token.token}") and return
+    respond_to do |format|
+      format.json { render json: @token }
+      redirect_to("https://appcenter.intuit.com/Connect/Begin?oauth_token=#{token.token}") and return
+    end
   end
 
   def oauth_callback
@@ -76,8 +79,6 @@ class CompaniesController < ApplicationController
       access_secret: at.secret
     })
 
-    # NTD: Is it always service first as interface?
-    # should create all attributes on creation so no need for reconnect
     company.employee_number = @employee_service.query().max_results
 
     company.save!
@@ -151,7 +152,12 @@ class CompaniesController < ApplicationController
       @employee_service = Quickbooks::Service::Employee.new
       @employee_service.access_token = oauth_client
       @employee_service.company_id = session[:realm_id]
+
+      @report_service = Quickbooks::Service::Reports.new
+      @report_service.access_token = oauth_client
+      @report_service.company_id = session[:realm_id]
     end
+
     # Use callbacks to share common setup or constraints between actions.
     def set_company
       @company = Company.find(params[:id])
