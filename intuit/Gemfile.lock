@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/raksonibs/quickbooks-ruby.git
-  revision: 479df5b97887cd0cda449a4e9743831182a9ef51
+  revision: 64360b72e5463c38644d205794f812a8f63af231
   branch: reports
   specs:
     quickbooks-ruby (0.1.7)
@@ -290,6 +290,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   letter_opener
+  nokogiri
   oauth
   oauth-plugin
   pg
