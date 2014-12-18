@@ -80,6 +80,8 @@ class CompaniesController < ApplicationController
     })
 
     company.employee_number = @employee_service.query().max_results
+    binding.pry
+    company.balance_sheet = @report_service.query()
 
     company.save!
 

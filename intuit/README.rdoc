@@ -4,3 +4,4 @@
 - sandbox broken
 - right now qbo log form rails log checkout out log/development.log
 - guardfile runs specs
+-> specs/ within page open / get cash flow statements
