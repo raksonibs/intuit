@@ -20,6 +20,17 @@ class CompaniesController < ApplicationController
   def edit
   end
 
+  def report_date_range
+    set_qb_services
+    date_range = params[:start_date] + " " + params[:end_date]
+    @report_service.query(params[:report], date_range)
+    @report_ranged = @report_service.last_response_xml.to_s # shouldn't save each time, should just render the request on these instances and default save is full year.
+    # should be doing this in ajax request but can't really render service as object?
+    respond_to do |format|
+      format.json { render json: @report_ranged }
+    end
+  end
+
   def bluedot
     intuit_account = Company.find(params['realmId'])
 

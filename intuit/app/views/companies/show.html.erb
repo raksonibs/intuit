@@ -4,10 +4,24 @@
   <strong>Name:</strong>
   <%= @company.name %>
 </p>
-
+<text name="allowed">Today, Yesterday <br>
+This Week, This Week-to-date, Last Week, Last Week-to-date, Next Week, Next 4 Weeks <br>
+This Month, This Month-to-date, Last Month, Last Month-to-date, Next Month <br>
+This Fiscal Quarter, This Fiscal Quarter-to-date, Last Fiscal Quarter, Last Fiscal Quarter-to-date, Next Fiscal Quarter <br>
+This Fiscal Year, This Fiscal Year-to-date, Last Fiscal Year, Last Fiscal Year-to-date, Next Fiscal Year</text>
 <p>
   <strong>Balance Sheet:</strong>
-  <% out = "" %>
+  <% form_tag report_ranged_companies_url, method: 'get' do %>
+    <%= label_tag(:start_date, "Start date: ") %>
+    <%= select_tag(:start_date, options_for_select(['Yesterday', 1], ['Today', 2], ['This Week', 3], ['Last Week', 4] ['This Month', 5], ['Last Month', 6], ['This Fiscal Quarter', 7], ['Last Fiscal Quarter', 8], ['This Fiscal Year', 9], ['Last Fiscal Year', 7])) %>
+    <!-- end date when this month would be end of this month! or week! Need to make logic to correct this. Also how do you do next week and next 4 weeks? Wouldn't these be nothing for a balance sheet? Next four weeks and next would have a start date of today and would end in next 4 weeks. Say if selected this fiscal year as start, and then end would be today. or it could be the end of the actual year. How does this end date get factored in? It would be end of year or something. Only some date ranges are allowed, should assemble and check on client side to not pass in bad ones. -->
+    <%= label_tag(:end_date, "End date: ") %>
+    <%= select_tag(:end_date, options_for_select(['Today', 1], ['Next Week', 2], ['Next 4 Weeks', 3], ['Next Month', 4], ['Next Fiscal Quarter', 5], ['Next Fiscal Year', 6] )) %>
+  <% end %>
+  <br> 
+  <em>Start Date: </em> <%= Nokogiri::XML(@balance_sheet).xpath('//xmlns:StartPeriod').children.to_s %> - <em>End Date: </em> <%= Nokogiri::XML(@balance_sheet).xpath('//xmlns:EndPeriod').children.to_s %>
+  <br>
+
   <pre>
     <%= @balance_sheet %>
   </pre>
