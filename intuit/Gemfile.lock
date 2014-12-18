@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/raksonibs/quickbooks-ruby.git
-  revision: 64360b72e5463c38644d205794f812a8f63af231
+  revision: b48b98cf4db4fdd7c6316030afa53f84e118652b
   branch: reports
   specs:
     quickbooks-ruby (0.1.7)
@@ -237,6 +237,9 @@ GEM
       websocket (~> 1.0)
     shoulda-matchers (2.7.0)
       activesupport (>= 3.0.0)
+    simple_form (3.1.0)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
     slop (3.6.0)
     spring (1.2.0)
     sprockets (2.12.3)
@@ -305,6 +308,7 @@ DEPENDENCIES
   sdoc (~> 0.4.0)
   selenium-webdriver
   shoulda-matchers
+  simple_form
   spring
   timecop
   turbolinks
