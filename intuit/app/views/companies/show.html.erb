@@ -5,4 +5,27 @@
   <%= @company.name %>
 </p>
 
+<p>
+  <strong>Balance Sheet:</strong>
+  <% out = "" %>
+  <pre>
+    <%= @balance_sheet %>
+  </pre>
+</p>
+
+<p>
+  <strong>Cash Flow:</strong>
+  <pre>
+    <%= @cash_flow %>
+  </pre>
+</p>
+
+<p>
+  <strong>Profit And Loss:</strong>
+  <% out = "" %>
+  <pre>
+    <%= @profit_and_loss %>
+  </pre>
+</p>
+
 <%= link_to 'Back', companies_path %>

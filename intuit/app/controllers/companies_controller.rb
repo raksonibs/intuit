@@ -1,3 +1,5 @@
+require "rexml/document"
+
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :edit, :update, :destroy]
 
@@ -6,6 +8,9 @@ class CompaniesController < ApplicationController
   end
 
   def show
+    @balance_sheet = @company.balance_sheet
+    @cash_flow = @company.cash_flow
+    @profit_and_loss = @company.profit_and_loss
   end
 
   def new
@@ -80,8 +85,13 @@ class CompaniesController < ApplicationController
     })
 
     company.employee_number = @employee_service.query().max_results
-    binding.pry
-    company.balance_sheet = @report_service.query()
+
+    @report_service.query()
+    company.balance_sheet = @report_service.last_response_xml.to_s
+    @report_service.query('CashFlow')
+    company.cash_flow = @report_service.last_response_xml.to_s
+    @report_service.query('ProfitAndLoss')
+    company.profit_and_loss = @report_service.last_response_xml.to_s
 
     company.save!
 
