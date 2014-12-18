@@ -20,8 +20,9 @@ class CompaniesController < ApplicationController
   def edit
   end
 
-  def report_date_range
+  def report_ranged
     set_qb_services
+    # NTD: Make the dates add correctly and map. Need something to grab the date strings and place as what it would be.
     date_range = params[:start_date] + " " + params[:end_date]
     @report_service.query(params[:report], date_range)
     @report_ranged = @report_service.last_response_xml.to_s # shouldn't save each time, should just render the request on these instances and default save is full year.
