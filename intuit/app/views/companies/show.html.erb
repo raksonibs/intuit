@@ -15,8 +15,6 @@
     <%= render 'date_form' %>
   </div>
   <br> 
-  <em class="start-date-display">Start Date: </em> <%= Nokogiri::XML(@balance_sheet).xpath('//xmlns:StartPeriod').children.to_s %> - <em class="end-date-display">End Date: </em> <%= Nokogiri::XML(@balance_sheet).xpath('//xmlns:EndPeriod').children.to_s %>
-  <br>
 
   <pre class="BalanceSheet-block">
     <%= @balance_sheet %>

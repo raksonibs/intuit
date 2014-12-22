@@ -5,10 +5,7 @@ $(document).ready(function() {
       console.log(data)
     })
   })
-  // startDate: endDate
-  // This Week actually monday to end of week
-  // maps accordingly to the supported values for reports so for example the
-  //  This Fiscal Year-to-date translates into Beginning of Fiscal Year: Today
+
   $(".date-change").click(function() {
            $this = $(this),
     selectedOpts = $this.parent().find('option:selected')[0],
@@ -22,8 +19,6 @@ $(document).ready(function() {
         data: { new_range: selectedOpts.text,
                 report: reportName },
         complete: function(data) {
-          // $(".start-date-display")
-          // debugger
           $("."+reportName+"-block").text(data.responseText)
         }
       })
