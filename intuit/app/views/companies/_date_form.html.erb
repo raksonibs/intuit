@@ -1,0 +1,5 @@
+<%= hidden_field_tag :report, @report, class: 'report-name' %>
+<%= label_tag(:new_range, "New Range: ") %>
+<%= select_tag(:new_range, options_for_select(@poss_dates, class: 'date-start')) %>
+
+<%= submit_tag "Change Dates", class: 'date-change' %>

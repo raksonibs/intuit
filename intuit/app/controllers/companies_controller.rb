@@ -2,6 +2,7 @@ require "rexml/document"
 
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :edit, :update, :destroy]
+  before_action :poss_dates, only: :show
 
   def index
     @companies = Company.all
@@ -24,7 +25,7 @@ class CompaniesController < ApplicationController
     set_qb_services
 
     # NTD: Make the dates add correctly and map. Need something to grab the date strings and place as what it would be.
-    date_range = params[:start_date] + " " + params[:end_date]
+    date_range = params[:new_range]
     @report_service.query(params[:report], date_range)
     @report_ranged = @report_service.last_response_xml.to_s # shouldn't save each time, should just render the request on these instances and default save is full year.
     # should be doing this in ajax request but can't really render service as object?
@@ -181,6 +182,21 @@ class CompaniesController < ApplicationController
       @report_service = Quickbooks::Service::Reports.new
       @report_service.access_token = oauth_client
       @report_service.company_id = session[:realm_id]
+    end
+
+    def poss_dates
+      @poss_dates = [['Today', 'Today'], ['Yesterday', 'Yesterday'], 
+                      ['This Week', 'This Week'], ['This Week-to-date', 'This Week-to-date'], 
+                      ['Last Week', 'Last Week'], ['Last Week-to-date', 'Last Week-to-date'], 
+                      ['Next Week', 'Next Week'], ['Next 4 Weeks', 'Next 4 Weeks'], 
+                      ['This Month','This Month'], ['This Month-to-date','This Month-to-date'], 
+                      ['Last Month','Last Month'], ['Last Month-to-date','Last Month-to-date'], 
+                      ['Next Month', 'Next Month'], ['This Fiscal Quarter','This Fiscal Quarter'], 
+                      ['This Fiscal Quater-to-date','This Fiscal Quater-to-date'], ['Last Fiscal Quarter-to-date','Last Fiscal Quarter-to-date'], 
+                      ['Last Fiscal Quarter','Last Fiscal Quarter'], ['Last Fiscal Quarter-to-date','Last Fiscal Quarter-to-date'], 
+                      ['Next Fiscal Quarter','Next Fiscal Quarter'], ['This Fiscal Year','This Fiscal Year'], 
+                      ['This Fiscal Year-to-date','This Fiscal Year-to-date'], ['Last Fiscal Year','Last Fiscal Year'], 
+                      ['Last Fiscal Year-to-date','Last Fiscal Year-to-date'], ['Next Fiscal Year','Next Fiscal Year']]
     end
 
     # Use callbacks to share common setup or constraints between actions.

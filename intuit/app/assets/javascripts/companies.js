@@ -10,28 +10,21 @@ $(document).ready(function() {
   // maps accordingly to the supported values for reports so for example the
   //  This Fiscal Year-to-date translates into Beginning of Fiscal Year: Today
   $(".date-change").click(function() {
-    var startDate;
-    var endDate;
            $this = $(this),
-    selectedOpts = $this.parent().find('option:selected'),
-       startDate = selectedOpts[0].text, 
-         endDate = selectedOpts[1].text;
-    var pairDates = [startDate, endDate]
-    var match = false;
-    $.each(possibleDatePairs, function( index, value ) {
-      if ( value.equals(pairDates) ) {
-        match = true;
-      }
-    })
+    selectedOpts = $this.parent().find('option:selected')[0],
+    reportName   = $this.parent().find('.report-name').val();
+    var match = true;
 
     if ( match ) {
       $.ajax({
         url: '/companies/report_ranged',
         method: 'POST',
-        data: { start_date: pairDates[0],
-                end_date: pairDates[1] },
-        success: function() {
-          debugger
+        data: { new_range: selectedOpts.text,
+                report: reportName },
+        complete: function(data) {
+          // $(".start-date-display")
+          // debugger
+          $("."+reportName+"-block").text(data.responseText)
         }
       })
     } else {
@@ -40,19 +33,4 @@ $(document).ready(function() {
 
   })
 
-  possibleDatePairs = [['Yesterday', 'Yesterday'], ['Today', 'Today'], 
-                       ['Beginning of Week', 'End of Week'], 
-                       ['Beginning of Week', 'Today'], 
-                       ['Beginning of Last Week', 'End of Last Week'], 
-                       ['Beginning of Last Week', 'Today'], 
-                       ['Today', 'End of Next Week'], ['Today', 'End of Next 4 Weeks'], 
-                       ['Beginning of Month', 'End of Month'], ['Beginning of Month', 'Today'], 
-                       ['Beginning of Last Month', 'End of Last Month'], ['Beginning of Last Month', 'Today'], 
-                       ['Today', 'End of Next Month'],  
-                       ['Beginning of Fiscal Quarter', 'End of Fiscal Quarter'], ['Beginning of Fiscal Quarter', 'Today'], 
-                       ['Beginning of Last Fiscal Quarter', 'End of Last Fiscal Quarter'], ['Beginning of Last Fiscal Quarter', 'Today'], 
-                       ['Today', 'End of Next Fiscal Quarter'],
-                       ['Beginning of Fiscal Year', 'End of Fiscal Year'], ['Beginning of Fiscal Year', 'Today'], 
-                       ['Beginning of Last Fiscal Year', 'End of Last Fiscal Year'], ['Beginning of Last Fiscal Year', 'Today'], 
-                       ['Today', 'End of Next Fiscal Year'] ]
 })

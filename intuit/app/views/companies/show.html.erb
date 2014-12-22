@@ -4,45 +4,44 @@
   <strong>Name:</strong>
   <%= @company.name %>
 </p>
-<text name="allowed">Today, Yesterday <br>
-This Week, This Week-to-date, Last Week, Last Week-to-date, Next Week, Next 4 Weeks <br>
-This Month, This Month-to-date, Last Month, Last Month-to-date, Next Month <br>
-This Fiscal Quarter, This Fiscal Quarter-to-date, Last Fiscal Quarter, Last Fiscal Quarter-to-date, Next Fiscal Quarter <br>
-This Fiscal Year, This Fiscal Year-to-date, Last Fiscal Year, Last Fiscal Year-to-date, Next Fiscal Year</text>
+
 <p>
   <span class="error-inform">
     
   </span>
   <strong>Balance Sheet:</strong>
   <div class="change-dates-form">
-    
-    <%= label_tag(:start_date, "Start date: ") %>
-    <%= select_tag(:start_date, options_for_select([['Yesterday', 'Yesterday'], ['Today', 'Today'], ['Beginning of Week', 'Beginning of Week'], ['Beginning of Last Week', 'Beginning of Last Week'], ['Beginning of Month', 'Beginning of Month'], ['Beginning of Last Month', 'Beginning of Last Month'], ['Beginning of Fiscal Quarter', 'Beginning of Fiscal Quarter'], ['Beginning of Last Fiscal Quarter', 'Beginning of Last Fiscal Quarter'], ['Beginning of Fiscal Year', 'Beginning of Fiscal Year'], ['Beginning of Last Fiscal Year', 'Beginning of Last Fiscal Year']], class: 'date-start')) %>
-
-    <%= label_tag(:end_date, "End date: ") %>
-    <%= select_tag(:end_date, options_for_select([['Yesterday', 'Yesterday'], ['Today', 'Today'], ['End of Week', 'End of Week'], ['End of Last Week', 'End of Last Week'], ['End of Next Week', 'End of Next Week'], ['End of Next 4 Weeks', 'End of Next 4 Weeks'], ['End of Month', 'End of Month'], ['End of Last Month', 'End of Last Month'], ['End of Next Month', 'End of Next Month'], ['End of Fiscal Quater', 'End of Fiscal Quater'], ['End of Next Fiscal', 'End of Next Fiscal'], ['End of Last Fiscal Quarter', 'End of Last Fiscal Quarter'], ['End of Fiscal Year', 'End of Fiscal Year'], ['End of Last Fiscal Year', 'End of Last Fiscal Year'], ['End of Next Fiscal Year', 'End of Next Fiscal Year']], class: 'date-end')) %>
-    <%= submit_tag "Change Dates", class: 'date-change' %>
+    <% @report = 'BalanceSheet' %>
+    <%= render 'date_form' %>
   </div>
   <br> 
-  <em>Start Date: </em> <%= Nokogiri::XML(@balance_sheet).xpath('//xmlns:StartPeriod').children.to_s %> - <em>End Date: </em> <%= Nokogiri::XML(@balance_sheet).xpath('//xmlns:EndPeriod').children.to_s %>
+  <em class="start-date-display">Start Date: </em> <%= Nokogiri::XML(@balance_sheet).xpath('//xmlns:StartPeriod').children.to_s %> - <em class="end-date-display">End Date: </em> <%= Nokogiri::XML(@balance_sheet).xpath('//xmlns:EndPeriod').children.to_s %>
   <br>
 
-  <pre>
+  <pre class="BalanceSheet-block">
     <%= @balance_sheet %>
   </pre>
 </p>
 
 <p>
+  <div class="change-dates-form">
+    <% @report = 'CashFlow' %>
+    <%= render 'date_form' %>
+  </div>
   <strong>Cash Flow:</strong>
-  <pre>
+  <pre class="CashFlow-block">
     <%= @cash_flow %>
   </pre>
 </p>
 
 <p>
+  <div class="change-dates-form">
+    <% @report = 'ProfitAndLoss' %>
+    <%= render 'date_form' %>
+  </div>
   <strong>Profit And Loss:</strong>
   <% out = "" %>
-  <pre>
+  <pre class="ProfitAndLoss-block">
     <%= @profit_and_loss %>
   </pre>
 </p>
