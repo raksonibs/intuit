@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   resources :companies do 
     collection do 
       get :authenticate, defaults: { format: 'json' }
-      get :report_ranged, defaults: { format: 'json' }
+      post :report_ranged, defaults: { format: 'json' }
       get :oauth_callback
       get :logout
     end
