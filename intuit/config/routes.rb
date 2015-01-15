@@ -17,6 +17,9 @@ Rails.application.routes.draw do
       post :report_ranged, defaults: { format: 'json' }
       get :oauth_callback
       get :logout
+      post :xero_create
+      get :xero_new
+
     end
   end
 

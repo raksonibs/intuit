@@ -3,6 +3,7 @@ require "rexml/document"
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :edit, :update, :destroy]
   before_action :poss_dates, only: :show
+  before_filter :get_xero_client
 
   def index
     @companies = Company.all
@@ -16,6 +17,32 @@ class CompaniesController < ApplicationController
 
   def new
     @company = Company.new
+  end
+
+  def xero_new
+    request_token = @xero_client.request_token(:oauth_callback => 'http://localhost:3000/')
+    session[:request_token] = request_token.token
+    session[:request_secret] = request_token.secret
+
+    redirect_to request_token.authorize_url
+  end
+
+  def xero_create
+    @xero_client.authorize_from_request(
+          session[:request_token], 
+          session[:request_secret], 
+          :oauth_verifier => params[:oauth_verifier] )
+
+    session[:xero_auth] = {
+            :access_token => @xero_client.access_token.token,
+            :access_key => @xero_client.access_token.secret }
+
+    session[:request_token] = nil
+    session[:request_secret] = nil
+  end
+
+  def xero_destroy
+      session.data.delete(:xero_auth)
   end
 
   def edit
@@ -168,6 +195,16 @@ class CompaniesController < ApplicationController
   end
 
   private
+
+    def get_xero_client
+      @xero_client = Xeroizer::PublicApplication.new(Figaro.env.xero_key, Figaro.env.xero_secret)
+
+      if session[:xero_auth] 
+        @xero_client.authorize_from_access(
+                    session[:xero_auth][:access_token], 
+                    session[:xero_auth][:access_key] )
+      end
+    end
 
     def set_qb_services
       oauth_client = OAuth::AccessToken.new($qb_oauth_consumer, session[:token], session[:secret])

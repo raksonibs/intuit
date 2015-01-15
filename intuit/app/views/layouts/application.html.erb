@@ -12,6 +12,8 @@
       <div class="connect-intuit">
         <ipp:connectToIntuit></ipp:connectToIntuit>
       </div>
+
+      <%= link_to "Sign in via Xero", xero_new_companies_path %>
     <% else %>
       <p> Logout here: </p> <br>
       Company Name: <%= current_company.name %> <br>
