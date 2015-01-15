@@ -12,6 +12,9 @@ gem 'font-awesome-rails'
 gem 'cocoon'
 gem 'country_select'
 
+gem "wash_out", "0.9.0"
+gem 'qbxml', '~> 0.1.5'
+
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
 
@@ -30,6 +33,7 @@ gem 'quickbooks-ruby', git: 'https://github.com/raksonibs/quickbooks-ruby.git', 
 gem 'figaro'
 
 gem 'oauth'
+gem 'xeroizer'
 
 gem 'oauth-plugin'
 
