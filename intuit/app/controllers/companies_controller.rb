@@ -3,7 +3,7 @@ require "rexml/document"
 class CompaniesController < ApplicationController
   before_action :set_company, only: [:show, :edit, :update, :destroy]
   before_action :poss_dates, only: :show
-  before_filter :get_xero_client
+  before_filter :get_xero_client, only: [:xero_create, :xero_new]
 
   def index
     @companies = Company.all
@@ -20,7 +20,7 @@ class CompaniesController < ApplicationController
   end
 
   def xero_new
-    request_token = @xero_client.request_token(:oauth_callback => 'http://localhost:3000/')
+    request_token = @xero_client.request_token(:oauth_callback => 'http://localhost:3000/companies/xero_create')
     session[:request_token] = request_token.token
     session[:request_secret] = request_token.secret
 
@@ -39,10 +39,12 @@ class CompaniesController < ApplicationController
 
     session[:request_token] = nil
     session[:request_secret] = nil
+
+    redirect_to companies_path
   end
 
   def xero_destroy
-      session.data.delete(:xero_auth)
+    session.data.delete(:xero_auth)
   end
 
   def edit
