@@ -114,7 +114,10 @@ class CompaniesController < ApplicationController
     set_qb_services
     
     @company = @company_service.query().entries.first
-
+    # @accounts = @account_service.query().entries
+    # @invoices = @invoice_service.query().entries
+    # @payments = @payment_service.query().entries
+    binding.pry
     company = Company.where({
       name: @company.company_name,
       company_id: @company.id.to_s
@@ -149,7 +152,7 @@ class CompaniesController < ApplicationController
     company = Quickbooks::Model::Company.new 
     company.given_name = company_params[:name]
     @company_service.create(company)
-
+    binding.pry
     respond_to do |format|
       if @company.save
         format.html { redirect_to @company, notice: 'Company was successfully created.' }
@@ -214,9 +217,29 @@ class CompaniesController < ApplicationController
       @company_service.access_token = oauth_client
       @company_service.company_id = session[:realm_id]
 
+      @account_service = Quickbooks::Service::Account.new
+      @account_service.access_token = oauth_client
+      @account_service.company_id = session[:realm_id]
+
+      @payment_service = Quickbooks::Service::Payment.new
+      @payment_service.access_token = oauth_client
+      @payment_service.company_id = session[:realm_id]
+
+      @invoice_service = Quickbooks::Service::Invoice.new
+      @invoice_service.access_token = oauth_client
+      @invoice_service.company_id = session[:realm_id]
+
       @employee_service = Quickbooks::Service::Employee.new
       @employee_service.access_token = oauth_client
       @employee_service.company_id = session[:realm_id]
+
+      @paymentmethod_service = Quickbooks::Service::PaymentMethod.new
+      @paymentmethod_service.access_token = oauth_client
+      @paymentmethod_service.company_id = session[:realm_id]
+
+      @item_service = Quickbooks::Service::Item.new
+      @item_service.access_token = oauth_client
+      @item_service.company_id = session[:realm_id]
 
       @report_service = Quickbooks::Service::Reports.new
       @report_service.access_token = oauth_client
