@@ -1,0 +1,2267 @@
+<?xml version="1.0"?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:o="urn:schemas-microsoft-com:office:office"
+ xmlns:x="urn:schemas-microsoft-com:office:excel"
+ xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet"
+ xmlns:html="http://www.w3.org/TR/REC-html40">
+ <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office">
+  <Author>Oskar Niburski</Author>
+  <LastAuthor>Oskar Niburski</LastAuthor>
+  <Created>2015-09-03T13:48:33Z</Created>
+  <LastSaved>2016-01-22T20:00:24Z</LastSaved>
+  <Company>None</Company>
+  <Version>14.0</Version>
+ </DocumentProperties>
+ <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office">
+  <AllowPNG/>
+ </OfficeDocumentSettings>
+ <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>7760</WindowHeight>
+  <WindowWidth>25360</WindowWidth>
+  <WindowTopX>2920</WindowTopX>
+  <WindowTopY>-19340</WindowTopY>
+  <ActiveSheet>1</ActiveSheet>
+  <Iteration/>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+ </ExcelWorkbook>
+ <Styles>
+  <Style ss:ID="Default" ss:Name="Normal">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" x:Family="Swiss" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s62">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s63">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Cambria" ss:Size="14" ss:Color="#000000" ss:Bold="1"
+    ss:Underline="Single"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s64">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Cambria" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s65">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Cambria" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s66">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Cambria" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s67">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Cambria" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s68">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Cambria" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s69">
+   <Alignment ss:Horizontal="Center" ss:Vertical="Center" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Cambria" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s70">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"/>
+   </Borders>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s71">
+   <Alignment ss:Vertical="Bottom" ss:WrapText="1"/>
+   <Borders>
+    <Border ss:Position="Bottom" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Left" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Right" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+    <Border ss:Position="Top" ss:LineStyle="Continuous" ss:Weight="1"
+     ss:Color="#FFFFFF"/>
+   </Borders>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000"/>
+   <Interior ss:Color="#99CCFF" ss:Pattern="Solid"/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s72">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000" ss:Bold="1"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s73">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s74">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s75">
+   <Alignment ss:Vertical="Bottom"/>
+   <Borders/>
+   <Font ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s76">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:Size="6.5" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s77">
+   <Alignment ss:Horizontal="Left" ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Calibri" ss:Size="12" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s78">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:FontName="Times ss:New ss:Roman" ss:Size="7" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+  <Style ss:ID="s79">
+   <Alignment ss:Vertical="Center"/>
+   <Borders/>
+   <Font ss:Size="11" ss:Color="#000000"/>
+   <Interior/>
+   <NumberFormat/>
+   <Protection/>
+  </Style>
+ </Styles>
+ <Worksheet ss:Name="Sheet1">
+  <Table ss:ExpandedColumnCount="13" ss:ExpandedRowCount="196" x:FullColumns="1"
+   x:FullRows="1" ss:StyleID="s62" ss:DefaultColumnWidth="53"
+   ss:DefaultRowHeight="12">
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="20"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="98"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="89"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="198"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="150"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="160"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="125"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="158"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="72"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="198"/>
+   <Column ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="128" ss:Span="1"/>
+   <Column ss:Index="13" ss:StyleID="s62" ss:AutoFitWidth="0" ss:Width="183"/>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s63"><Data ss:Type="String">WCAN Angel Network Project Evaluation Breakdown - EOI Application</Data></Cell>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+    <Cell ss:StyleID="s64"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s65"><Data ss:Type="String">Angel Network Name</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Region in Western Canada</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Info &amp; Experience for Angel Network Lead</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Info on Directors &amp; Officers</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Brief overview of the Network structure and focus</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Brief sustainability Plan</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Collaboration Plan</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Total Funding Requested for the Projects</Data></Cell>
+    <Cell ss:StyleID="s66"><Data ss:Type="String">Brief Project Description</Data></Cell>
+    <Cell ss:StyleID="s67"><Data ss:Type="String">NACO staff recommend-actions</Data></Cell>
+    <Cell ss:StyleID="s68"><Data ss:Type="String">NACO Staff Score:        A) meets the criteria. B) does not meet the criteria.                            C) unsure if it meets the criteria</Data></Cell>
+    <Cell ss:StyleID="s69"><Data ss:Type="String">Comments/Recommendations and Feedback Requests</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"><Data ss:Type="String">GCA NTUS (Not the Usual Suspects) Semi Annual Angel Investing Forum</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">British Columbia. High net worth individuals who have accrued wealth in real estate, mining, manufacturing, forestry, and other ‘traditional’ industries.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Andrew  Jones, 6043073772, 210 – 415 Cordova St, Vancouver, BC, Technology focused transaction advisor / investment banker; multiple angel investments historical and active; 10 major financings closed since firm inception.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Brent Holliday, CEO, brent@garibaldicapital.com Andrew Jones, CFO, andrew@garibaldicapital.com</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Bi-annual (every 6 months) event. 10 highly curated companies pitch for 10 minutes each, to an audience of highly curated angels that we consider to be ‘Not the Usual Suspects’ as angel investors, having achieved financial success in other industries but having expressed a clear interest in angel investing in growth / technology companies at the Seed I / Seed II stage.. Mission: To provide a zero fee, confidential, highly curated forum for both angels and CEOs to connect – formally during the pitch phase, and informally, socially, thereafter (during the hosted reception phase)</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">To seek out lead sponsors to cover the full costs of: venue, food, marketing / promotion, and investor education.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">We are starting a NTUS Toronto in 2016. It will likely be in conjunction with the new/expanded 111 Kings incubator space.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">20000</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">March 16th, 2016 NTUS v8 Event 10 companies x 10 minutes with hosted reception.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Sept 21st, 2016 NTUS v9 Event 10 companies x 10 minutes with hosted reception.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"><Data ss:Type="String">VA Angels Kelowna Holdings LTD. </Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">The Okanagan Valley, British Columbia </Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Randy Lennon, 403-831-9720, Kelowna@VaAngels.Com, Randy Lennon, CEO&#160;, is a 40&#160;year &#160;entrepreneur who has founded and built &#160;successful enterprises in the fields of newspaper publishing, television and radio, recording artist management, retail, &#160;advertising, marketing and the internet.  He has also worked as a police&#160;officer, regional television and national &#160;radio talk show host, starred in a situation &#160;comedy pilot, and worked as a special advisor to the leader of a major national political party in Ottawa. His recording artists have won&#160;US Gold and Platinum Albums&#160;as well as the&#160;Juno Award&#160;in Canada. In the field of media, Mr. Lennon founded the Spruce Grove Examiner at age 19, building the company to a chain of four weekly newspapers serving the Edmonton market. &#160;  As&#160;Chairman of the Privatization Committee of the board of directors of Access Television Network, he oversaw the first successful privatization of a public television broadcaster in North America. &#160;His crowning achievement in the area was the development of&#160;“The Biz Brainstorm”&#160;workshop and radio show series that garnered back-to-back nominations for the prestigious&#160;Ernst and Young Entrepreneur of the Year Award.In addition to serving as CEO for Candor, Mr. Lennon is managing director with Calgary,&#160;Vancouver and Regina based&#160;Meridian International Merchant Capital, providing capital and corporate finance advisory services to companies operating internationally. &#160;Meridian recently arranged financing that facilitated the purchase of the&#160;Phoenix Coyotes&#160;by a group of primarily Alberta investors.  He is also the President of&#160;VA Angels&#160;Kelowna and Phoenix chapters, one of Canada’s most active Angel Investor Network (also in Calgary, Edmonton and Winnipeg). VA Angels brings together accredited investors with early stage companies to grow through investing capital, guidance, and mentorship. &#160;VA Angels recently celebrated its&#160;100th investee company and over the 13 years members invested over $38 million.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Randy Lennon, President Samantha Milligan, Secretary</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">VA Angels Kelowna is a subsidiary of VA Angels. VA Angels is one of Canada’s largest and most active Angel Network, boasting 5 Chapters, over 150 Members and a 12 year track record . Mission: VA Angels Kelowna’s Vision is to Educate and Empower Accredited Investors for the Purposes of Promoting and Growing the Angel Industry within The Okanagan Valley.   Our Mission is to grow our Membership to 50 Members by December 2016 to provide our Companies with access to a dynamic and high quality group of accredited Investors. </Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Constant Sales &amp; Marketing Efforts and regular Membership Referral Programs. Also providing a quality Forum experience for both the Investor and Entrepreneur which will manifest it’s own perpetual growth. </Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">VA Angels is proud to be a part of a Master Organization which promotes this form of Networking and Collaboration. We are also eager to attend industry related events to connect with all other Networks outside of our parent brand. </Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">48935</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">VA Angels Kelowna would be interested in launching a new website (Branded to match our parent organization) located at the URL OkanaganAngels.Ca for the sole purposes of educating accredited investors on the value of Angel Investing and promoting the industry within the goals and the objectives laid out by the purposes of the grant funding. ($2,495+GST).   We then would like to conduct a monthly Digital Marketing Campaign which consists of SEO (Search Engine Optimization), Google Adwords, Social Media Marketing and RTB (Real Time Bidding) for the purposes of driving traffic from HNW Accredited individuals to this Educational website where the final conversion is application to our Chapter. Based in a Monthly Budget of $1,595 for this Campaign we project 27 – 35 new Member Applicants over the course of 12 months.   Total Annual Project Cost - $21,635</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">VA Angels Kelowna would like to host a one day Free (To accredited investors and Yacht Club Members) Angel Investment Workshop promoting Angel Investing in the Okanagan Valley hosted at the Kelowna Yacht Club. The cost of Hosting and Catering for this event is $5,000   We will utilize the Marketing Budget and resources from Project #1 to Promote this event Online.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">VA Angels Kelowna would like to Publish and Distribute an Okanagan Valley Angel Investing Industry Magazine. This would be printed Quarterly and would also become a revenue generating Project after the second Issue. The Cost of Printing, Production and Distribution of this Project would be $9,550 per issue for the Spring and Summer Issues. Totaling $19,100 of the Grant Funding. After 2 Issues it will be self sustaining (with advertising revenues). Considerable planning has been done on this project (see attached mock-up and branding) and Samantha and Randy both have considerable experience in publishing.  **Please note the attached sample says Canada’s Angel Investment Magazine but will be changed to The Okanagan Valley’s Angel Investing Magazine. (This can be modified during any issue for the purpose of expansion when needed).  The Magazine will be a free coffee table publication which will be hand distributed throughout the Okanagan Valley to highly targeted areas where accredited investors work, play and shop. Distribution will include (but not be limited to) The Kelowna Yacht Club, luxury car dealership’s (waiting areas), and high profile legal offices. There will also be a targeted mailing list of Investors and subscribers as well.      The goals of the project are as follows;   -To grow the size of the Angel community in the Okanagan -To assist in increasing the amount of Angel funds received by Canadian companies -To grow our membership to 50 Members by Dec 2016   -To provide a vehicle to help NACO collect Investment Data   -To improve communication &amp; information flow of the Angel Industry  -To be an educational resource to the Angel Community  -To promote Angel Events </Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">VA Angels Kelowna would like to host a Spring Members Social Gathering for the purpose of Member Referral &amp; Awareness. This will be held in May 2016 and Cost $3,200 with Catering and Marketing. </Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"><Data ss:Type="String">TEC VA </Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Alberta, Manitoba, BC. ~100 Accredited Investors entrepreneurs, professionals. We also hold public forums which can include anywhere from 30-70 non-specific attendees in the audience.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Ryan  Heit, 780-492-8532, 10230 Jasper Avenue Edmonton, Alberta, Canada T5J 4P6, Investment Coordinator for TEC Edmonton, 3X entrepreneur (all going concerns), angel investor in over 5 deals, MSc, MBA</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Randy Thompson thompson@vaangels.com 403-383-0106 Randy Yatscoff randy.yatscoff@tecedmonton.com 780-492-5744</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">TEC Venture Angels is a partnership between TEC Edmonton and VA Angels. This merger has allowed for an increase in pitch forums as well given more exposure to the public of the entrepreneurial start up space. This aids in both member recruitment as well as increased opportunities for entrepreneurs to pitch their company. TEC Venture Angels is run by not-for-profit business incubator and accelerator TEC Edmonton. TEC Edmonton screens and assists start-up companies wishing to approach TEC Venture Angels for investment capital. All investments are either done directly between members and entrepreneurs or through our VA Fund 1. In Edmonton, TEC VA runs two streams: a public and a private forum. Also within the TEC VA network are chapters in Calgary, Winnipeg, Kelowna and Phoenix (AZ) which run monthly Private forums. A new addition to the network now include satellite chapters in Medicine Hat and Prince George. These satellites will hold biannual events that are a mix of investor education and entrepreneur pitches.. Mission: Committed to building Western Canadian industry through early stage angel investing. Mission is to create and grow both quality investors and quality deal flow through mentorship, education events, a robust network. Our members also volunteer with multiple incubators in the communities we are active in to help support our community: · Venture Mentoring Services (Edmonton) · ICS Prince George · Start Up Edmonton · eHub, Falling Walls (UofA) · AccelerateYYC · NAIT · Innovate Manitoba · Entrepreneurship Manitoba · Grupo Guayacan</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">The network is more than the monthly meetings. There’s networking events, entrepreneur education events, promotion of private investing as an asset class, and an informal concierge service to entrepreneur resources). These activities provide a conduit for entrepreneurs and investors to connect with each other and create a healthy relationship that is essential prior to any investment.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Our plan is to continue to support the existing 5 chapters and then add in the 2 or 3 new satellites into our group. On-going collaboration with NACO and ACA, we will be providing our entrepreneur basecamp program to angel groups in N. America via Angel Research Institute (Kauffman Foundation). Our new fund, VA Angel Fund 1, will also allow for syndication of more deals and we expect this to ramp up in 2016.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">50000</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Our plan is to continue to support the existing 5 chapters and then add in the 2 or 3 new satellites into our group. On-going collaboration with NACO and ACA, we will be providing our entrepreneur basecamp program to angel groups in N. America via Angel Research Institute (Kauffman Foundation). Our new fund, VA Angel Fund 1, will also allow for syndication of more deals and we expect this to ramp up in 2016.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Launch Academy</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">British Columbia through Launch Academy and partners such as Open Angel Network, VanTec Angel Forum. Alberta through chooselethbridge.ca and Innovate Calgary</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Ray  Walia, 604-761-7776, #300 - 128 West Hastings Street, Vancouver BC, Over the past decade, Ray Walia has been an integral part of the movement to make Vancouver Canada’s leading hotspot for innovation and technology. Ray’s impact can be measured in the numerous businesses he has personally founded, the startups he has funded, the volume entrepreneurs he has mentored, and the countless events he has produced to champion Vancouver’s homegrown talent, and the amount of international attention he has garnered for Vancouver’s technology sector.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Ray Walia - ray@launchacademy.ca 604-761-7776 Roger Patterson - roger@latergram.me 604-446- 8154 Mike Edwards - mike@initiogroup.com 604-902- 3530</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Launch Academy is a Federally registered not for profit entity. The Lean Angel program. Mission: Accelerator – Assist companies to get to MVP and interact with appropriate Angels</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Fee based online education resources and in person workshops.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Lean Angel will deliver resources and tools for delivering the program using video and Internet streaming. Lean Angel will work with existing angels and tech community thought leaders to develop compelling content that is current and up to date and deliver through existing Angel Networks. It will include but not be limited to: videos, eBooks, a ‘Lean Angel Canvas’ and online material on ‘best practices’ and the ‘latest trends in angel investing’.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">50000</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Education program for potential Angel Investors. Develop a ‘Lean Angel Program’ to recruit potential angels to technology investing. Deliver resource tools for delivering the program using video and Internet streaming. Work with existing Angels to develop compelling content that is current and up to date.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Partner with individual Angels and ANGEL Networks in Greater Vancouver and smaller regions to provide resource tools for nascent Angel Networks in smaller communities. Work with them to provide online educational content to compliment face to face meetings and angel recruitment initiatives.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Partner with Tec Connect in the Lethbridge area of Southern Alberta to foster the development of an Angel Network in the region. Invest-Tech, the Angel Network in Calgary will also support the initiative.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Develop an online education module specific to Agriculture and investing in bio-agriculture technologies.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Manitoba Knights</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">We invest in Manitoba-based opportunities.  We invest into technology companies including IT and med tech.  We invest into pre-revenue and early revenue companies.  </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Harry  Ethans, 204-295-3059, 300-136 Market Ave.  Wpg MB R3B 0P3, Corporate history in mergers and acquisitions for CanWest Global.  Currently Deal Validator for Knights investments.  Active on +5 Boards.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Steve Kroft, Chair.   David Asper Noli Manalo </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">The Manitoba Knights are an organized group of individual investors, each sharing their opinions, but making individual investment decisions.  All deals presented to the Manitoba Knights have met the investability criteria the group has established, and these criteria have been confirmed as present by Marshall Ring, CEO of the Manitoba Technology Accelerator, then Harry Ethans, Deal Validator for Manitoba Knights, and then a deal champion from the Knights.  At this point, an investment meeting is called and investors are asked to declare interest or disinterest within 5 days.. Mission: Vision: That Manitoba-based technology companies have the ability to secure up to $3M in Angel financing and the opportunity to thrive and build deep roots in Manitoba. Mission: To provide Angel investors the opportunity to invest into high growth potential companies that have been screened by professional technology commercialization executives, as well as a peer group.   </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">The organization currently has an operating budget of $0.  We believe there is an opportunity to grow our footprint, aligned with the same goals as NACO through this project, but the Knights can operate on $0 and be effective.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">The Manitoba Knights have an emerging collaborative relationship with the Saskatchewan Capital Network.  Through this project application we would like to finalize and formalize the activities to support this relationship.  The Knights also have informal collaboration with two lead Angel groups in Boston – Mass Medical and Hub Angels.  Emerging relationships are also forming in China.  This proposal includes finalization and formalization of those collaborative relationships. </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">100000</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Project: Quarterly meetings to explain investment process.  Project alignment: Investor focused event; Membership recruitment and activation; Local marketing initiative. Impact on Goals: Increase the number of Angels in group; Connect members to other investors not in group; Increase the number and quality of educational and networking events.  Activity Description: Knights investment process enables individuals with little experience in Angel investing in general, or technology investing specifically to invest as a result of the Knight’s screening process.  Knight’s process also leverages other capital tools such as the Province’s Angel Tax Credit program.  There are investors who want to understand the Knights approach to investing.  Quarterly meetings can educate investors on our process and possibly convert into active Angels.  </Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Project: Quarterly meetings to update on active investments.  Project alignment: Investor focused event; Membership recruitment and activation; Local marketing initiative. Impact on Goals: Increase the number of Angels in group; Connect members to other investors not in group; Increase the number and quality of educational and networking event; Better reporting data.  Activity Description: During quarterly meetings, report on active investments.  Based on current track record, share prices of investments are rising.  Communicating these results will encourage participation.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Project: Host celebration events for local investees on milestones.  Project alignment: Investor focused; Membership recruitment and activation; Local marketing initiative. Impact on Goals: Increase the number of Angels in group; Connect members to other investors not in group; Increase the number and quality of educational and networking events; Better data to be reported.  Activity Description: When key milestone events are realized, publicize the news and host celebration events.  As an example, securing a first customer, securing a follow on round.  The purpose is to celebrate success to encourage more participation.  </Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Project: Review and compare current Knights’ tools and processes against good practices.  Project alignment: Development of tools and resources. Impact on Goals: Connect members to other investors outside membership; Improve investor participation in deal syndication; Improve adoption of best practices; Better data to be reported.  Activity Description: Identify leading good practices, look for commonality, compare and contrast to Knights, gap analysis and discussion on implementing improvements.  If similar language and processes can be used, this will also increase syndication.  Included is participation in events for collaborative groups, specifically Saskatchewan Capital Network.  </Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Southern Alberta/Lethbridge Angel Network</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Lethbridge’s population is 94,800 with two post- secondary institutions. It is located in the southern portion of the Alberta and is the centre of a trading area that serves approximately 275,000 people in Alberta, British Columbia and the State of Montana. In 2015, it was named one of the top 21 finalists for the designation of 2016 Intelligent Community of the Year. As well, CFIB rated Lethbridge18 out of 121 Canadian cities as the best place to start and grow a business. Lethbridge is home to tecconnect (est. 2011) the only technology business incubator south of Calgary. tecconnect currently supports 7 startup technology companies with 5 graduates. The local regional innovation network (RINSA) has been identified as a best practice in Alberta by AITF because of our collaborative and comprehensive approach to developing a robust entrepreneurial ecosystem.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Renae  Barlow, 403-332-6021, 3582 30 Street North, Lethbridge Alberta, Until a legal entity can be established, the current VP of tecconnect and Business Development for EDL will take the lead in creating and implementing an angel network. Over the last four years, Renae has been providing the foundational business development support services to startup technology companies. She also organizes and delivers, through leveraged community and provincial partnerships, educational workshops, seminars and meetings for the benefit of all entrepreneurs in the community. Renae is also an entrepreneur having started, operated three companies; sold two and blew one up! She is also a leading member of the Regional Innovation Network of Southern Alberta (RINSA) ensuring collaborations between community partners, including both post-secondary institutions, are occurring in support of an entrepreneurial ecosystem in southern Alberta.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Economic Development Lethbridge (EDL) is a community-based, non-profit organization led by a 25-member Board of Directors (see attached list). EDL receives core funding from the City of Lethbridge and leverages those funds with initiative-based commitments from business and other government partnerships. EDL also owns and operates tecconnect, a business incubator targeting startup companies in technology and innovation. www.tecconnect.ca</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">This has not been created yet. Proposed projects will develop the network and structure based on best practices of other angel networks.. Mission: DRAFT - To establish the first angel network for Lethbridge and southern Alberta area to educate and influence the entrepreneurial ecosystem by promoting successful investments in technology and innovation.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">As part of the development of a local angel network, a sustainable model will be developed based on best practices of other angel networks. These revenues could include membership dues, sponsorships, events and in-kind contributions.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">This proposal depends on collaboration with programs and services of existing angel networks in Western Canada. Positive and supportive discussions have started with Henry Kutarna of Invest-Tech (Innovate Calgary); Randy Thompson of VA Angels; and Ray Walia of Launch Academy to leverage and partner with their resources to establish the first angel network for the Lethbridge area.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">20000</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Development of a local angel network to expand the availability of early-stage equity capital in the Lethbridge region. Recruitment and education of new angel investor network to build understanding of how to execute and manage the fundamental elements of early stage investing. To facilitate the delivery of educational seminars and information based on best practices, through existing western Canada resources to provide the tools and knowledge to execute early stage investment deals that will increase investment returns and grow successful companies.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Discover Companies to Prepare for Angel Pitches: Identify investment ready companies and prepare companies for investment through boot camp programs and connect companies to network of angel investors.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Networking and increasing Visibility within Angel Network Community. Travel costs to Canadian Angel conferences and events like the NACO summit and the Annual Banff Venture Forum. Attendance at these events would raise the profile of the new Lethbridge angel group and provide opportunities to network with other Angel Groups.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"><Data ss:Type="String">CapitalRoad Foundation</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">The Foundation is presently deepening its Venture Ambassadors program focused on promoting the Capitalroad events from leading individuals to organizations and networks in each province across Canada. Today, we connect early stage venture investors with angel funded companies in (primarily) Western Canada’s advanced technology sectors.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Tom  Ogaranko, 780-994-8076, togaranko@tessellateinc.com, Tom Ogaranko has been a Director of the CapitalRoad Foundation since 2003 and Chair since 2012. The Foundation operates the Banff Venture Forum, Canadian Financing Forum and the Propel Energy Tech Forum, Western Canada’s largest early stage venture events. Tom has built and exited 5 technology firms over the past 20 years, has been a part of teams raising over $850mm in private and public investment for technology infrastructure, applied R&amp;D and venture development.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">The Foundation’s Directors are: • Tom Ogaranko, togaranko@tessellateinc.com, 780- 994-8076 • Martin Kratz, mkratz@bennettjones.com, (403) 298- 3650 • John Pinsent, john@SAandP .ca, (780) 448-0399 • Wayne Karpoff, wkarpoff@willowglensystems.com, (780) 465-1530;152 • Steve Hnatiuk, steve@lhequitypartners.com, (604) 657-0500 • Ora Zabloski, ora@amkorgroup.com, (403) 239- 9035 • Adrian Banica, Adrian.banica.ca@gmail.com, (780) 441-1950</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">CapitalRoad is a National Not For Profit Foundation. The Foundation does not make investments, rather operates forums for active venture investors to meet Canada’s most promising companies. Over our 20 years of operating these forums we have often worked with angel organizations to facilitate the development of their networks and the ability for them to introduce promising companies to new investors. We also design our events to provide both investors and entrepreneurs with timely and relevant insights to improve the opportunities for everyone’s success.. Mission: To link Canada’s highest potential, emerging technology companies to the most active and supportive investors.      CapitalRoad’s portfolio of events is recognized across Canada as the premiere showcase and networking platform for technology entrepreneurs. The Forums are a fixture on the calendars of the technology entrepreneur, Angel investor, and VC communities and are core drivers of a vibrant entrepreneur, Angel and institutional investor ecosystem.  </Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">The Foundation is a sustainable organization today. CapitalRoad is a national not-for-profit foundation committed to improving the opportunities for early and growth stage Canadian technology companies to better access investment financing. CapitalRoad is pleased to endorse the efforts of the Canadian venture capital and technology communities and is the proud operator of the Banff Venture Forum, Canadian Financing Forum and PROPEL Energy Tech Forum. These events represent Canada's largest investment forum operation, and are aimed at enhancing the access to capital environment for Canadian technology entrepreneurs Our events gather over 800 investors, entrepreneurs and service providers annually to showcase 75 of Canada’s leading emerging companies.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">We have extensive engagement and support from the venture investment community, corporate venture investors and service providers in Canada. We have had many active efforts over the years to support stronger linkages between angel and venture networks and we are seeking additional partnerships to continue this work with the angel community. We want to collaborate with NACO to strengthen the relationships and deal flow between Angel Networks and venture investors by extending our Ambassador program to Angel Networks in Canada, helping them advance leading opportunities from their networks to meet new investors.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">86800</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Angel and VC Education Webinar – a recorded webinar that would feature active angel networks and venture investors providing advice on how to best collaborate to maximize value and minimize risks for all parties. Once recorded, it can serve as a standard educational asset that NACO and Capitalroad could use to distribute to NACO supported angel networks and Capitalroad Ambassador Program Organizations across Canada. Proposed Timeline – Completed by September 2016 Budget - $10,000; NACO Contribution $5,000</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Capitalroad Ambassador Program Extension – Assist with the promotion and expansion of the Ambassador Program. Key value for NACO Angel Networks 1. Place high growth potential companies from their network on a national stage in front of the highest caliber venture capital, venture debt, and other private equity investors along with corporate venture groups from top North American strategic acquisition companies; 2. Receive individual and organizational profile on the Forum websites and print programs; and 3. Leverage the Forums as a means of furthering the mandates of their respective organizations. Proposed Timeline – 2016-2017 Budget - $30,000 per annum; NACO Contribution $15,000 per annum</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">NACO Angel Network Attendance at CapitalRoad events. Subsidize or sponsor the costs of a leading opportunity in 10 NACO Supported networks to attend the Banff Venture Forum. The funds would support a NACO Angel Network lead angel or their best company of the year. Proposed – 2016-2017 Budget – 10 NACO Organizations x 1 Attendees x Admission Fees x 2 years = $25,900</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">VANTEC Entrepreneurs Fund (VCC) Inc. </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Angel investors from primarily from the Greater Vancouver area and British Columbia to invest in BC Eligible Business Corporations. The fund is also looking to add investors from Western Canada and the US states from the Pacific Northwest Region.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Thealzel  Lee, 604-839-5388, E-Fund, 3538 West 29th Avenue, Vancouver, BC V6S 1T3, Thealzel co-founded E-Fund in 2011. She has also founded, invested and managed angel seed investment funds since 2002; and is a co-manager of the VANTEC Angel Network Inc. since 2006.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Thealzel Lee, Director &amp; President Phone: 604-830-5388 Email: thealzel@e-fund.ca  Pieter Dorsman, Director &amp; CFO Phone: 604-671-3408 Email: pieter@e-fund.ca  Gordon Walter Phone: 604-790-1804 Email: gw@e-fund.ca</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">E-Fund is an angel seed investment fund and a member of VANTEC. As a fund managed under the BC government’s SBVCA, E-Fund invests equity in BC Eligible Business Corporations. E-Fund relies upon its 60-plus investor members to identify, investigate and recommend investments from its pooled funds.  The fund currently has 9 active investments in its portfolio and has already had 2 exits within 2 years of investment.. Mission: Vision: Strong sustainable angel investment community. Mission: To be the premier angel investment fund of choice for angel investors and entrepreneurs to support next generations of entrepreneurs. </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Grow E-Fund in terms of both in quantity (e.g. recruit new investor members) and quality (e.g. improve angel investment throughr education) to increase the connections between the fund with other angel group activities in the region (e.g. partnered events).</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">E-Fund will syndicate and co-invest its deals with other angel groups in the region to strengthen the connections between the groups. Examples: Cross-promotion of events, joint management of events, deal syndications, etc.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">50000</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Organization and recruitment of activities to bring new investors and opportunities to E-Fund. E-Fund.  Activities include – but not limited to – E-Fund hosted events to promote angel investments, and promotional speaking or educational opportunities at seminars and conferences with partner organizations that support the angel investment such as BCTIA (late-stage angels), LifeSciencesBC (life/health angels), Foresight Accelerator (Cleantech angels), Women Enterprise Network (Female angels) and others. NACO would be recognized as a headline sponsor for these events to reinforce awareness of the connectivity of this national angel investor organization.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Develop and/or deliver high quality educational programming to the 60-plus E-Fund angel investor members to boost the investment activity and outcomes of E-Fund. Activities include – but not limited to – development and delivery of in-house education for E-Fund investor members, mentorship programs to onboard new E-Fund investor members, support to attend angel investor education seminars and workshops.  NACO would be recognized as a headline sponsor for these activities to reinforce awareness of the connectivity of this national angel investor organization.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">VANTEC Entrepreneurs Fund (VCC) Inc. [dba E-Fund]</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Angel investors are primarily from the Greater Vancouver area and British Columbia and they invest in BC Eligible Business Corporations. The fund is also looking to add investors from Western Canada and the US states from the Pacific Northwest Region.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Thealzel Lee, 604-839-5388, :  E-Fund, 3538 West 29th Avenue, Vancouver, BC V6S 1T3, Thealzel co-founded E-Fund in 2011. She has also founded, invested and managed angel seed investment funds since 2002; and is a co-manager of the VANTEC Angel Network Inc. since 2006.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Thealzel Lee, Director &amp; President Phone: 604-830-5388 Email: thealzel@e-fund.ca  Pieter Dorsman, Director &amp; CFO Phone: 604-671-3408 Email: pieter@e-fund.ca  Gordon Walter Phone: 604-790-1804 Email: gw@e-fund.ca </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">E-Fund is an angel seed investment fund and a member of VANTEC. As a fund managed under the BC government’s SBVCA, E-Fund invests equity in BC Eligible Business Corporations. E-Fund relies upon its 60-plus investor members to identify, investigate and recommend investments from its pooled funds.  The fund currently has 9 active investments in its portfolio and has already had 2 exits within 2 years of investment.. Mission: Vision: Strong sustainable angel investment community. Mission: To be the premier angel investment fund of choice for angel investors and entrepreneurs to support next generations of entrepreneurs. </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Grow E-Fund in terms of both in quantity (e.g. recruit new investor members) and quality (e.g. improve angel investment through education) to increase the connections between the fund with other angel group activities in the region (e.g. partnered events).</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">E-Fund will syndicate and co-invest its deals with other angel groups in the region to strengthen the connections between the groups. Examples: Cross-promotion of events, joint management of events, deal syndications, etc.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">0</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Organization and recruitment of activities to bring new investors and opportunities to E-Fund. Activities include – but not limited to – E-Fund hosted events to promote angel investments, and promotional speaking or educational opportunities at seminars and conferences with partner organizations that support the angel investment such as BCTIA (late-stage angels), LifeSciencesBC (life/health angels), Foresight Accelerator (Cleantech angels), Women Enterprise Network (Female angels) and others. NACO would be recognized as a headline sponsor for these events to reinforce awareness of the connectivity of this national angel investor organization.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Develop and/or deliver high quality educational programming to the 60-plus E-Fund angel investor members to boost the investment activity and outcomes of E-Fund. Activities include – but not limited to – development and delivery of in-house education for E-Fund investor members, mentorship programs to onboard new E-Fund investor members, support to attend angel investor education seminars and workshops.  NACO would be recognized as a headline sponsor for these activities to reinforce awareness of the connectivity of this national angel investor organization.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Angel Forum</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Primarily serves the Vancouver area, then Victoria &amp; Vancouver Island and Kelowna &amp; Okanagan followed by Alberta, Washington &amp; Oregon states </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Bob  Chaworth-Musters, 604-921-4040, 408 Inglewood Ave, West Vancouver, V7T1X1, Bob Chaworth-Musters in 1997 founded the Angel Forum in Vancouver that is the oldest Angel group in Canada. He has invested in (and has lost money) in a number of early stage companies in tech and health.&#160; He also has been very active in educating and advising entrepreneurs and investors through founding in 1998, the Investor Ready workshop series. He was a Board Director and Founding Member of Canada’s National Angel Capital Organization, 2003-2013 and a member of the US Angel Capital Assoc. &#160; Prior to founding the Angel Forum, he was with a major Canadian financial institution ranging from corporate and investment banking to private banking in BC, Europe and the Middle East. He also was involved with a seed venture capital fund, a pre-shipment finance fund with BC Trade, discretionary investment management for private investors and lectured on investment funds</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Robert Sanderson, Bob@Ithacahouse.ca, 788-279-8185 Robert Rayner, drainer@telus.net, 604-905-3808</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Group: Angel Forum Society (a non profit society) and Angel Forum (a-for-profit company) . Mission: Quality Deal Flow for Angel Investors and Professional Education for Angel Investors and Entrepreneurs.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Has sustained itself for 18 years by all stakeholders contributing financially and tight cost control. Need for volunteer Directors / Advisors </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Already engaged with other Angel Groups in BC, Alberta, Sask., Washington and Oregon – need for more travel interchange between these groups. BC’s 30% tax credit is a partial barrier to syndication with investors outside of BC, who are not eligible</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">50000</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">New entry level and advanced Educational workshops for 50+ Angel Investors and Entrepreneurs in Vancouver and other major BC cities. New license fee cost of workshops together with travel costs of speakers and marketing / venue / catering / printing / reporting costs, our time will exceed attendee revenues (women and spousal reduced admission fees), requiring financial support. </Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">New integrated cloud based Website (existing third party) designed for Member based Associations that works on smartphones, tablets and desktops – with Registration, SEO and Social Media and Process automation. Project costs will include the supplier’s Setup fees, our time, legal review (website Terms &amp; Conditions, Conflict of Interest, Code of Conduct etc.) reporting and social media assistance </Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">3.a Increase Annual Membership via new Communication tools to engage New and Existing Members, Entrepreneurs and other Stakeholders, using relevant social media, regular email newsletter services, logo design, retargeting, and other communication. Project costs will include time fees for communication work, media relations, speaking engagements, reporting and our time.  3Aa. Increase Annual Membership via new Communication tools to engage New and Existing Members, Entrepreneurs and other Stakeholders, using relevant social media, regular email newsletter services, logo design, retargeting, and other communication. Project costs will include time fees for communication work, media relations, speaking engagements, reporting and our time.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Increase Annual Membership via new Communication tools to engage New and Existing Members, Entrepreneurs and other Stakeholders, using relevant social media, regular email newsletter services, logo design, retargeting, and other communication. Project costs will include time fees for communication work, media relations, speaking engagements, reporting and our time.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Angel Forum</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Primarily serves the Vancouver area, then Victoria &amp; Vancouver Island and Kelowna &amp; Okanagan followed by Alberta, Washington &amp; Oregon states </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Bob  Chaworth-Musters, 604-921-4040, 408 Inglewood Ave, West Vancouver, V7T1X1, Bob Chaworth-Musters in 1997 founded the Angel Forum in Vancouver that is the oldest Angel group in Canada. He has invested in (and has lost money) in a number of early stage companies in tech and health.&#160; He also has been very active in educating and advising entrepreneurs and investors through founding in 1998, the Investor Ready workshop series. He was a Board Director and Founding Member of Canada’s National Angel Capital Organization, 2003-2013 and a member of the US Angel Capital Assoc. &#160; Prior to founding the Angel Forum, he was with a major Canadian financial institution ranging from corporate and investment banking to private banking in BC, Europe and the Middle East. He also was involved with a seed venture capital fund, a pre-shipment finance fund with BC Trade, discretionary investment management for private investors and lectured on investment funds.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Robert Sanderson, Bob@Ithacahouse.ca, 788-279-8185 Robert Rayner, drainer@telus.net, 604-905-3808</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Group: Angel Forum Society (a non profit society) and Angel Forum (a-for-profit company) . Mission: Quality Deal Flow for Angel Investors and Professional Education for Angel Investors and Entrepreneurs.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Has sustained itself for 18 years by all stakeholders contributing financially and tight cost control. Need for volunteer Directors / Advisors </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Already engaged with other Angel Groups in BC, Alberta, Sask., Washington and Oregon – need for more travel interchange between these groups. BC’s 30% tax credit is a partial barrier to syndication with investors outside of BC, who are not eligible</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">50000</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">New entry level and advanced Educational workshops for 50+ Angel Investors and Entrepreneurs in Vancouver and other major BC cities. New license fee cost of workshops together with travel costs of speakers and marketing / venue / catering / printing / reporting costs, our time will exceed attendee revenues (women and spousal reduced admission fees), requiring financial support. </Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">New integrated cloud based Website (existing third party) designed for Member based Associations that works on smartphones, tablets and desktops – with Registration, SEO and Social Media and Process automation. Project costs will include the supplier’s Setup fees, our time, legal review (website Terms &amp; Conditions, Conflict of Interest, Code of Conduct etc.) reporting and social media assistance </Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">3a. Increase Annual Membership via new Communication tools to engage New and Existing Members, Entrepreneurs and other Stakeholders, using relevant social media, regular email newsletter services, logo design, retargeting, and other communication. Project costs will include time fees for communication work, media relations, speaking engagements, reporting and our time.  3Aa. Outreach marketing by attending, speaking at relevant events attended by investors – emphasis on Women Investors. Project costs to include travel, women and spousal reduced membership / admission fees, reporting and our time.  </Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Outreach marketing by attending, speaking at relevant events attended by investors – emphasis on Women Investors. Project costs to include travel, women and spousal reduced membership / admission fees, reporting and our time.  </Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">VANTEC Angel Network Inc.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Angel investors and entrepreneurs from primarily from the Greater Vancouver area and British Columbia; and also from Western Canada and the US states from the Pacific Northwest Region.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Thealzel  Lee, 604-839-5388, VANTEC Network Inc., 7300 – 515 West Hastings Street, Vancouver, BC V6B 5K3, Thealzel has been a co-manager of VANTEC since 2006. She has also founded, invested and managed angel seed investment funds since 2002.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Michael Volker Phone: 604-644-1926 Email: mike@volker.org Address:  VANTEC Network Inc., 7300 – 515 West Hastings Street, Vancouver, BC V6B 5K3</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">A founding member of NACO, VANTEC has arranged monthly networking, education and pitch meetings for entrepreneurs and angel investors since April 1999. Membership are individual angel investors and angel seed investment funds.. Mission: Vision: Strong sustainable angel investment community. Mission: To introduce early stage investors and mentors to promising technology (i.e. all advanced technology fields) ventures mainly in British Columbia. </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Increase the VANTEC membership in terms of both in quantity (e.g. recruit new members) and quality (e.g. angel investor education) to increase the connections between VANTEC with other angel group activities in the region (e.g. partnered events).</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">VANTEC will continue its practice of partnering with other angel groups in the region and to seek new partnerships with organizations serving the angel investment community for the purpose of strengthening the connections between the groups. Examples: Cross-promotion of events, joint management of events, deal syndications, etc.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">50000</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">To improve the connectivity and reputation of the 60-plus member VANTEC network through partnered events with organizations that showcase quality angel investment deals to a wider spectrum of angel investors. Events would take place 1 or 2 times per month over a 12-month period. Examples of organizations with 25-plus members that support the angel community include - but not limited to - BCTIA (late-stage angels), LifeSciencesBC (life/health angels), Foresight Accelerator (Cleantech angels), Women Enterprise Network (Female angels) and others. NACO would be recognized as a headline sponsor for these events to reinforce local awareness of the connectivity of the national angel investor organization.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Follow-on investment facilitation activities in cooperation with VANTEC members and non-members (e.g. Open Angel, Capital Investment Network, accelerators, etc.) to encourage angel investment.  Activities would include – but not limited to – deal screening reports, cross-referrals of deals and follow-on collection of investment activities by VANTEC members and non-members that would give a more detailed landscape of angel investment in BC.  </Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Organization and recruitment of new members to join 60-plus member VANTEC and its associated angel investment funds through partnered workshops and seminars that provide education to potential new angel investors.  Examples of potential partner organizations with 25-plus members that support the growth of the angel investor community include - but not limited to - BCTIA (late-stage angels), LifeSciencesBC (life/health angels), Foresight Accelerator (Cleantech angels), Women Enterprise Network (Female angels) and others. NACO would be recognized as a headline sponsor for these events to reinforce awareness of the connectivity of this national angel investor organization.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Saskatchewan Capital Network Inc.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Saskatchewan</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Marie  Savostianik, 306-373-3424, 118-802 Heritage Crescent Saskatoon, SK  S7H 5T3, Management and administration of SCN since its establishment in October 2011.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Blair Knippel, Past President bknippel@icloud.com (306) 230-8582 Laurie Dmytryshyn, President ldmytryshyn@picgroup.ca (306) 664-3955 x109  Doug Konkin, Vice President doug.konkin@centus.ca (306) 262-6700  Wayne Watts, Treasurer ccbi@sasktel.net (306) 668-2358  Greg Sutton, Secretary gsutton@tinyeye.com (306) 955-1911  David Callele dcallele@experiencefirstdesign.com (306) 380-7410  Dale Lemke dale@displaysystemsintl.com (306) 934-6884  Kevin Thompson KThompson@IAGTO.CA (306) 385-6253  Craig Zawada craig.zawada@wmcz.com (306) 933-0004 x228</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">SCN is a member-based, non-profit organization governed by a nine-member Board of Directors.  The objects of the Network are: (a) To facilitate investment by Members in early stage and growth-focused companies;  (b) To encourage entrepreneurship where there is a potential to build sustainable and successful businesses;  (c) To provide mechanisms to bridge the funding gap between entrepreneurs and investors; and  (d) To provide tools, education and advice to investors and entrepreneurs.  Through presentation and networking events, SCN facilitates the introduction of investment-ready entrepreneurial companies to potential investors.  Since SCN established four years ago, 29 companies have presented to our investor members.  Nine companies have acquired capital totaling more than $1.5 million.. Mission: Mission:  To provide a forum for Saskatchewan angel investors to access high quality investment opportunities.  Vision:  To be a trusted and valued connection for angel investment capital.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Our primary source of operational funding has come from the Province of Saskatchewan through various departments.  SCN has developed a Sponsorship program – we have three organizations that have provided dollars and one that provides in-kind services.  SCN has received project funding from NRC IRAP to offer skill development workshops for investors, entrepreneurs and service providers, as well as consulting service for the presentation-readiness of entrepreneurs. </Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">SCN’s policy is that we will consider investment presentations from outside the province where the company has presented to their local angel network and raised capital as a result of their presentation.  SCN has invited three non-Saskatchewan companies to present to our members - one company acquired capital.  SCN has excellent working relationships with several angel networks such as Invest-Tech, Vancouver Angel Forum, and First Angel Network.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">50000</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">SCN will undertake a member recruitment campaign focused on capitalizing on current members’ personal and professional networks, company presentation events, networking events, and professional development workshops.  SCN will: Establish a Membership committee to develop a strategy and activities to recruit and retain investor members. Work with existing members and stakeholders (such as professional and industry associations, financial institutions, economic development agencies, etc.) to identify potential angel investor members.  The focus will first be in the Saskatoon area, then Regina, followed by other Saskatchewan cities. Host networking and education events that will bring awareness of angel investing and the benefit of joining SCN. Events may include: Company investment presentations Local angel investors’ success stories Angel Overview informational workshops Member profiles of will be created to understand each member’s investment interest and motivation, as well as their needs from SCN to ensure that programs and activities are directed to meet the needs of members. Develop and distribute member newsletters with calendar of events, deal updates, etc. Support the promotion and awareness of SCN online and through social media.  Cost:  $15,000 for contractors, consultants, marketing, travel, venue rental, catering, meetings and events.  Outcomes: Increase SCN membership by 10 members to a total of 45 members within one year.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Adoption of Best Practices for SCN and its Investor Members  In order for SCN and its members to be successful, as well as to be able to reach out to other investors and their networks, SCN must improve its business processes and procedures to ensure suitable alignment with more established angel networks.  Activities will include:  Research and develop Board and Committee policies and procedures; Research and develop a comprehensive deal screening process; Research and develop a systematic due diligence process; and Coordinate and host professional development workshops (e.g. due diligence, structuring deals and term sheets, due diligence, valuation, exit strategies – to be determined by members and stakeholders).  Cost:  $10,000 for contractors, consultants, marketing, travel, venue rental, catering, meetings and events.  Outcomes: SCN will adopt relevant best practices to provide good governance and high quality deal screening and due diligence practices.  Over a twelve-month period, SCN will coordinate and host at least two workshops for investors to improve their knowledge and skills and de-risk their investment decisions.  </Data></Cell>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">SCN will develop and deliver a public relations strategy with activities to promote angel investing and SCN to stakeholders (including angel investors, entrepreneurs, relevant federal, provincial, municipal government departments, professional and non-profit service providers, and economic development agencies).  Activities may include:  Free print, radio and TV media opportunities Press release and press conference on funding to SCN Investment success stories  Cost:  $5,000 for contractors, consultants, marketing, travel, venue rental, catering, meetings and events.  Outcomes: A public relations strategy will be developed and executed.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">SCN’s Sponsorship Committee has developed a sponsor benefit package and a list of potential activities to identify and seek potential sponsors in SCN.  Activities may include:  Development of strategy and activities to identify and meet with potential sponsors. Coordinate and host events that feature and promote SCN sponsors, including company presentation events, information sessions and professional development workshops. Increasing sponsor profiles online and through social media.  Cost:  $10,000 for contractors, consultants, marketing, travel, venue rental, catering, meetings and events.  Outcomes: Within a twelve-month period, SCN will acquire $50,000 in sponsorship support.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Keiretsu Forum NW </Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Keiretsu Forum NW opened its Vancouver BC chapter in 2012 and currently has approximately 40 members that are private accredited angel investors. Mike Volker, President of Vantec, is our Vancouver Chapter President while Thealzel Lee, Director of Vantec and E-Fund, is the Co-Chapter President. Peter Elkins, CEO of Capital Investment Network, serves as the Victoria Chapter President.  Monthly meetings featuring presenting companies are held at Simon Fraser University and due diligence trainings are hosted at Fasken Martineau. A number of Western Canadian companies are sourced each month into our pipeline and ones such as Lung Pacer have raised capital and completed due diligence with Keiretsu Forum NW which lead to interest from other members and their deal being syndicated across multiple Keiretsu Forum chapters in the Bay Area and Mid-Atlantic regions. </Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Jeff  Hayton, 360-630-9587, 2815 Eastlake Ave E, Suite 300 Seattle, WA 98102, As the Membership and Finance Director at Keiretsu Forum NW, Jeff works every day with early-stage companies to help them in dealing with the angel capital community. Jeff oversees membership and sponsorship sales, including all business development and program outreach throughout 7 chapters across the Keiretsu Forum network in Washington, Oregon, Idaho and British Columbia. He also runs the daily financial operations including all bookkeeping, budgeting and forecasting for an organization that exceeded $1M in revenue in 2015.  In just 1 year with Keiretsu Forum, Jeff has consistently outperformed monthly sales targets by 50% which has enabled more funds to be allocated towards the acquisition of Zino Society and the launch of a new Keiretsu Forum chapter in Tacoma in February 2016. From an operational standpoint, this has accelerated the growth of Keiretsu by expanding the budget to allow the hiring of two additional full-time staff and one full-time intern.  In addition to his role as Membership and Finance Director, Jeff has volunteered and been recruited to serve in project management roles on four due diligence teams which has resulted in follow-on funding for the startup companies looking to go-to-market. He holds a Bachelor’s Degree in Finance from the University of Washington.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Randy Williams, CEO &amp; Founder randy@keiretsuforum.com 415.493.9875</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Keiretsu Forum is a global investment community of accredited private equity angel investors, venture capitalists and corporate/institutional investors. Our worldwide network of capital, resources and deal flow spans across 41 chapters on 3 continents. Keiretsu Forum NW is headquartered in Seattle, WA and is comprised of 7 chapters in Seattle, Kirkland, Vancouver/Victoria BC, Portland, Boise and Tacoma. Each chapter has its own President who is an experienced angel investor and respected community leader acting as the liaison between the local startup communities and the Keiretsu Forum network. Since its inception in 2005, Keiretsu Forum NW members have invested more than $249M into 350+ startup companies including $41.9M into 57 companies last year.   The companies that apply to present at Keiretsu Forum are looking to raise go-to-market funding between $250k-$5M and are commonly in their seed, series a, or series b round of fundraising. We have a robust screening process that reviews 30-50 company applications each month, 7-10 of which are reviewed and voted on by members for approval to present to each Northwest chapter. Once approved, companies travel to Tacoma, Vancouver BC, Kirkland, Seattle and Portland throughout a week and receive exposure to the 400+ investors throughout the Northwest in addition to having a live stream broadcast of their presentation to our chapters in Boise and Victoria. After the presentations, we offer a stringent due diligence process in which members considering investment produce thorough 80-300pg reports breaking down each component of the companies. Historically, 78% of the companies that complete a due diligence report with Keiretsu Forum NW receive funding, and in 2015 members completed 34 due diligence reports.   Keiretsu Forum NW also provides due diligence training and educational workshops for members, partners and guests in collaboration with speakers to offer insight on relevant market trends and topics centered on the startup world and angel investing. Recent topics have featured intellectual property, exit strategy, competitive intelligence, estate tax planning, and how to analyze a marketing plan in due diligence. . Mission: “Great Association with Quality Deal Flow.”  “Great Association… Keiretsu Forum membership is comprised of angel and institutional investors, business leaders, venture capitalists and serial entrepreneurs. Keiretsu Forum enjoys synergies and close relationships with venture capital firms, universities and other partner organizations. These relationships facilitate the access to capital, talent, technology and resources needed to build a successful venture.  …With Quality Deal Flow.” Our quality and diverse deal flow comes from our community of members, venture capitalists, sponsors, incubators and universities. Keiretsu Forum members invest in early-stage companies that focus on emerging technologies, life science/healthcare, real estate, hardware, software, digital media and entertainment, social/environmental impact, fashion, mobile/wireless, clean technology and other segments with high growth opportunity.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">In February 2016, Keiretsu Forum NW launched a new chapter in Tacoma and plans to roll out chapters in Arizona, Utah and Alaska in 2017 and 2018. Being headquartered in Seattle, we seek to grow our other Northwest chapters by enlisting more partners to source deals and add a full-time Director position for our chapter in Vancouver/Victoria BC.   To drive and sustain membership growth, we will host additional monthly events and meetings including deal screenings, educational workshops and co-branded events that are tailored to the members of each local chapter. This will bring more local deals sourced from members, incubators, accelerators, venture capital firms and other community partners to the Keiretsu Forum global network resulting in more free flowing capital and job creation within the local markets the companies serve.</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">In Western Canada, Keiretsu Forum NW is an active partner with Vantec, E-Fund and Capital Investment Network. These relationships have produced synergies resulting in the exchange of deal flow and cross-promotion of events, meetings and investment opportunities. BCTIA, Cascadia Venture Forum, Wavefront, Istuary Innovation Group, Canadian/US Consulates, and the Economic Development Council represent ideal strategic partnerships we would also like to adopt with other angel networks.  In addition to Vancouver, Keiretsu Forum NW seeks to collaborate with more angel and entrepreneur groups in Victoria, Kelowna, Abbotsford, Alberta and Calgary to source more local startups and offer them exposure to more capital while bringing higher quality deal flow throughout the Keiretsu Forum angel network to investors residing in these areas. Across Canada, Keiretsu Forum currently has multiple chapters in Central and Eastern Canada including Toronto, Waterloo and Vaughan.  Across the border in the United States, Europe and Middle East, Keiretsu Forum works with angel groups such as Angel Capital Association, Band of Angels, Tech Coast Angels, TAGS, Fire Conference and many others to help fill the funding gap for early-stage companies. </Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="Number">50000</Data></Cell>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">There is a need to find more high potential start-up companies in Western Canada to put in front of qualified investors in Canada and the U.S.&#160; &#160;Keiretsu would like to collaborate with other angel investing organizations and local community organizations such as Chambers of Commerce, incubators, accelerators, angel groups, law firms and other service providers, as well as colleges and universities to provide deal screenings, co-branded events, educational events, training and outreach throughout the region of Western Canada.&#160;   Areas for such collaboration in Western Canada include but are not limited to Vancouver, Victoria, Kelowna and Calgary. These events would feature local startup companies from the latter cities which would be screened on a monthly basis from Keiretsu Forum Vancouver members to provide coaching, feedback and determine fitness for the Keiretsu investor community. Once approved, these Canadian startups will garner exposure to 400+ investors throughout Keiretsu Forum NW Region with the opportunity to syndicate their deal across our global network of 46 Keiretsu chapters and 2000+ angel investors.   Budget request: total - $50,000 CAD $50,000 CAD to help underwrite the cost of programs and events within Vancouver and the adjacent cities listed above in Western Canada (venue rental, keynote speakers, marketing materials, etc). </Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Victoria Angel Network</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">We service Greater Victoria, BC that has a population of approximately 330,000 people.  Our region is unique because it has an above average number of high net worth individuals, consistently attracting a high proportion of very senior executives and retired entrepreneurs who have successfully exited ventures. </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Dan Gunn, n/a, 777 Fort Street Victoria, BC, V8W 1G9,  Dan has led VIATEC since 2005 as its CEO and Executive Director.  VIATEC is the one-stop hub&#160;that connects people, knowledge and resources to grow and promote the Greater Victoria technology sector.  He has led various investment community initiatives including the Greater Victoria Angel Network collaboration with the University of Victoria (UVic), and numerous local investment summits. https://ca.linkedin.com/in/dangunn</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String"> For VIATEC: Name Company Email Phone Jim Balcom Redlen Technologies Inc jim.balcom@redlen.com (250) 656-5411 Sage Berryman Sage Berryman sageberryman@ralmax.com (250) 590-5888 Robert Cooper PlusROI Online Marketing Inc rob@plusroi.com (250) 294-0915 Scott Dewis RACEROCKS 3D INC scott@racerocks3d.com (250) 391-9646 Colin How Colin How colinhow@gmail.com (250) 580-7988 Jennifer Jacques Schneider Electric jennifer.jacques@ca.schneider-electric.com (250) 652-7100 Ext. 7643 Ho Kim Ho Kim hokim@protection1.com  Bobbi Leach RevenueWire Inc. rleach@revenuewire.com (250) 370-9229 Mark Longo Osler, Hoskin &amp; Harcourt LLP mlongo@osler.com (604) 506-1429 Alex Mendelev TinyMob Games alex@tinymobgames.com (778) 977-1131 Rasool Rayani Rasool Rayani rasool.rayani@gmail.com (778) 885-2111 Christina Seargeant Workday (formerly MediaCore) christina.seargeant@workday.com (250) 590-9394 Tim Teh Kano Applications Inc tim.teh@kanoapps.com (250) 881-4854 Brad Williams Helm Operations brad.williams.eas@gmail.com (250) 857-7992       For CIN: Name Company Email Phone Hannes Blum Venture Partner North America for Acton Capital hannesblum@gmail.com 250-217-6371 Briony Bayer Gustavson Capital bbayer@gustavsoncapital.com 250-412-1290 Laurie Baggio Phoenix Ventures IInc. laurie@phoenixventuresinc.com 604-805-7498 Rodger Banister Helm Operations rbanister@gmail.com 250-360-1991 Stephanie Andrew Espresso Capital stephanie@capitalinvestmentnetwork.ca 250-857-6369 Peter Elkins Kiln Software peter@capitalinvestmentnetwork.ca 778-966-1250 </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String"> VIATEC and UVIC's tech transfer office partnered in 2010 to create the Greater Victoria Angel Network (GVAN).  Meetings were originally held quarterly.  The focus shifted for both organizations, and the last meeting was held in September, 2013.  The Capital Investment Network was started by volunteers from the angel community in January, 2014 to fill this void.  CIN is now a non-profit organization, dedicated to providing investor education, deal flow and other resources to connect and enhance the sophistication of the local investment community and has spurred new investments from local investors.  Over the last two years, we have had a number of successful company exits.  There now exists an excellent opportunity to further accelerate the growth and impact of our investor and company networks based on the combined outcomes provided by CIN, VIATEC as well as new collaborative projects with local angels.. Mission:  Based on the groundwork laid by CIN, VIATEC and numerous successful technology entrepreneurs, the Victoria Angel Network provides a united approach to nurturing and growing Victoria’s angel investment community, increasing the number of participants in that community, and the amount of investments made in local companies.  Victoria Angel Network investors share the common goal of achieving above-market returns by investing in local businesses, and by building community by actively participating in company screenings, education, forums, deep-dive reviews, meticulous due diligence, and ongoing support of the companies. </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String"> VIATEC has 4 years of matching funding available through NRC-CAIP (Canadian Accelerator and Incubator Program), in addition to revenues received through sponsorship and event registration fees.  We continue to explore other business models to ensure that we select the best approach for the network’s long-term sustainability.  We are committed to ensuring that the network continues to grow and maintains itself as a key component of our innovation ecosystem.  We are very interested to work with other angel networks across Canada and North America to learn how other angel networks build financial sustainability into their business model.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String"> VIATEC currently collaborates with 13 other accelerators in British Columbia through the BC Accelerator Network (BCAN).  As part of this program, representatives gather 3 to 4 times per year to share best practices, and work collaboratively on companies in the various regions.  Collaboration is a core value for every member of our team, working regularly with numerous angel groups, accelerators and funds including VANTEC, Seattle Angels, Kereitsu Forum as well as investors in the valley and across the rest of BC. We are committed to continuing to build these connections to better connect local investors with various initiatives including participation in NACO and ACA activities, and to find more ways to work collaboratively with angel networks in Western Canada and across the border.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">108000</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Capital Investment Network Marketing Building on CIN’s excellent track record over the last two years, a comprehensive marketing effort now needs to be made to reach all stakeholders in the investment community, including angel investors, entrepreneurs, accelerator/incubators, mentors, media and high net worth individuals.  By ensuring that key local individuals are engaged with CIN, we will increase our storytelling frequency and presence, with emphasis on the following areas of activity: Public Relations (directed at local media) PPC and CPM Ads (web) Website/SEO (digital marketing strategy) We expect the budget for this activity to be limited to $15,000 total.  This will translate into positive measurable outcomes including increasing participation numbers at our events, increased investor membership and a more connected and engaged investor community (new syndicates, more investments).</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Victoria Investment Ecosystem Survey  Angel investing is high risk and requires expertise and in-depth involvement for strong deal flow, screening and due diligence, and management and support of portfolio of tech start-ups. As such, it is difficult for newcomers to easily engage in. An angel fund can be a great way to engage newcomers, share the workload and risk, and offer firsthand education to angel investors.  Victoria BC may be a great place for an angel fund with many great start-ups, but currently has no formalized angel fund. Before starting a fund, we need to survey the Victoria start-up and angel investor ecosystem as well as research the prior history of start-ups and angel transactions.  This will provide the quantitative analysis needed to potentially launching a local angel fund led by local angels.  We expect the budget for this activity to be limited to $20,000 total.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Discover Tectoria Pitch Event and Investor Track On February 19th, we will be holding a tech community event Called Discover Tectoria (2013 website).  This year, the Mayor of Victoria is inviting a number of angel and VC investors and other thought leaders to Victoria on February 17th for a “reverse trade mission” called the Capital Mission. While we have these investors in town, we will host a pitch event that will showcase our best and brightest start-ups and growth stage ventures.  We will also provide pitch training and practice leading up to the event. We expect the budget for this activity, including all venue and audiovisual costs, to be limited to $25,000 total.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Angel Network Education CIN has been able to opportunistically secure excellent speakers for various investor education events.  This is probably the most important activity that we have identified to make new investors both aware of the local investing opportunity exists, and comfortable in making local investments. Two education events led by CIN will be held and will be structured to allow for ample networking both before and after the formal session.  There will be speaker(s) with relevant experience and knowledge on the session’s topics.  The subject of the sessions will be: Topic TBD; We are keen to explore partnering with NACO and the NACO Academy to test this program in the Victoria market.   Investing Through A Fund (in essence, the results of research from Project #2) We expect the budget for this activity, including all venue and audiovisual costs, to be limited to $6,000 per event, for a total of $12,000.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Mean Eyed Cat Venture Labs Inc.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Region – Winnipeg, Southern and Western Manitoba, Interlake Number of Members - 52 Demographic – Male – 40-64 years old Net worth - $2 million plus Experience – Entrepreneurs in the manufacturing sector, agriculture and real estate Average Investment - $500 - $750K  Sectors – Technology (enterprise software), manufacturing, distribution, oil/gas and food processing </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Robert  Warren, (204) 792-4159, 347 Oak Lawn Road, Winnipeg, MB, R3Y 0H6, Robert has over 30 years of finance experience as both an analyst and investor.  He was one of the founders of the Winnipeg Angel Organization and is active with several Texas angel groups.  During his career, he has worked with companies that have raised over $300 million from such firms as Chevron, Shell, Intel and Whole Foods as well as Angel investors and VC’s across North America and Asia. One company he worked with trades on the TSX.   Since returning to Winnipeg from Texas he has worked with Angels throughout Manitoba on deals in a variety of industries including manufacturing, food processing and IT.  He established the Mean Eyed Cat to support these Angels by helping them improve their skills and build their networks.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Board of Advisors – Angel Activities Geoff McInnes, gmcinnes@archytasgroup.com, (204) 480-0651 Ray Wieler, raywieler@gmail.com, (204) 362-4040 Marshall Zacharias, marshall@westcapag.com, (204) 668-2299 Jordan Fillion, fillj@mymts.net, (204) 748-8558 Robert Warren, rob.warren@mecvl.com, (204) 792-4159  Officers  Robert Warren, Managing Director, rob.warren@mecvl.com, (204) 792-4159 Cindy Warren, Corporate Secretary, cindy.warren@mecvl.com, (204) 799-4962 Mike Martyniuk, Treasurer, mike.martyniuk@mecvl.com, (204) 837-3904</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">The Mean Eyed Cat is a Manitoba non-share capital corporation governed by two boards.  The first board covers the accelerator portion of the Cat and consists of members with experience helping entrepreneurs through the development process.  Companies going through this process have either received investments from the Angel group, an individual Angel or are in the process of seeking Angel funding.    In keeping with Cat’s goals of building networks and providing the best possible support, this board consists of people from Manitoba, other locations in Canada plus international representatives.  One of the Canadian representatives is Ross Finlay from the First Angels Network in Halifax. The second board consists of active Angels or key advisors to Angels in Manitoba.  Three members of the accelerator board, Ross Finlay, Laura Kilcrease and Harry Yuklea serve as resources to the Angel board based on their experiences as Angel investors and VC’s. The Managing Director works with each group and keeps them informed of available deals plus the progress of the accelerator participants. Marshall Zacharias serves on both boards based on his entrepreneurial and investment experience.   The Mean Eyed Cat’s network consists of investors from the Selkirk, Virden, Steinbach, Winkler and Brandon areas of rural Manitoba plus groups in Winnipeg representing a variety of ethnic groups including the Filipino, Chinese and Mennonite communities. . Mission: To develop the experiences of members and knowledge of the Angel asset class in Canada.  The Mean Eyed Cat will accomplish this by: Building a diverse group of Angels from across the Province; Delivering education programs to build the skills of members; Allowing members to share experiences via regional and province-wide events, Developing relationships with other Angel groups in Manitoba and Canada to learn best practices; Developing relationships with US-based Angel groups to learn best practices; Syndicating deals as a way to improve both deal flow and allow for larger investments; Regularly attending NACO’s regional and national events; Actively supporting NACO’s activities and development;  Working with Government to inform and develop programs to improve the Angel asset class; Developing relationships with the VC and other communities to develop exit plans; Working with local companies to ensure they are fully prepared to approach Angels; Working with the media and other publics to ensure they are familiar with the Angel asset class and the role Angels play in the capital markets.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">The sustainability of the network relies on three things: Recruitment of new members:  The Cat is constantly working with existing members to identify prospects.  These are typically people making investments but not identifying themselves as Angels.  The Cat also identifies people not making investments but meeting the characteristics of an Angel.  This process is also designed to broaden the diversity of the group to include more women, younger members and groups from other demographic areas be it ethnicity or geographic. Education: By delivering an education program, the Cat aims to produce a more informed and disciplined investor.  The goal is to build an investor’s skills so they adopt a portfolio approach and perform more due diligence.  Providing these skills should prevent them from becoming disappointed and quit making investments after one or two don’t pan out.  Part of this process also involves the power of networking with other groups and syndication. Exits: Members must see there is a history of realizing gains in their investments within a reasonable time period.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">The Mean Eyed Cat has already started working with other groups in Western Canada, other regions in Canada and the US.  In Western Canada, we have shared deals with the local chapter of the VAAngels and members of the Manitoba Knights as well as local Super Angel Jim Richardson and have been provided with information on deals by these groups.  We have also reached out to the Saskatchewan Capital Network and are in the process of bringing in a presenter from BC, Basil Peters, to deliver a seminar on the issues involved with cross-border investments.   Across Canada, we have collaborated with the Northern Ontario Angels, First Angels and Maple Leaf Angels.  This collaboration has taken a variety of forms including offers to syndicate (Northern Ontario), sharing deals (FAN and Maple Leaf) and bringing in a speaker (FAN). Cross Border we work with a variety of groups based in North Dakota including the Dakota Venture Group.  We also have developed ties with the Rice Alliance, Central Texas Angels and other groups in Texas.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">50000</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Education Workshops: The Mean Eyed Cat will offer the NACO Academy sessions in Manitoba.  We will start with the sessions on due diligence, building the network, mentoring; and exit strategies as well as the session targeted at entrepreneurs.  Our plan is to offer three to four sessions per year, depending on demand.    Eventually we will offer all sections of NACO Academy.  In addition we will work with the Province to deliver workshops on the programs they offer that aid Angel investors, for example, the Small Business Venture Capital Tax Credit, Commercialization Support for Business and Manitoba Innovation Growth Side Car Fund. All education sessions will be open to other Angel groups in Manitoba as well as those from Northwestern Ontario, Saskatchewan, North Dakota, NW Minnesota and NE Montana.  </Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Resource Tools: The Mean Eyed Cat will create an online library of resources the members can access as well as a common platform for receiving and sharing deals.  The common platform we are leaning towards is AngelList but we also have experience with Gust.  The proposed library would include articles on the industry or written by Angels from other regions in Canada or the US, sample forms, contacts in areas such as accounting, law, HR, VC firms and other specialty areas as well as forms the Angel can use as part of their due diligence or investment management process.  It will also include case studies of previous investments to draw on the experiences of the Angels involved in these investments.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Membership Drives: The Mean Eyed Cat will undertake three major membership drives.  The first is to locate and recruit women entrepreneurs from the City of Winnipeg.  We are starting this drive in Winnipeg because of the population size, number of women-owned businesses and presence of a strong financial sector.  The second drive will concentrate on the Parkland District (west side of Lake Manitoba) and Northern Manitoba as this region is currently not represented in the Mean Eyed Cat’s group but is increasingly important.  Third, we intend to recruit members from the First Nations that have an active investment group, e.g. Peguis and Norway House as well as other Aboriginal groups.  These groups are currently not represented in the Cat but are also becoming quite active.   We are also looking to expand our base among our current demographics and reach out to other underrepresented groups, e.g., the LGBT community.</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Regional Events – Syndication  The Cat proposes to deliver a maximum of two such events per year and plans to tie these into the educational component.  These events will include; meetings between the Mean Eyed Cat’s members and other groups in Manitoba; meetings with groups from Northern Ontario and Saskatchewan as well as groups from Northern Minnesota, North Dakota and Eastern Montana.  The goals are:  Build a level of trust between the groups via social activities; Share experiences and practices through seminars and case studies; Syndicate deals by running pitch sessions where each group brings along one or more companies to present.</Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Invest-Tech</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">The Invest-Tech has a wide range of members including individual Angels, members of local investment groups including the A-100, fund representatives, and family offices. We have junior investors as well as seasoned Angels who volunteer for the practice panel. Our membership is interested in a variety of industries like Oil &amp; Gas although it is light at this time, agriculture and digital media. </Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Henry  Kutarna, 403.267.2408, hkutarna@innovatecalgary.com,  3553 31 ST NW, Calgary, AB T2L 2K7, Henry Kutarna is the Executive Director of Invest-Tech at Innovate Calgary. He is also Chair of a private family investment fund concentrating on manufacturing and real estate.   He has been a Deputy Minister of Economic Development, President of the Saskatchewan Diversification Corporation, and a Deputy Minister of Social Services.    He was a private executive coach and operated The Executive Advisor, a consultant group working with corporations and not-for-profit organizations in executive coaching, advisory services, board governance, deal making, and other business development. He has served on numerous private and public boards, as well as on many not for profit and charitable boards. He is known as an executive coach and mentor.   He is an executive in residence at the Banff Centre for Leadership, has led CEO forums for The Executive Committee and was president and CEO of the Calgary Convention &amp; Visitors Bureau. Henry, most recently, held the position of Vice President of Market Development at Innovate Calgary.  Henry holds a Bachelor of Arts (Honours) Degree in Economics from the University of Saskatchewan, has done post-graduate work in Economics at the University of Regina, has a Certified Destination Management Executive designation [C.D.M.E.] from Purdue University/University of Calgary, was a participant in the Province of Saskatchewan Executive Development Program, and has taken the Canadian Securities Course, the Exempt Market Dealers Exam and a host of other executive seminars such as the Queen’s University Negotiations Seminar.   Kutarna is an acknowledged leader in the Alberta angel finance community and is an A100 member.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Invest-Tech does not have its own Board of Directors however it does fall under the guide and leadership of the Innovate Calgary board.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Invest-Tech a program and service offered by Innovate Calgary. Our program line includes entrepreneur boot camps, practice pitch panels and forums for companies as well as Investor Education events throughout the year. . Mission: The mission of Invest-Tech is to assist in creating a capital market for Alberta tech deals by introducing well prepared deals to accredited investors.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">The Invest-Tech team plans to allocate 80% of their resources to the current program with an increase of collaboration with neighboring angel groups for deal flow and to reduce the cost on things like major speaking events. The other 20% will be allocated to identifying high potential deals and providing a focused and custom program to increase invisibility. We also plan to provide more focused Investor education and recruitment events to increase networking and to identify new up and coming Alberta Angels.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Invest-Tech is in the early stages identifying other Angel groups within Alberta and our neighboring provinces to identify the interests of their Angel groups and to look at ways we can work together to better educate and get Angels involved. This will include Edmonton and Saskatchewan initially and move further east and west as we build momentum.</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="Number">50000</Data></Cell>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">1.&#160;&#160;&#160;&#160; Member recruitment and new capital sources 2.&#160;&#160;&#160;&#160; Investor education events 3.&#160;&#160;&#160;&#160; Marketing roadshow in Edmonton, Calgary, Regina and Saskatchewan and increase Invest-Tech visibility nationally &#160; The funds would be allocated to cover hard travel costs of the Invest-Tech team to travel within and outside of Alberta to meet and lock in new capital sources that are not current members. We believe there are groups and investors in smaller Alberta cities like Lethbridge, Medicine Hat and Olds that are not being fully engaged or supported with the current programming in Alberta. Through an Alberta tour, we plan to unlock new capital sources, provide education and networking support as well as increase the Invest-Tech membership.   This focus of this project would not only be to educate and bring these new investors into the fold. This collaborative effort would create new capital pools for Invest-Tech deals but also offer investor education to those towns and cities. A second focus of this project would be work closely with offices like Economic Development Lethbridge, include their staff in the same education offering and develop a syndication relationship. These working relationship will offer Invest-Tech access to deals from other sources as well as offer deals from these cities and towns access to Invest-Tech member capital. A long term benefit of this project should see the formation of capital groups in these cities or towns.  Baseline metrics would include – Invest-Tech member travel to Lethbridge and or 2 other cities in Alberta 1 time this year. Extend quarterly invitations to the city’s economic development staff and potential </Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"><Data ss:Type="String">Throughout the 2016 calendar year, the Invest-Tech team plans to hold several investor education events in Calgary and is planning a marketing roadshow in Edmonton, Calgary, Regina and Saskatchewan. These events will serve as an informal member recruitment event in all 4 cities where investors and entrepreneurs in the community are all welcome to attend. There will be an education component and could potentially include a topic from the NACO academy. A second large and formal investor education event will be planned in Calgary early 2017 but depending on financing may include additional cities.  In Calgary, we are planning 4 investor education events. The model of these events are to connect industry experts (speakers/panelists) with our members. This offers our members multiple benefits:  Opportunity to network amongst each other Opportunity to network with industry experts Education on new markets or deals that may not be included in their portfolio  These events offer several benefits to Invest-Tech as well including:  Recruitment for new members Sales to for prospective members Creation of a more capable/skillful membership Retention of all members   Invest-Tech plans to offer an education series with neighboring cities such as Edmonton and Regina or Saskatoon. The series would engage the angel groups in each city providing the same benefits as the Calgary members. The intention of this series is to engage their local offices like the VA Angels in Edmonton and Saskatchewan Capital Group. The hope is if we work together as offices our syndication relationships will improve but also by increasing the skillset and knowledge of members in each city it allows Invest-Tech deals access to additional capital pools.  Baseline metrics –  Deliver 4 investor education events Co-host an investor education event in Edmonton and Regina/Saskatoon 5 new prospects per event (in Calgary, 20 total) Convert 10 prospects into paid members  Budget –  Calgary education events $20,000 ($5000/per) Edmonton &amp; Regina/Saskatoon costs ($10,000) $30,000 total – Costs include space rental, marketing material, meal that is not fully covered by ticket sales) </Data></Cell>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+    <Cell ss:StyleID="s70"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"><Data ss:Type="String">Finally, to increase Invest-Tech’s visibility within the Canadian Angel community some of the ask will be applied to allow for additional travel to Canadian Angel conferences and events like the NACO summit, the GROW conference or the annual Banff Venture Forum. An increase attendance at these events will allow for a larger deal syndication reach by providing the opportunity to network to continue work with other Angel group attendees. It will also provide an increased visibility of the programs and services offered by Invest-Tech as well as an increase exposure to the entrepreneurial community within Canada.&#160;  Brand exposure at these types of events is crucial to the new Invest-Tech brand. Invest-Tech launched as it’s own brand separate from Alberta Deal Generator and has not had the opportunity to present itself to other angel groups. We want to build relationships with other Angel groups for several reasons: deal syndication but also Angel referrals. If a member of the Invest-Tech team has a contact in a different city looking for an Angel group, it is useful to one understand which group represents which city and their contacts and to understand their models. The same would be expected that these Angel groups understand the Invest-Tech model and refer their Calgarian contacts to Invest-Tech. These types of relationships are best formed at conferences or summits where Angel groups have opportunities to meet and establish a basic working relationship.  Baseline metrics –   Attend 3 conferences by 2 Invest-Tech team members Formalize relationships with 3 Angel groups Send all Invest-Tech deals to other Angel groups Include staff of other Angel groups on the Invest-Tech membership mailing list  Budget - $10,000 (Flight and car rental)</Data></Cell>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+    <Cell ss:StyleID="s71"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s72"><Data ss:Type="String">Criteria to meet: EOI</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"/>
+    <Cell><Data ss:Type="String">Angel Network name</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="3" ss:StyleID="s72"/>
+    <Cell ss:StyleID="s73"><Data ss:Type="String">Location - Region in Western Canada</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s74"><Data ss:Type="String">Contact Information and experience of the Angel Network lead</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s74"><Data ss:Type="String">Information on the Angel Networks board of directors &amp; officers</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s74"><Data ss:Type="String">Overview of the intended structure of the Network (Management, membership, deal flow)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s74"><Data ss:Type="String">Intended structure and focus of the Network (Management, membership, deal flow)</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s74"><Data ss:Type="String">The focus and mission of the Angel Network</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s74"><Data ss:Type="String">The sustainability plan of the Angel Network</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s74"><Data ss:Type="String">Plan for collaboration with other Angel Networks in Western Canada, across Canada and the USA</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s74"><Data ss:Type="String">Total amount of project funding Requested</Data></Cell>
+   </Row>
+   <Row ss:Index="67" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">Project Info EOI:</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s74"><Data ss:Type="String">Brief description of each of the 3 required projects</Data></Cell>
+   </Row>
+   <Row ss:Index="70" ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">Criteria to meet: FA</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Everything required in the EOI</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">History and overview of the Angel Network</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Provide information on membership</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Describe the Angel Network's achievements</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Provide information on other sources of funding</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Described the Network's processes that are in place to effectively manage an Angel Network</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Described the Network's established process for ensuring that members have declared their status as Accredited Investors1, and a method to record said declaration</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Described the Network’s processes and procedures for making investment decisions, including a process that ensures that only the Accredited Investors are making investment decisions</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Described the membership - A minimum of fifteen (15 ) accredited investor members</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Described the length of time In existence - a minimum of six (6) months</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Described the need for an angel Network in their region of Western Canada</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">A brief Angel Network plan</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Angel Network's goals for deal and investment totals for the year</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Any further relevant information</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Provide 2 letters of support from Investors and companies</Data></Cell>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">Documents to provide FA:</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+    <Cell ss:StyleID="s75"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s74"><Data ss:Type="String"> Legal entity documentation</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">By-laws or policies that identify: the legal name, the Angel Network’s investment objectives, and an established process for becoming a member and maintaining or terminating membership;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">D&amp;O Insurance Policy</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Full year's Angel Network budget or the most recent Financial Statements</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">A detailed budget for each project </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">Attested to FA:</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+    <Cell ss:StyleID="s73"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Agree to and sign NACO’s Code of Conduct; </Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Agree to record and report accurate financial and statistical metrics to NACO on a quarterly basis;</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s73"><Data ss:Type="String">Having a NACO membership in good standing</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s74"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s76"><Data ss:Type="String">1 An Accredited Investor means an individual who is qualified as such pursuant to National Instrument 45-106 “Prospectus and Registration Exemptions”.</Data></Cell>
+   </Row>
+   <Row ss:Index="102" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">Project Information FA:</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"/>
+    <Cell><Data ss:Type="String">Ensure that a minimum of 3 projects are proposed</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2"><Data ss:Type="String">Provided details of each project</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2"><Data ss:Type="String">Provided realistic goals and objectives for the project</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2"><Data ss:Type="String">Provide a detailed project-by-project budget and the total amount requested</Data></Cell>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s77"><Data ss:Type="String">Ensure one of  the  goals is to impact at least 25-60 investors per year.</Data></Cell>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s77"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+    <Cell ss:StyleID="s74"/>
+   </Row>
+   <Row ss:Index="109" ss:AutoFitHeight="0">
+    <Cell ss:StyleID="s72"><Data ss:Type="String">Program Goals</Data></Cell>
+    <Cell ss:StyleID="s72"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s78"><Data ss:Type="String">&#160; To improve the connectivity and reputation of the Angel community in Western Canada as measured by deal syndication, cross border investment, average round size and other measures;</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">To support the delivery of high-quality, locally relevant programming in Western Canada;</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">To increase the number and quality of educational resources available to Angels in Western Canada;</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">To increase the number and quality of educational and networking events (workshops, Summits etc.) held in Western Canada; </Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s79"><Data ss:Type="String">To collect better and more detailed data about Angel investments taking place in Western Canada;</Data></Cell>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+    <Cell ss:StyleID="s79"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s78"><Data ss:Type="String">&#160;To improve the awareness of NACO and its member Angel Networks in Western Canada;</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0">
+    <Cell ss:Index="2" ss:StyleID="s78"><Data ss:Type="String">&#160;To triple the size of NACO's Western Canadian membership over three years; and</Data></Cell>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+    <Cell ss:StyleID="s78"/>
+   </Row>
+   <Row ss:AutoFitHeight="0" ss:Height="17" ss:Span="79"/>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <Unsynced/>
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <ActiveRow>13</ActiveRow>
+     <ActiveCol>2</ActiveCol>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+  <x:WorksheetOptions>           </x:WorksheetOptions>
+ </Worksheet>
+ <Worksheet ss:Name="Sheet2">
+  <Table ss:ExpandedColumnCount="17" ss:ExpandedRowCount="51" x:FullColumns="1"
+   x:FullRows="1" ss:DefaultColumnWidth="65" ss:DefaultRowHeight="15">
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Individual WCAN Angel Network Project Budgets</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Note: The Expert Review Committee (ERC) will select successful Project Funding Applications from ranked evaluations of applications received, and approve the financial support of up to 75% of the total project’s expenses for the successful project.  Each individual project included in the applicant’s Project Funding Application will be ranked and judged individually on it’s own merit.  Each project may be awarded funding on a separate project by project basis. </Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Instructions:  Please fill out a separate project budget for each and every project you are applying for funding for.  Please note that the maximum amount of funding available for each Angel Network is $50,000.  Please add further Items as necessary.</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Project Information</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Name of Angel Network:</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">oskar test</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Project Name:</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Project 2</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Project start date:</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2015-06-30</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Project completion date:</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2016-06-30</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Event dates:                                                                   (Please provide multiple dates if applicable.) </Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2012-12-13, 2013,13,13</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Other relevant Information:</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">dogs and cats</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Budget Item</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Total Anticipated Expense                     (per project)       (before tax)</Data></Cell>
+    <Cell><Data ss:Type="String">Project Expenses to be claimed to WCAN              (before tax)</Data></Cell>
+    <Cell><Data ss:Type="String">Description</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Maximum Claimable Amount               (75% )</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Consultants</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">1.0</Data></Cell>
+    <Cell><Data ss:Type="String">10.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.75</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Contractors</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2.0</Data></Cell>
+    <Cell><Data ss:Type="String">9.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">1.5</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Marketing Costs</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">3.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2.25</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Recruitment Costs</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">4.0</Data></Cell>
+    <Cell><Data ss:Type="String">43.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">3.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Meetings, Other</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">5.0</Data></Cell>
+    <Cell><Data ss:Type="String">8.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">3.75</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Events, Food and Beverage</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">6.0</Data></Cell>
+    <Cell><Data ss:Type="String">5.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Transportation, related to events and marketing</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">7.0</Data></Cell>
+    <Cell><Data ss:Type="String">6.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">5.25</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Licenses and Fees</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">8.0</Data></Cell>
+    <Cell><Data ss:Type="String">200.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">6.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Venue, Room Rental</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">9.0</Data></Cell>
+    <Cell><Data ss:Type="String">25.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">6.75</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Audio Visual Fees</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">10.0</Data></Cell>
+    <Cell><Data ss:Type="String">1.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">7.5</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Research</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Education</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Advertising&#160;&amp; Communication</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Speaker Costs</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Materials and Supplies</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Incremental Office Expenses</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Software</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Totals (Internal Use)</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">55.0</Data></Cell>
+    <Cell><Data ss:Type="String">307.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">36.75</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Cash Flow Requests</Data></Cell>
+    <Cell><Data ss:Type="String">Please fill in the anticipated project cash flow requests for the whole year, not to exceed 75% of the total expense before tax.</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">From April 2016 - March 2017</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">REPORTING PERIOD / COST CATEGORY </Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Apr</Data></Cell>
+    <Cell><Data ss:Type="String">May</Data></Cell>
+    <Cell><Data ss:Type="String">June</Data></Cell>
+    <Cell><Data ss:Type="String">July</Data></Cell>
+    <Cell><Data ss:Type="String">Aug</Data></Cell>
+    <Cell><Data ss:Type="String">Sept</Data></Cell>
+    <Cell><Data ss:Type="String">Oct</Data></Cell>
+    <Cell><Data ss:Type="String">Nov</Data></Cell>
+    <Cell><Data ss:Type="String">Dec</Data></Cell>
+    <Cell><Data ss:Type="String">Jan</Data></Cell>
+    <Cell><Data ss:Type="String">Feb</Data></Cell>
+    <Cell><Data ss:Type="String">Mar</Data></Cell>
+    <Cell><Data ss:Type="String">TOTAL forecasted </Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Projected Cash Flow Across All Projects               (Best Estimate)</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">2.0</Data></Cell>
+    <Cell><Data ss:Type="String">4.0</Data></Cell>
+    <Cell><Data ss:Type="String">5.0</Data></Cell>
+    <Cell><Data ss:Type="String">400.0</Data></Cell>
+    <Cell><Data ss:Type="String">300.0</Data></Cell>
+    <Cell><Data ss:Type="String">100.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">300.0</Data></Cell>
+    <Cell><Data ss:Type="String">300.0</Data></Cell>
+    <Cell><Data ss:Type="String">300.0</Data></Cell>
+    <Cell><Data ss:Type="String">300.0</Data></Cell>
+    <Cell><Data ss:Type="String">2011.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Projected Cash Flow (Per Budget - Internal Use Only)</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">11.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">800.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">300.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">900.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">WCAN Authorized Assistance</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0075</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">WCAN  (budget)</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">4.0</Data></Cell>
+    <Cell><Data ss:Type="String">16.0</Data></Cell>
+    <Cell><Data ss:Type="String">400.0</Data></Cell>
+    <Cell><Data ss:Type="String">300.0</Data></Cell>
+    <Cell><Data ss:Type="String">900.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">600.0</Data></Cell>
+    <Cell><Data ss:Type="String">300.0</Data></Cell>
+    <Cell><Data ss:Type="String">300.0</Data></Cell>
+    <Cell><Data ss:Type="String">1200.0</Data></Cell>
+    <Cell><Data ss:Type="String">2011.0</Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">Total Requested</Data></Cell>
+    <Cell><Data ss:Type="String">Total Budgeted</Data></Cell>
+    <Cell><Data ss:Type="String">Total Spent</Data></Cell>
+    <Cell><Data ss:Type="String">Variance</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+   <Row>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String">0.0</Data></Cell>
+    <Cell><Data ss:Type="String">#REF!</Data></Cell>
+    <Cell><Data ss:Type="String">36.75</Data></Cell>
+    <Cell><Data ss:Type="String">-36.75</Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+    <Cell><Data ss:Type="String"></Data></Cell>
+   </Row>
+  </Table>
+  <WorksheetOptions xmlns="urn:schemas-microsoft-com:office:excel">
+   <PageLayoutZoom>0</PageLayoutZoom>
+   <Selected/>
+   <Panes>
+    <Pane>
+     <Number>3</Number>
+     <RangeSelection>R1C1:R51C17</RangeSelection>
+    </Pane>
+   </Panes>
+   <ProtectObjects>False</ProtectObjects>
+   <ProtectScenarios>False</ProtectScenarios>
+  </WorksheetOptions>
+ </Worksheet>
+</Workbook>

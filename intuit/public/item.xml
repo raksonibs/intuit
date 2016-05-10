@@ -1,0 +1,358 @@
+------ QUICKBOOKS-RUBY REQUEST ------
+METHOD = get
+RESOURCE = https://sandbox-quickbooks.api.intuit.com/v3/company/123145759723942/query?query=SELECT+*+FROM+Item+STARTPOSITION+1+MAXRESULTS+20
+REQUEST BODY:
+{}
+REQUEST HEADERS = {"Content-Type"=>"application/xml", "Accept"=>"application/xml", "Accept-Encoding"=>"gzip, deflate"}
+------ QUICKBOOKS-RUBY RESPONSE ------
+RESPONSE CODE = 200
+RESPONSE BODY:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<IntuitResponse xmlns="http://schema.intuit.com/finance/v3" time="2016-04-26T15:52:36.793-07:00">
+  <QueryResponse startPosition="1" maxResults="18">
+    <Item domain="QBO" sparse="false">
+      <Id>3</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:36:03-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T12:47:47-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Concrete</Name>
+      <Description>Concrete for fountain installation</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Concrete</FullyQualifiedName>
+      <Taxable>true</Taxable>
+      <UnitPrice>0</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Landscaping Services:Job Materials:Fountains and Garden Lighting">48</IncomeAccountRef>
+      <PurchaseCost>0</PurchaseCost>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>4</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:41:38-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-27T10:41:38-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Design</Name>
+      <Description>Custom Design</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Design</FullyQualifiedName>
+      <Taxable>false</Taxable>
+      <UnitPrice>75</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Design income">82</IncomeAccountRef>
+      <PurchaseCost>0</PurchaseCost>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>6</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:43:14-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-27T10:43:14-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Gardening</Name>
+      <Description>Weekly Gardening Service</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Gardening</FullyQualifiedName>
+      <Taxable>false</Taxable>
+      <UnitPrice>0</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Landscaping Services">45</IncomeAccountRef>
+      <PurchaseCost>0</PurchaseCost>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>2</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-22T14:42:05-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-22T14:42:05-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Hours</Name>
+      <Active>true</Active>
+      <FullyQualifiedName>Hours</FullyQualifiedName>
+      <Taxable>false</Taxable>
+      <UnitPrice>0</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Services">1</IncomeAccountRef>
+      <PurchaseCost>0</PurchaseCost>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>7</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:43:54-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-27T10:43:54-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Installation</Name>
+      <Description>Installation of landscape design</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Installation</FullyQualifiedName>
+      <Taxable>false</Taxable>
+      <UnitPrice>50</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Landscaping Services:Labor:Installation">52</IncomeAccountRef>
+      <PurchaseCost>0</PurchaseCost>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>8</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:44:40-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T12:47:38-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Lighting</Name>
+      <Description>Garden Lighting</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Lighting</FullyQualifiedName>
+      <Taxable>true</Taxable>
+      <UnitPrice>0</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Landscaping Services:Job Materials:Fountains and Garden Lighting">48</IncomeAccountRef>
+      <PurchaseCost>0</PurchaseCost>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>9</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:45:18-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-27T10:45:18-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Maintenance &amp; Repair</Name>
+      <Description>Maintenance &amp; Repair</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Maintenance &amp; Repair</FullyQualifiedName>
+      <Taxable>false</Taxable>
+      <UnitPrice>0</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Landscaping Services:Labor:Maintenance and Repair">53</IncomeAccountRef>
+      <PurchaseCost>0</PurchaseCost>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>10</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:45:49-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-27T10:45:49-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Pest Control</Name>
+      <Description>Pest Control Services</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Pest Control</FullyQualifiedName>
+      <Taxable>false</Taxable>
+      <UnitPrice>35</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Pest Control Services">54</IncomeAccountRef>
+      <PurchaseCost>0</PurchaseCost>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>11</Id>
+      <SyncToken>3</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:46:45-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T13:16:17-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Pump</Name>
+      <Description>Fountain Pump</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Pump</FullyQualifiedName>
+      <Taxable>true</Taxable>
+      <UnitPrice>15</UnitPrice>
+      <Type>Inventory</Type>
+      <IncomeAccountRef name="Sales of Product Income">79</IncomeAccountRef>
+      <PurchaseDesc>Fountain Pump</PurchaseDesc>
+      <PurchaseCost>10</PurchaseCost>
+      <ExpenseAccountRef name="Cost of Goods Sold">80</ExpenseAccountRef>
+      <AssetAccountRef name="Inventory Asset">81</AssetAccountRef>
+      <TrackQtyOnHand>true</TrackQtyOnHand>
+      <QtyOnHand>25</QtyOnHand>
+      <InvStartDate>2016-03-30</InvStartDate>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>12</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:49:18-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-27T10:49:18-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Refunds &amp; Allowances</Name>
+      <Description>Income due to refunds or allowances</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Refunds &amp; Allowances</FullyQualifiedName>
+      <Taxable>false</Taxable>
+      <UnitPrice>0</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Other Income">83</IncomeAccountRef>
+      <PurchaseCost>0</PurchaseCost>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>5</Id>
+      <SyncToken>2</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:42:19-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T13:16:17-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Rock Fountain</Name>
+      <Description>Rock Fountain</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Rock Fountain</FullyQualifiedName>
+      <Taxable>true</Taxable>
+      <UnitPrice>275</UnitPrice>
+      <Type>Inventory</Type>
+      <IncomeAccountRef name="Sales of Product Income">79</IncomeAccountRef>
+      <PurchaseDesc>Rock Fountain</PurchaseDesc>
+      <PurchaseCost>125</PurchaseCost>
+      <ExpenseAccountRef name="Cost of Goods Sold">80</ExpenseAccountRef>
+      <AssetAccountRef name="Inventory Asset">81</AssetAccountRef>
+      <TrackQtyOnHand>true</TrackQtyOnHand>
+      <QtyOnHand>2</QtyOnHand>
+      <InvStartDate>2016-03-30</InvStartDate>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>13</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:50:11-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T12:47:31-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Rocks</Name>
+      <Description>Garden Rocks</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Rocks</FullyQualifiedName>
+      <Taxable>true</Taxable>
+      <UnitPrice>0</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Landscaping Services:Job Materials:Fountains and Garden Lighting">48</IncomeAccountRef>
+      <PurchaseCost>0</PurchaseCost>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>1</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-22T14:42:05-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-22T14:42:05-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Services</Name>
+      <Active>true</Active>
+      <FullyQualifiedName>Services</FullyQualifiedName>
+      <Taxable>false</Taxable>
+      <UnitPrice>0</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Services">1</IncomeAccountRef>
+      <PurchaseCost>0</PurchaseCost>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>14</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:50:45-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T12:47:22-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Sod</Name>
+      <Description>Sod</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Sod</FullyQualifiedName>
+      <Taxable>true</Taxable>
+      <UnitPrice>0</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Landscaping Services:Job Materials:Plants and Soil">49</IncomeAccountRef>
+      <PurchaseCost>0</PurchaseCost>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>15</Id>
+      <SyncToken>2</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:51:28-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T12:47:25-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Soil</Name>
+      <Description>2 cubic ft. bag</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Soil</FullyQualifiedName>
+      <Taxable>true</Taxable>
+      <UnitPrice>10</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Landscaping Services:Job Materials:Plants and Soil">49</IncomeAccountRef>
+      <PurchaseDesc>2 cubic ft. bag</PurchaseDesc>
+      <PurchaseCost>6.5</PurchaseCost>
+      <ExpenseAccountRef name="Job Expenses:Job Materials:Plants and Soil">66</ExpenseAccountRef>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>16</Id>
+      <SyncToken>3</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:51:50-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T12:51:47-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Sprinkler Heads</Name>
+      <Description>Sprinkler Heads</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Sprinkler Heads</FullyQualifiedName>
+      <Taxable>true</Taxable>
+      <UnitPrice>2</UnitPrice>
+      <Type>Inventory</Type>
+      <IncomeAccountRef name="Sales of Product Income">79</IncomeAccountRef>
+      <PurchaseDesc>Sprinkler Heads</PurchaseDesc>
+      <PurchaseCost>0.75</PurchaseCost>
+      <ExpenseAccountRef name="Cost of Goods Sold">80</ExpenseAccountRef>
+      <AssetAccountRef name="Inventory Asset">81</AssetAccountRef>
+      <TrackQtyOnHand>true</TrackQtyOnHand>
+      <QtyOnHand>25</QtyOnHand>
+      <InvStartDate>2016-03-30</InvStartDate>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>17</Id>
+      <SyncToken>3</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:52:07-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T12:57:24-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Sprinkler Pipes</Name>
+      <Description>Sprinkler Pipes</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Sprinkler Pipes</FullyQualifiedName>
+      <Taxable>true</Taxable>
+      <UnitPrice>4</UnitPrice>
+      <Type>Inventory</Type>
+      <IncomeAccountRef name="Sales of Product Income">79</IncomeAccountRef>
+      <PurchaseDesc>Sprinkler Pipes</PurchaseDesc>
+      <PurchaseCost>2.5</PurchaseCost>
+      <ExpenseAccountRef name="Cost of Goods Sold">80</ExpenseAccountRef>
+      <AssetAccountRef name="Inventory Asset">81</AssetAccountRef>
+      <TrackQtyOnHand>true</TrackQtyOnHand>
+      <QtyOnHand>31</QtyOnHand>
+      <InvStartDate>2016-03-30</InvStartDate>
+    </Item>
+    <Item domain="QBO" sparse="false">
+      <Id>18</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T10:52:42-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-27T10:52:42-07:00</LastUpdatedTime>
+      </MetaData>
+      <Name>Trimming</Name>
+      <Description>Tree and Shrub Trimming</Description>
+      <Active>true</Active>
+      <FullyQualifiedName>Trimming</FullyQualifiedName>
+      <Taxable>false</Taxable>
+      <UnitPrice>35</UnitPrice>
+      <Type>Service</Type>
+      <IncomeAccountRef name="Landscaping Services">45</IncomeAccountRef>
+      <PurchaseCost>0</PurchaseCost>
+      <TrackQtyOnHand>false</TrackQtyOnHand>
+    </Item>
+  </QueryResponse>
+</IntuitResponse>

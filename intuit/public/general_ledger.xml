@@ -1,0 +1,4653 @@
+------ QUICKBOOKS-RUBY REQUEST ------
+METHOD = get
+RESOURCE = https://sandbox-quickbooks.api.intuit.com/v3/company/123145759723942/reports/GeneralLedger?date_macro=This+Fiscal+Year-to-date
+REQUEST BODY:
+{}
+REQUEST HEADERS = {"Content-Type"=>"application/xml", "Accept"=>"application/xml", "Accept-Encoding"=>"gzip, deflate"}
+------ QUICKBOOKS-RUBY RESPONSE ------
+RESPONSE CODE = 200
+RESPONSE BODY:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Report xmlns="http://schema.intuit.com/finance/v3">
+  <Header>
+    <Time>2016-04-26T15:40:23-07:00</Time>
+    <ReportName>GeneralLedger</ReportName>
+    <DateMacro>this calendar year-to-date</DateMacro>
+    <ReportBasis>Accrual</ReportBasis>
+    <StartPeriod>2016-01-01</StartPeriod>
+    <EndPeriod>2016-04-26</EndPeriod>
+    <Currency>USD</Currency>
+    <Option>
+      <Name>NoReportData</Name>
+      <Value>false</Value>
+    </Option>
+  </Header>
+  <Columns>
+    <Column>
+      <ColTitle>Date</ColTitle>
+      <ColType>tx_date</ColType>
+    </Column>
+    <Column>
+      <ColTitle>Transaction Type</ColTitle>
+      <ColType>txn_type</ColType>
+    </Column>
+    <Column>
+      <ColTitle>Num</ColTitle>
+      <ColType>doc_num</ColType>
+    </Column>
+    <Column>
+      <ColTitle>Name</ColTitle>
+      <ColType>name</ColType>
+    </Column>
+    <Column>
+      <ColTitle>Memo/Description</ColTitle>
+      <ColType>memo</ColType>
+    </Column>
+    <Column>
+      <ColTitle>Split</ColTitle>
+      <ColType>split_acc</ColType>
+    </Column>
+    <Column>
+      <ColTitle>Amount</ColTitle>
+      <ColType>subt_nat_amount</ColType>
+    </Column>
+    <Column>
+      <ColTitle>Balance</ColTitle>
+      <ColType>rbal_nat_amount</ColType>
+    </Column>
+  </Columns>
+  <Rows>
+    <Row type="Section">
+      <Header>
+        <ColData value="Checking" id="35"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="Beginning Balance"/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value="4700.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-01-04"/>
+          <ColData value="Payment" id="76"/>
+          <ColData value="1053"/>
+          <ColData value="Bill's Windsurf Shop" id="2"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="175.0"/>
+          <ColData value="4875.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-01-18"/>
+          <ColData value="Expense" id="107"/>
+          <ColData value="12"/>
+          <ColData value="Robertson &amp; Associates" id="49"/>
+          <ColData value=""/>
+          <ColData value="Legal &amp; Professional Fees:Accounting" id="69"/>
+          <ColData value="-250.0"/>
+          <ColData value="4625.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-09"/>
+          <ColData value="Check" id="57"/>
+          <ColData value="4"/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Automobile:Fuel" id="56"/>
+          <ColData value="-54.55"/>
+          <ColData value="4570.45"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-15"/>
+          <ColData value="Sales Tax Payment" id="123"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value="Q1 Payment"/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="-38.4"/>
+          <ColData value="4532.05"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-15"/>
+          <ColData value="Sales Tax Payment" id="124"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value="Q1 Payment"/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="-38.5"/>
+          <ColData value="4493.55"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-18"/>
+          <ColData value="Expense" id="86"/>
+          <ColData value="9"/>
+          <ColData value="Tania's Nursery" id="50"/>
+          <ColData value=""/>
+          <ColData value="Job Expenses:Job Materials:Plants and Soil" id="66"/>
+          <ColData value="-89.09"/>
+          <ColData value="4404.46"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-18"/>
+          <ColData value="Check" id="109"/>
+          <ColData value="12"/>
+          <ColData value="Books by Bessie" id="30"/>
+          <ColData value=""/>
+          <ColData value="Legal &amp; Professional Fees:Bookkeeper" id="70"/>
+          <ColData value="-55.0"/>
+          <ColData value="4349.46"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-24"/>
+          <ColData value="Check" id="58"/>
+          <ColData value="5"/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Automobile:Fuel" id="56"/>
+          <ColData value="-62.01"/>
+          <ColData value="4287.45"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-25"/>
+          <ColData value="Expense" id="87"/>
+          <ColData value="15"/>
+          <ColData value="Tania's Nursery" id="50"/>
+          <ColData value=""/>
+          <ColData value="Job Expenses" id="58"/>
+          <ColData value="-108.09"/>
+          <ColData value="4179.36"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-05"/>
+          <ColData value="Payment" id="15"/>
+          <ColData value="5664"/>
+          <ColData value="Freeman Sporting Goods:55 Twin Lane" id="9"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="86.4"/>
+          <ColData value="4265.76"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-05"/>
+          <ColData value="Sales Receipt" id="17"/>
+          <ColData value="1008"/>
+          <ColData value="Kate Whelan" id="14"/>
+          <ColData value=""/>
+          <ColData value="Design income" id="82"/>
+          <ColData value="225.0"/>
+          <ColData value="4490.76"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-07"/>
+          <ColData value="Payment" id="72"/>
+          <ColData value=""/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value="Amy claims the pest control did not occur"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="105.0"/>
+          <ColData value="4595.76"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-09"/>
+          <ColData value="Bill Payment (Check)" id="79"/>
+          <ColData value="7"/>
+          <ColData value="Hicks Hardware" id="41"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="-250.0"/>
+          <ColData value="4345.76"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-12"/>
+          <ColData value="Expense" id="80"/>
+          <ColData value="8"/>
+          <ColData value="Hicks Hardware" id="41"/>
+          <ColData value=""/>
+          <ColData value="Landscaping Services:Job Materials:Plants and Soil" id="49"/>
+          <ColData value="-24.36"/>
+          <ColData value="4321.4"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-21"/>
+          <ColData value="Cash Expense" id="136"/>
+          <ColData value=""/>
+          <ColData value="Squeaky Kleen Car Wash" id="57"/>
+          <ColData value=""/>
+          <ColData value="Automobile" id="55"/>
+          <ColData value="-19.99"/>
+          <ColData value="4301.41"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-21"/>
+          <ColData value="Cash Expense" id="135"/>
+          <ColData value=""/>
+          <ColData value="Bob's Burger Joint" id="56"/>
+          <ColData value=""/>
+          <ColData value="Meals and Entertainment" id="13"/>
+          <ColData value="-5.66"/>
+          <ColData value="4295.75"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-21"/>
+          <ColData value="Check" id="84"/>
+          <ColData value=""/>
+          <ColData value="Tony Rondonuwu" id="52"/>
+          <ColData value=""/>
+          <ColData value="Legal &amp; Professional Fees:Lawyer" id="71"/>
+          <ColData value="-100.0"/>
+          <ColData value="4195.75"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-22"/>
+          <ColData value="Cash Expense" id="132"/>
+          <ColData value=""/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Automobile:Fuel" id="56"/>
+          <ColData value="-52.14"/>
+          <ColData value="4143.61"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-22"/>
+          <ColData value="Check" id="133"/>
+          <ColData value="70"/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Maintenance and Repair" id="72"/>
+          <ColData value="-185.0"/>
+          <ColData value="3958.61"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-23"/>
+          <ColData value="Bill Payment (Check)" id="104"/>
+          <ColData value="11"/>
+          <ColData value="Hall Properties" id="40"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="-900.0"/>
+          <ColData value="3058.61"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-23"/>
+          <ColData value="Payment" id="61"/>
+          <ColData value="1886"/>
+          <ColData value="Cool Cars" id="3"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="694.0"/>
+          <ColData value="3752.61"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-24"/>
+          <ColData value="Check" id="36"/>
+          <ColData value="2"/>
+          <ColData value="Mahoney Mugs" id="43"/>
+          <ColData value=""/>
+          <ColData value="Office Expenses" id="15"/>
+          <ColData value="-18.08"/>
+          <ColData value="3734.53"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-24"/>
+          <ColData value="Expense" id="83"/>
+          <ColData value="13"/>
+          <ColData value="Hicks Hardware" id="41"/>
+          <ColData value=""/>
+          <ColData value="Job Expenses:Job Materials:Sprinklers and Drip Systems" id="67"/>
+          <ColData value="-215.66"/>
+          <ColData value="3518.87"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-25"/>
+          <ColData value="Sales Receipt" id="11"/>
+          <ColData value="1003"/>
+          <ColData value="Dylan Sollfrank" id="6"/>
+          <ColData value=""/>
+          <ColData value="Design income" id="82"/>
+          <ColData value="337.5"/>
+          <ColData value="3856.37"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-26"/>
+          <ColData value="Cash Expense" id="137"/>
+          <ColData value=""/>
+          <ColData value="Bob's Burger Joint" id="56"/>
+          <ColData value=""/>
+          <ColData value="Meals and Entertainment" id="13"/>
+          <ColData value="-3.86"/>
+          <ColData value="3852.51"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Bill Payment (Check)" id="22"/>
+          <ColData value="1"/>
+          <ColData value="Brosnahan Insurance Agency" id="31"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="-2000.0"/>
+          <ColData value="1852.51"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Bill Payment (Check)" id="37"/>
+          <ColData value="3"/>
+          <ColData value="Books by Bessie" id="30"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="-75.0"/>
+          <ColData value="1777.51"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Payment" id="40"/>
+          <ColData value="2064"/>
+          <ColData value="Travis Waldron" id="26"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="103.55"/>
+          <ColData value="1881.06"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Check" id="138"/>
+          <ColData value="Debit"/>
+          <ColData value="Squeaky Kleen Car Wash" id="57"/>
+          <ColData value=""/>
+          <ColData value="Automobile" id="55"/>
+          <ColData value="-19.99"/>
+          <ColData value="1861.07"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Deposit" id="62"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="218.75"/>
+          <ColData value="2079.82"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Payment" id="33"/>
+          <ColData value=""/>
+          <ColData value="Freeman Sporting Goods:55 Twin Lane" id="9"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="50.0"/>
+          <ColData value="2129.82"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Refund" id="66"/>
+          <ColData value="1020"/>
+          <ColData value="Pye's Cakes" id="15"/>
+          <ColData value=""/>
+          <ColData value="Pest Control Services" id="54"/>
+          <ColData value="-87.5"/>
+          <ColData value="2042.32"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Bill Payment (Check)" id="82"/>
+          <ColData value="45"/>
+          <ColData value="Tim Philip Masonry" id="51"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="-666.0"/>
+          <ColData value="1376.32"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Bill Payment (Check)" id="77"/>
+          <ColData value="6"/>
+          <ColData value="PG&amp;E" id="48"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="-114.09"/>
+          <ColData value="1262.23"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Expense" id="89"/>
+          <ColData value="108"/>
+          <ColData value="Tania's Nursery" id="50"/>
+          <ColData value=""/>
+          <ColData value="Job Expenses" id="58"/>
+          <ColData value="-46.98"/>
+          <ColData value="1215.25"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Cash Expense" id="131"/>
+          <ColData value=""/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Automobile:Fuel" id="56"/>
+          <ColData value="-63.15"/>
+          <ColData value="1152.1"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Deposit" id="102"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="408.0"/>
+          <ColData value="1560.1"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Deposit" id="121"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="868.15"/>
+          <ColData value="2428.25"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Expense" id="127"/>
+          <ColData value="76"/>
+          <ColData value="Pam Seitz" id="47"/>
+          <ColData value=""/>
+          <ColData value="Legal &amp; Professional Fees" id="12"/>
+          <ColData value="-75.0"/>
+          <ColData value="2353.25"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Check" id="115"/>
+          <ColData value="75"/>
+          <ColData value="Hicks Hardware" id="41"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="-228.75"/>
+          <ColData value="2124.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-04-02"/>
+          <ColData value="Cash Expense" id="134"/>
+          <ColData value=""/>
+          <ColData value="Tania's Nursery" id="50"/>
+          <ColData value=""/>
+          <ColData value="Job Expenses:Job Materials:Plants and Soil" id="66"/>
+          <ColData value="-23.5"/>
+          <ColData value="2101.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-04-13"/>
+          <ColData value="Credit Card Credit" id="139"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="Mastercard" id="41"/>
+          <ColData value="-900.0"/>
+          <ColData value="1201.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Checking"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="-3499.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Savings" id="36"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-26"/>
+          <ColData value="Deposit" id="5"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value="Opening Balance"/>
+          <ColData value="Opening Balance Equity" id="34"/>
+          <ColData value="600.0"/>
+          <ColData value="600.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Deposit" id="121"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value="Money to savings"/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="200.0"/>
+          <ColData value="800.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Savings"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="800.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Accounts Receivable (A/R)" id="84"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="Beginning Balance"/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value="401.75"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-01-04"/>
+          <ColData value="Payment" id="97"/>
+          <ColData value=""/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value=""/>
+          <ColData value="Undeposited Funds" id="4"/>
+          <ColData value="-226.75"/>
+          <ColData value="175.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-01-04"/>
+          <ColData value="Payment" id="76"/>
+          <ColData value="1053"/>
+          <ColData value="Bill's Windsurf Shop" id="2"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-175.0"/>
+          <ColData value="0.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-01-14"/>
+          <ColData value="Invoice" id="96"/>
+          <ColData value="1031"/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="387.0"/>
+          <ColData value="387.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-01-21"/>
+          <ColData value="Invoice" id="70"/>
+          <ColData value="1024"/>
+          <ColData value="Red Rock Diner" id="20"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="156.0"/>
+          <ColData value="543.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-10"/>
+          <ColData value="Invoice" id="60"/>
+          <ColData value="1016"/>
+          <ColData value="Kookies by Kathy" id="16"/>
+          <ColData value=""/>
+          <ColData value="Landscaping Services" id="45"/>
+          <ColData value="75.0"/>
+          <ColData value="618.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-11"/>
+          <ColData value="Invoice" id="92"/>
+          <ColData value="1028"/>
+          <ColData value="Freeman Sporting Goods:55 Twin Lane" id="9"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="81.0"/>
+          <ColData value="699.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-11"/>
+          <ColData value="Invoice" id="75"/>
+          <ColData value="1027"/>
+          <ColData value="Bill's Windsurf Shop" id="2"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="85.0"/>
+          <ColData value="784.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-11"/>
+          <ColData value="Invoice" id="71"/>
+          <ColData value="1025"/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="205.0"/>
+          <ColData value="989.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-11"/>
+          <ColData value="Invoice" id="93"/>
+          <ColData value="1029"/>
+          <ColData value="Dukes Basketball Camp" id="5"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="460.4"/>
+          <ColData value="1449.4"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-20"/>
+          <ColData value="Invoice" id="14"/>
+          <ColData value="1006"/>
+          <ColData value="Freeman Sporting Goods:55 Twin Lane" id="9"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="86.4"/>
+          <ColData value="1535.8"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-03"/>
+          <ColData value="Payment" id="94"/>
+          <ColData value=""/>
+          <ColData value="Dukes Basketball Camp" id="5"/>
+          <ColData value=""/>
+          <ColData value="Undeposited Funds" id="4"/>
+          <ColData value="-460.4"/>
+          <ColData value="1075.4"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-05"/>
+          <ColData value="Invoice" id="16"/>
+          <ColData value="1007"/>
+          <ColData value="John Melton" id="13"/>
+          <ColData value=""/>
+          <ColData value="Design income" id="82"/>
+          <ColData value="750.0"/>
+          <ColData value="1825.4"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-05"/>
+          <ColData value="Payment" id="15"/>
+          <ColData value="5664"/>
+          <ColData value="Freeman Sporting Goods:55 Twin Lane" id="9"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-86.4"/>
+          <ColData value="1739.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-07"/>
+          <ColData value="Payment" id="72"/>
+          <ColData value=""/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-105.0"/>
+          <ColData value="1634.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-08"/>
+          <ColData value="Invoice" id="68"/>
+          <ColData value="1022"/>
+          <ColData value="Jeff's Jalopies" id="12"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="81.0"/>
+          <ColData value="1715.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-08"/>
+          <ColData value="Invoice" id="67"/>
+          <ColData value="1021"/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="459.0"/>
+          <ColData value="2174.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-13"/>
+          <ColData value="Payment" id="74"/>
+          <ColData value=""/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="0.0"/>
+          <ColData value="2174.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-13"/>
+          <ColData value="Credit Memo" id="73"/>
+          <ColData value="1026"/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value=""/>
+          <ColData value="Pest Control Services" id="54"/>
+          <ColData value="-100.0"/>
+          <ColData value="2074.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-14"/>
+          <ColData value="Invoice" id="63"/>
+          <ColData value="1017"/>
+          <ColData value="Sushi by Katsuyuki" id="25"/>
+          <ColData value=""/>
+          <ColData value="Landscaping Services" id="45"/>
+          <ColData value="80.0"/>
+          <ColData value="2154.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-16"/>
+          <ColData value="Invoice" id="39"/>
+          <ColData value="1012"/>
+          <ColData value="Shara Barnett:Barnett Design" id="23"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="274.5"/>
+          <ColData value="2428.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-18"/>
+          <ColData value="Invoice" id="42"/>
+          <ColData value="1013"/>
+          <ColData value="Travis Waldron" id="26"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="81.0"/>
+          <ColData value="2509.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-18"/>
+          <ColData value="Invoice" id="12"/>
+          <ColData value="1004"/>
+          <ColData value="Cool Cars" id="3"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="2369.52"/>
+          <ColData value="4879.02"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-21"/>
+          <ColData value="Invoice" id="13"/>
+          <ColData value="1005"/>
+          <ColData value="Freeman Sporting Goods:55 Twin Lane" id="9"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="54.0"/>
+          <ColData value="4933.02"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-21"/>
+          <ColData value="Invoice" id="64"/>
+          <ColData value="1018"/>
+          <ColData value="Sushi by Katsuyuki" id="25"/>
+          <ColData value=""/>
+          <ColData value="Landscaping Services" id="45"/>
+          <ColData value="80.0"/>
+          <ColData value="5013.02"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-23"/>
+          <ColData value="Payment" id="61"/>
+          <ColData value="1886"/>
+          <ColData value="Cool Cars" id="3"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-694.0"/>
+          <ColData value="4319.02"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-26"/>
+          <ColData value="Payment" id="116"/>
+          <ColData value=""/>
+          <ColData value="Sushi by Katsuyuki" id="25"/>
+          <ColData value=""/>
+          <ColData value="Undeposited Funds" id="4"/>
+          <ColData value="-80.0"/>
+          <ColData value="4239.02"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Invoice" id="9"/>
+          <ColData value="1001"/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value="Front yard, hedges, and sidewalks"/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="108.0"/>
+          <ColData value="4347.02"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Invoice" id="99"/>
+          <ColData value="1032"/>
+          <ColData value="Travis Waldron" id="26"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="414.72"/>
+          <ColData value="4761.74"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Invoice" id="27"/>
+          <ColData value="1009"/>
+          <ColData value="Travis Waldron" id="26"/>
+          <ColData value=""/>
+          <ColData value="Services" id="1"/>
+          <ColData value="103.55"/>
+          <ColData value="4865.29"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Invoice" id="49"/>
+          <ColData value="1015"/>
+          <ColData value="Paulsen Medical Supplies" id="18"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="954.75"/>
+          <ColData value="5820.04"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Invoice" id="34"/>
+          <ColData value="1010"/>
+          <ColData value="Weiskopf Consulting" id="29"/>
+          <ColData value=""/>
+          <ColData value="Design income" id="82"/>
+          <ColData value="375.0"/>
+          <ColData value="6195.04"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Payment" id="33"/>
+          <ColData value=""/>
+          <ColData value="Freeman Sporting Goods:55 Twin Lane" id="9"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-50.0"/>
+          <ColData value="6145.04"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Payment" id="32"/>
+          <ColData value="5421"/>
+          <ColData value="John Melton" id="13"/>
+          <ColData value=""/>
+          <ColData value="Undeposited Funds" id="4"/>
+          <ColData value="-300.0"/>
+          <ColData value="5845.04"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Invoice" id="65"/>
+          <ColData value="1019"/>
+          <ColData value="Sushi by Katsuyuki" id="25"/>
+          <ColData value=""/>
+          <ColData value="Landscaping Services" id="45"/>
+          <ColData value="80.0"/>
+          <ColData value="5925.04"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Invoice" id="69"/>
+          <ColData value="1023"/>
+          <ColData value="Red Rock Diner" id="20"/>
+          <ColData value=""/>
+          <ColData value="Pest Control Services" id="54"/>
+          <ColData value="70.0"/>
+          <ColData value="5995.04"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Payment" id="40"/>
+          <ColData value="2064"/>
+          <ColData value="Travis Waldron" id="26"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-103.55"/>
+          <ColData value="5891.49"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Payment" id="31"/>
+          <ColData value="6552"/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value=""/>
+          <ColData value="Undeposited Funds" id="4"/>
+          <ColData value="-108.0"/>
+          <ColData value="5783.49"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Invoice" id="106"/>
+          <ColData value="1034"/>
+          <ColData value="Rondonuwu Fruit and Vegi" id="21"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="78.6"/>
+          <ColData value="5862.09"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Invoice" id="103"/>
+          <ColData value="1033"/>
+          <ColData value="Geeta Kalapatapu" id="10"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="629.1"/>
+          <ColData value="6491.19"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Payment" id="101"/>
+          <ColData value=""/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value=""/>
+          <ColData value="Undeposited Funds" id="4"/>
+          <ColData value="-220.0"/>
+          <ColData value="6271.19"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Payment" id="98"/>
+          <ColData value=""/>
+          <ColData value="Travis Waldron" id="26"/>
+          <ColData value=""/>
+          <ColData value="Undeposited Funds" id="4"/>
+          <ColData value="-81.0"/>
+          <ColData value="6190.19"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="129"/>
+          <ColData value="1036"/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="477.5"/>
+          <ColData value="6667.69"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Payment" id="120"/>
+          <ColData value=""/>
+          <ColData value="Cool Cars" id="3"/>
+          <ColData value=""/>
+          <ColData value="Undeposited Funds" id="4"/>
+          <ColData value="-1675.52"/>
+          <ColData value="4992.17"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Payment" id="128"/>
+          <ColData value=""/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value=""/>
+          <ColData value="Undeposited Funds" id="4"/>
+          <ColData value="-387.0"/>
+          <ColData value="4605.17"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="130"/>
+          <ColData value="1037"/>
+          <ColData value="Sonnenschein Family Store" id="24"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="362.07"/>
+          <ColData value="4967.24"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="119"/>
+          <ColData value="1035"/>
+          <ColData value="Mark Cho" id="17"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="314.28"/>
+          <ColData value="5281.52"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Accounts Receivable (A/R)"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="4879.77"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Inventory Asset" id="81"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="111"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Sprinkler Heads"/>
+          <ColData value="Opening Balance Equity" id="34"/>
+          <ColData value=""/>
+          <ColData value=""/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="111"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Sprinkler Heads"/>
+          <ColData value="Opening Balance Equity" id="34"/>
+          <ColData value="7.5"/>
+          <ColData value="7.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="112"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Sprinkler Pipes"/>
+          <ColData value="Opening Balance Equity" id="34"/>
+          <ColData value=""/>
+          <ColData value="7.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="112"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Sprinkler Pipes"/>
+          <ColData value="Opening Balance Equity" id="34"/>
+          <ColData value="25.0"/>
+          <ColData value="32.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="113"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Rock Fountain"/>
+          <ColData value="Opening Balance Equity" id="34"/>
+          <ColData value=""/>
+          <ColData value="32.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="113"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Rock Fountain"/>
+          <ColData value="Opening Balance Equity" id="34"/>
+          <ColData value="375.0"/>
+          <ColData value="407.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Bill" id="126"/>
+          <ColData value=""/>
+          <ColData value="Norton Lumber and Building Materials" id="46"/>
+          <ColData value="Fountain Pump"/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="80.0"/>
+          <ColData value="487.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Bill" id="126"/>
+          <ColData value=""/>
+          <ColData value="Norton Lumber and Building Materials" id="46"/>
+          <ColData value="Rock Fountain"/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="125.0"/>
+          <ColData value="612.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="129"/>
+          <ColData value="1036"/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value="Rock Fountain"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="-125.0"/>
+          <ColData value="487.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="129"/>
+          <ColData value="1036"/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value="Fountain Pump"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="-10.0"/>
+          <ColData value="477.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Check" id="115"/>
+          <ColData value="75"/>
+          <ColData value="Hicks Hardware" id="41"/>
+          <ColData value="Rock Fountain"/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="125.0"/>
+          <ColData value="602.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Check" id="115"/>
+          <ColData value="75"/>
+          <ColData value="Hicks Hardware" id="41"/>
+          <ColData value="Sprinkler Heads"/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="11.25"/>
+          <ColData value="613.75"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Check" id="115"/>
+          <ColData value="75"/>
+          <ColData value="Hicks Hardware" id="41"/>
+          <ColData value="Sprinkler Pipes"/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="62.5"/>
+          <ColData value="676.25"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Check" id="115"/>
+          <ColData value="75"/>
+          <ColData value="Hicks Hardware" id="41"/>
+          <ColData value="Fountain Pump"/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="30.0"/>
+          <ColData value="706.25"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="119"/>
+          <ColData value="1035"/>
+          <ColData value="Mark Cho" id="17"/>
+          <ColData value="Rock Fountain"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="-125.0"/>
+          <ColData value="581.25"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="119"/>
+          <ColData value="1035"/>
+          <ColData value="Mark Cho" id="17"/>
+          <ColData value="Sprinkler Pipes"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="-10.0"/>
+          <ColData value="571.25"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="130"/>
+          <ColData value="1037"/>
+          <ColData value="Sonnenschein Family Store" id="24"/>
+          <ColData value="Rock Fountain"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="-125.0"/>
+          <ColData value="446.25"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="130"/>
+          <ColData value="1037"/>
+          <ColData value="Sonnenschein Family Store" id="24"/>
+          <ColData value="Fountain Pump"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="-10.0"/>
+          <ColData value="436.25"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="110"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Pump"/>
+          <ColData value="Opening Balance Equity" id="34"/>
+          <ColData value=""/>
+          <ColData value="436.25"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="110"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Pump"/>
+          <ColData value="Opening Balance Equity" id="34"/>
+          <ColData value="160.0"/>
+          <ColData value="596.25"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Inventory Asset"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="596.25"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Undeposited Funds" id="4"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-01-04"/>
+          <ColData value="Payment" id="97"/>
+          <ColData value=""/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="226.75"/>
+          <ColData value="226.75"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-03"/>
+          <ColData value="Payment" id="94"/>
+          <ColData value=""/>
+          <ColData value="Dukes Basketball Camp" id="5"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="460.4"/>
+          <ColData value="687.15"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-26"/>
+          <ColData value="Payment" id="116"/>
+          <ColData value=""/>
+          <ColData value="Sushi by Katsuyuki" id="25"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="80.0"/>
+          <ColData value="767.15"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-26"/>
+          <ColData value="Sales Receipt" id="47"/>
+          <ColData value="1014"/>
+          <ColData value="Diego Rodriguez" id="4"/>
+          <ColData value=""/>
+          <ColData value="Landscaping Services" id="45"/>
+          <ColData value="140.0"/>
+          <ColData value="907.15"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Deposit" id="62"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-78.75"/>
+          <ColData value="828.4"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Payment" id="31"/>
+          <ColData value="6552"/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="108.0"/>
+          <ColData value="936.4"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Sales Receipt" id="38"/>
+          <ColData value="1011"/>
+          <ColData value="Pye's Cakes" id="15"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="78.75"/>
+          <ColData value="1015.15"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Deposit" id="62"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-140.0"/>
+          <ColData value="875.15"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Payment" id="32"/>
+          <ColData value="5421"/>
+          <ColData value="John Melton" id="13"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="300.0"/>
+          <ColData value="1175.15"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Payment" id="101"/>
+          <ColData value=""/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="220.0"/>
+          <ColData value="1395.15"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Payment" id="98"/>
+          <ColData value=""/>
+          <ColData value="Travis Waldron" id="26"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="81.0"/>
+          <ColData value="1476.15"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Deposit" id="102"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-300.0"/>
+          <ColData value="1176.15"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Deposit" id="102"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-108.0"/>
+          <ColData value="1068.15"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Deposit" id="121"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-81.0"/>
+          <ColData value="987.15"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Deposit" id="121"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-80.0"/>
+          <ColData value="907.15"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Deposit" id="121"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-460.4"/>
+          <ColData value="446.75"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Deposit" id="121"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-226.75"/>
+          <ColData value="220.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Payment" id="128"/>
+          <ColData value=""/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="387.0"/>
+          <ColData value="607.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Payment" id="120"/>
+          <ColData value=""/>
+          <ColData value="Cool Cars" id="3"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="1675.52"/>
+          <ColData value="2282.52"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Deposit" id="121"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-220.0"/>
+          <ColData value="2062.52"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Undeposited Funds"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="2062.52"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Truck" id="38"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Section">
+          <Header>
+            <ColData value="Original Cost"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+          </Header>
+          <Rows>
+            <Row type="Data">
+              <ColData value="2016-03-14"/>
+              <ColData value="Journal Entry" id="6"/>
+              <ColData value=""/>
+              <ColData value="" id=""/>
+              <ColData value="Opening Balance"/>
+              <ColData value="-Split-" id=""/>
+              <ColData value="13495.0"/>
+              <ColData value="13495.0"/>
+            </Row>
+          </Rows>
+          <Summary>
+            <ColData value="Total for Original Cost"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value="13495.0"/>
+            <ColData value=""/>
+          </Summary>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Truck"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="13495.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Accounts Payable (A/P)" id="33"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-02-13"/>
+          <ColData value="Bill" id="105"/>
+          <ColData value=""/>
+          <ColData value="Cal Telephone" id="32"/>
+          <ColData value=""/>
+          <ColData value="Utilities:Telephone" id="77"/>
+          <ColData value="56.5"/>
+          <ColData value="56.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-14"/>
+          <ColData value="Bill" id="78"/>
+          <ColData value=""/>
+          <ColData value="PG&amp;E" id="48"/>
+          <ColData value=""/>
+          <ColData value="Utilities:Gas and Electric" id="76"/>
+          <ColData value="86.44"/>
+          <ColData value="142.94"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-22"/>
+          <ColData value="Bill" id="2"/>
+          <ColData value=""/>
+          <ColData value="Hicks Hardware" id="41"/>
+          <ColData value="Opening Balance"/>
+          <ColData value="Miscellaneous" id="14"/>
+          <ColData value="250.0"/>
+          <ColData value="392.94"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-09"/>
+          <ColData value="Bill Payment (Check)" id="79"/>
+          <ColData value="7"/>
+          <ColData value="Hicks Hardware" id="41"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-250.0"/>
+          <ColData value="142.94"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-14"/>
+          <ColData value="Bill" id="24"/>
+          <ColData value=""/>
+          <ColData value="Hall Properties" id="40"/>
+          <ColData value=""/>
+          <ColData value="Rent or Lease" id="17"/>
+          <ColData value="900.0"/>
+          <ColData value="1042.94"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-14"/>
+          <ColData value="Bill" id="21"/>
+          <ColData value=""/>
+          <ColData value="Cal Telephone" id="32"/>
+          <ColData value=""/>
+          <ColData value="Utilities:Telephone" id="77"/>
+          <ColData value="74.36"/>
+          <ColData value="1117.3"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-14"/>
+          <ColData value="Bill" id="35"/>
+          <ColData value=""/>
+          <ColData value="PG&amp;E" id="48"/>
+          <ColData value=""/>
+          <ColData value="Utilities:Gas and Electric" id="76"/>
+          <ColData value="114.09"/>
+          <ColData value="1231.39"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-15"/>
+          <ColData value="Bill" id="3"/>
+          <ColData value=""/>
+          <ColData value="Tim Philip Masonry" id="51"/>
+          <ColData value="Opening Balance"/>
+          <ColData value="Miscellaneous" id="14"/>
+          <ColData value="666.0"/>
+          <ColData value="1897.39"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-16"/>
+          <ColData value="Bill" id="18"/>
+          <ColData value=""/>
+          <ColData value="Books by Bessie" id="30"/>
+          <ColData value=""/>
+          <ColData value="Legal &amp; Professional Fees:Accounting" id="69"/>
+          <ColData value="75.0"/>
+          <ColData value="1972.39"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-23"/>
+          <ColData value="Bill" id="1"/>
+          <ColData value=""/>
+          <ColData value="Brosnahan Insurance Agency" id="31"/>
+          <ColData value="Opening Balance"/>
+          <ColData value="Miscellaneous" id="14"/>
+          <ColData value="2000.0"/>
+          <ColData value="3972.39"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-23"/>
+          <ColData value="Bill" id="19"/>
+          <ColData value=""/>
+          <ColData value="Brosnahan Insurance Agency" id="31"/>
+          <ColData value=""/>
+          <ColData value="Insurance" id="11"/>
+          <ColData value="241.23"/>
+          <ColData value="4213.62"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-23"/>
+          <ColData value="Bill Payment (Check)" id="104"/>
+          <ColData value="11"/>
+          <ColData value="Hall Properties" id="40"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-900.0"/>
+          <ColData value="3313.62"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Bill Payment (Check)" id="22"/>
+          <ColData value="1"/>
+          <ColData value="Brosnahan Insurance Agency" id="31"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-2000.0"/>
+          <ColData value="1313.62"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Bill" id="25"/>
+          <ColData value=""/>
+          <ColData value="Norton Lumber and Building Materials" id="46"/>
+          <ColData value=""/>
+          <ColData value="Job Expenses:Job Materials:Decks and Patios" id="64"/>
+          <ColData value="103.55"/>
+          <ColData value="1417.17"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Bill Payment (Credit Card)" id="50"/>
+          <ColData value="1"/>
+          <ColData value="Cal Telephone" id="32"/>
+          <ColData value=""/>
+          <ColData value="Mastercard" id="41"/>
+          <ColData value="-74.36"/>
+          <ColData value="1342.81"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Bill Payment (Check)" id="37"/>
+          <ColData value="3"/>
+          <ColData value="Books by Bessie" id="30"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-75.0"/>
+          <ColData value="1267.81"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Bill" id="44"/>
+          <ColData value=""/>
+          <ColData value="Diego's Road Warrior Bodyshop" id="36"/>
+          <ColData value=""/>
+          <ColData value="Maintenance and Repair:Equipment Repairs" id="75"/>
+          <ColData value="755.0"/>
+          <ColData value="2022.81"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Bill Payment (Check)" id="82"/>
+          <ColData value="45"/>
+          <ColData value="Tim Philip Masonry" id="51"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-666.0"/>
+          <ColData value="1356.81"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Bill Payment (Check)" id="77"/>
+          <ColData value="6"/>
+          <ColData value="PG&amp;E" id="48"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-114.09"/>
+          <ColData value="1242.72"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Bill Payment (Credit Card)" id="117"/>
+          <ColData value="1"/>
+          <ColData value="Cal Telephone" id="32"/>
+          <ColData value=""/>
+          <ColData value="Mastercard" id="41"/>
+          <ColData value="-56.5"/>
+          <ColData value="1186.22"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Bill Payment (Credit Card)" id="118"/>
+          <ColData value="1"/>
+          <ColData value="Norton Lumber and Building Materials" id="46"/>
+          <ColData value=""/>
+          <ColData value="Mastercard" id="41"/>
+          <ColData value="-103.55"/>
+          <ColData value="1082.67"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Bill" id="108"/>
+          <ColData value=""/>
+          <ColData value="Robertson &amp; Associates" id="49"/>
+          <ColData value=""/>
+          <ColData value="Legal &amp; Professional Fees:Accounting" id="69"/>
+          <ColData value="315.0"/>
+          <ColData value="1397.67"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Bill" id="126"/>
+          <ColData value=""/>
+          <ColData value="Norton Lumber and Building Materials" id="46"/>
+          <ColData value=""/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="205.0"/>
+          <ColData value="1602.67"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Accounts Payable (A/P)"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="1602.67"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Mastercard" id="41"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-01-25"/>
+          <ColData value="Expense" id="85"/>
+          <ColData value="3"/>
+          <ColData value="Tania's Nursery" id="50"/>
+          <ColData value=""/>
+          <ColData value="Job Expenses:Job Materials:Plants and Soil" id="66"/>
+          <ColData value="158.08"/>
+          <ColData value="158.08"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-15"/>
+          <ColData value="Expense" id="59"/>
+          <ColData value="1"/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Automobile:Fuel" id="56"/>
+          <ColData value="65.0"/>
+          <ColData value="223.08"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-18"/>
+          <ColData value="Expense" id="81"/>
+          <ColData value="1"/>
+          <ColData value="Hicks Hardware" id="41"/>
+          <ColData value=""/>
+          <ColData value="Job Expenses:Job Materials:Decks and Patios" id="64"/>
+          <ColData value="88.09"/>
+          <ColData value="311.17"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-20"/>
+          <ColData value="Expense" id="88"/>
+          <ColData value="22"/>
+          <ColData value="Tania's Nursery" id="50"/>
+          <ColData value=""/>
+          <ColData value="Landscaping Services:Job Materials:Plants and Soil" id="49"/>
+          <ColData value="54.92"/>
+          <ColData value="366.09"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-24"/>
+          <ColData value="Expense" id="56"/>
+          <ColData value="50"/>
+          <ColData value="Tania's Nursery" id="50"/>
+          <ColData value=""/>
+          <ColData value="Job Expenses:Job Materials:Plants and Soil" id="66"/>
+          <ColData value="82.45"/>
+          <ColData value="448.54"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Expense" id="55"/>
+          <ColData value=""/>
+          <ColData value="Lee Advertising" id="42"/>
+          <ColData value=""/>
+          <ColData value="Advertising" id="7"/>
+          <ColData value="74.86"/>
+          <ColData value="523.4"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Expense" id="51"/>
+          <ColData value="1"/>
+          <ColData value="Ellis Equipment Rental" id="38"/>
+          <ColData value=""/>
+          <ColData value="Equipment Rental" id="29"/>
+          <ColData value="112.0"/>
+          <ColData value="635.4"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Bill Payment (Credit Card)" id="50"/>
+          <ColData value="1"/>
+          <ColData value="Cal Telephone" id="32"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="74.36"/>
+          <ColData value="709.76"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Bill Payment (Credit Card)" id="117"/>
+          <ColData value="1"/>
+          <ColData value="Cal Telephone" id="32"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="56.5"/>
+          <ColData value="766.26"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Expense" id="122"/>
+          <ColData value="1"/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Automobile:Fuel" id="56"/>
+          <ColData value="52.56"/>
+          <ColData value="818.82"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Bill Payment (Credit Card)" id="118"/>
+          <ColData value="1"/>
+          <ColData value="Norton Lumber and Building Materials" id="46"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="103.55"/>
+          <ColData value="922.37"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-04-04"/>
+          <ColData value="Credit Card Expense" id="141"/>
+          <ColData value=""/>
+          <ColData value="Squeaky Kleen Car Wash" id="57"/>
+          <ColData value=""/>
+          <ColData value="Automobile" id="55"/>
+          <ColData value="19.99"/>
+          <ColData value="942.36"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-04-04"/>
+          <ColData value="Credit Card Expense" id="140"/>
+          <ColData value=""/>
+          <ColData value="Bob's Burger Joint" id="56"/>
+          <ColData value="Bought lunch for crew 102"/>
+          <ColData value="Meals and Entertainment" id="13"/>
+          <ColData value="18.97"/>
+          <ColData value="961.33"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-04-05"/>
+          <ColData value="Credit Card Expense" id="143"/>
+          <ColData value=""/>
+          <ColData value="Hicks Hardware" id="41"/>
+          <ColData value=""/>
+          <ColData value="Job Expenses:Job Materials:Decks and Patios" id="64"/>
+          <ColData value="42.4"/>
+          <ColData value="1003.73"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-04-11"/>
+          <ColData value="Credit Card Expense" id="142"/>
+          <ColData value=""/>
+          <ColData value="Squeaky Kleen Car Wash" id="57"/>
+          <ColData value=""/>
+          <ColData value="Automobile" id="55"/>
+          <ColData value="19.99"/>
+          <ColData value="1023.72"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-04-13"/>
+          <ColData value="Credit Card Credit" id="139"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value="Monthly Payment"/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-900.0"/>
+          <ColData value="123.72"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-04-24"/>
+          <ColData value="Credit Card Expense" id="144"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="Automobile" id="55"/>
+          <ColData value="34.0"/>
+          <ColData value="157.72"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Mastercard"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="157.72"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Arizona Dept. of Revenue Payable" id="89"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-02-11"/>
+          <ColData value="Invoice" id="93"/>
+          <ColData value="1029"/>
+          <ColData value="Dukes Basketball Camp" id="5"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="8.44"/>
+          <ColData value="8.44"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-11"/>
+          <ColData value="Invoice" id="93"/>
+          <ColData value="1029"/>
+          <ColData value="Dukes Basketball Camp" id="5"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="29.96"/>
+          <ColData value="38.4"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-15"/>
+          <ColData value="Sales Tax Payment" id="123"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value="Q1 Payment"/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="-38.4"/>
+          <ColData value="0.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Arizona Dept. of Revenue Payable"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="0.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Board of Equalization Payable" id="90"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="Beginning Balance"/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value="10.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-01-14"/>
+          <ColData value="Invoice" id="96"/>
+          <ColData value="1031"/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="22.0"/>
+          <ColData value="32.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-11"/>
+          <ColData value="Invoice" id="92"/>
+          <ColData value="1028"/>
+          <ColData value="Freeman Sporting Goods:55 Twin Lane" id="9"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="6.0"/>
+          <ColData value="38.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-15"/>
+          <ColData value="Sales Tax Payment" id="124"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value="Q1 Payment"/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="-38.5"/>
+          <ColData value="0.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-20"/>
+          <ColData value="Invoice" id="14"/>
+          <ColData value="1006"/>
+          <ColData value="Freeman Sporting Goods:55 Twin Lane" id="9"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="6.4"/>
+          <ColData value="6.4"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-08"/>
+          <ColData value="Invoice" id="68"/>
+          <ColData value="1022"/>
+          <ColData value="Jeff's Jalopies" id="12"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="6.0"/>
+          <ColData value="12.4"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-08"/>
+          <ColData value="Invoice" id="67"/>
+          <ColData value="1021"/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="34.0"/>
+          <ColData value="46.4"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-18"/>
+          <ColData value="Invoice" id="42"/>
+          <ColData value="1013"/>
+          <ColData value="Travis Waldron" id="26"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="6.0"/>
+          <ColData value="52.4"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-18"/>
+          <ColData value="Invoice" id="12"/>
+          <ColData value="1004"/>
+          <ColData value="Cool Cars" id="3"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="175.52"/>
+          <ColData value="227.92"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-21"/>
+          <ColData value="Invoice" id="13"/>
+          <ColData value="1005"/>
+          <ColData value="Freeman Sporting Goods:55 Twin Lane" id="9"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="4.0"/>
+          <ColData value="231.92"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Invoice" id="9"/>
+          <ColData value="1001"/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="8.0"/>
+          <ColData value="239.92"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Invoice" id="99"/>
+          <ColData value="1032"/>
+          <ColData value="Travis Waldron" id="26"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="30.72"/>
+          <ColData value="270.64"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Invoice" id="103"/>
+          <ColData value="1033"/>
+          <ColData value="Geeta Kalapatapu" id="10"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="46.6"/>
+          <ColData value="317.24"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Invoice" id="106"/>
+          <ColData value="1034"/>
+          <ColData value="Rondonuwu Fruit and Vegi" id="21"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="3.6"/>
+          <ColData value="320.84"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="130"/>
+          <ColData value="1037"/>
+          <ColData value="Sonnenschein Family Store" id="24"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="26.82"/>
+          <ColData value="347.66"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="119"/>
+          <ColData value="1035"/>
+          <ColData value="Mark Cho" id="17"/>
+          <ColData value=""/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="23.28"/>
+          <ColData value="370.94"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Board of Equalization Payable"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="360.44"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Loan Payable" id="43"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Journal Entry" id="7"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value="Opening Balance"/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="4000.0"/>
+          <ColData value="4000.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Loan Payable"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="4000.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Notes Payable" id="44"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Journal Entry" id="8"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value="Opening Balance"/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="25000.0"/>
+          <ColData value="25000.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Notes Payable"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="25000.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Opening Balance Equity" id="34"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="Beginning Balance"/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value="5000.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-14"/>
+          <ColData value="Journal Entry" id="6"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value="Opening Balance"/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="13495.0"/>
+          <ColData value="18495.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-26"/>
+          <ColData value="Deposit" id="5"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="Savings" id="36"/>
+          <ColData value="600.0"/>
+          <ColData value="19095.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Journal Entry" id="7"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value="Opening Balance"/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="-4000.0"/>
+          <ColData value="15095.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Journal Entry" id="8"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value="Opening Balance"/>
+          <ColData value="-Split-" id=""/>
+          <ColData value="-25000.0"/>
+          <ColData value="-9905.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="112"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Sprinkler Pipes"/>
+          <ColData value="Inventory Asset" id="81"/>
+          <ColData value=""/>
+          <ColData value="-9905.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="113"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Rock Fountain"/>
+          <ColData value="Inventory Asset" id="81"/>
+          <ColData value=""/>
+          <ColData value="-9905.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="113"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Rock Fountain"/>
+          <ColData value="Opening Balance Equity" id="34"/>
+          <ColData value="375.0"/>
+          <ColData value="-9530.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="111"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Sprinkler Heads"/>
+          <ColData value="Opening Balance Equity" id="34"/>
+          <ColData value="7.5"/>
+          <ColData value="-9522.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="111"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Sprinkler Heads"/>
+          <ColData value="Inventory Asset" id="81"/>
+          <ColData value=""/>
+          <ColData value="-9522.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="110"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Pump"/>
+          <ColData value="Opening Balance Equity" id="34"/>
+          <ColData value="160.0"/>
+          <ColData value="-9362.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="110"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Pump"/>
+          <ColData value="Inventory Asset" id="81"/>
+          <ColData value=""/>
+          <ColData value="-9362.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Inventory Qty Adjust" id="112"/>
+          <ColData value="START"/>
+          <ColData value="" id=""/>
+          <ColData value="Opening inventory for Sprinkler Pipes"/>
+          <ColData value="Opening Balance Equity" id="34"/>
+          <ColData value="25.0"/>
+          <ColData value="-9337.5"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Opening Balance Equity"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="-14337.5"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Retained Earnings" id="2"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="Beginning Balance"/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value=""/>
+          <ColData value="91.25"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Retained Earnings"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Design income" id="82"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-05"/>
+          <ColData value="Invoice" id="16"/>
+          <ColData value="1007"/>
+          <ColData value="John Melton" id="13"/>
+          <ColData value="Custom Design"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="750.0"/>
+          <ColData value="750.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-05"/>
+          <ColData value="Sales Receipt" id="17"/>
+          <ColData value="1008"/>
+          <ColData value="Kate Whelan" id="14"/>
+          <ColData value="Custom Design"/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="225.0"/>
+          <ColData value="975.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-25"/>
+          <ColData value="Sales Receipt" id="11"/>
+          <ColData value="1003"/>
+          <ColData value="Dylan Sollfrank" id="6"/>
+          <ColData value="Custom Design"/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="337.5"/>
+          <ColData value="1312.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Invoice" id="49"/>
+          <ColData value="1015"/>
+          <ColData value="Paulsen Medical Supplies" id="18"/>
+          <ColData value="Custom Design"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="300.0"/>
+          <ColData value="1612.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Invoice" id="34"/>
+          <ColData value="1010"/>
+          <ColData value="Weiskopf Consulting" id="29"/>
+          <ColData value="Custom Design"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="375.0"/>
+          <ColData value="1987.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Invoice" id="103"/>
+          <ColData value="1033"/>
+          <ColData value="Geeta Kalapatapu" id="10"/>
+          <ColData value="Custom Design"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="262.5"/>
+          <ColData value="2250.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Design income"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="2250.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Discounts given" id="86"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-16"/>
+          <ColData value="Invoice" id="39"/>
+          <ColData value="1012"/>
+          <ColData value="Shara Barnett:Barnett Design" id="23"/>
+          <ColData value="Discount"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="-30.5"/>
+          <ColData value="-30.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Sales Receipt" id="38"/>
+          <ColData value="1011"/>
+          <ColData value="Pye's Cakes" id="15"/>
+          <ColData value="Discount"/>
+          <ColData value="Undeposited Funds" id="4"/>
+          <ColData value="-8.75"/>
+          <ColData value="-39.25"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Invoice" id="49"/>
+          <ColData value="1015"/>
+          <ColData value="Paulsen Medical Supplies" id="18"/>
+          <ColData value="Discount"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="-50.25"/>
+          <ColData value="-89.5"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Discounts given"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="-89.5"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Landscaping Services" id="45"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-01-14"/>
+          <ColData value="Invoice" id="96"/>
+          <ColData value="1031"/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="90.0"/>
+          <ColData value="90.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-10"/>
+          <ColData value="Invoice" id="60"/>
+          <ColData value="1016"/>
+          <ColData value="Kookies by Kathy" id="16"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="75.0"/>
+          <ColData value="165.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-11"/>
+          <ColData value="Invoice" id="75"/>
+          <ColData value="1027"/>
+          <ColData value="Bill's Windsurf Shop" id="2"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="50.0"/>
+          <ColData value="215.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-11"/>
+          <ColData value="Invoice" id="92"/>
+          <ColData value="1028"/>
+          <ColData value="Freeman Sporting Goods:55 Twin Lane" id="9"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="75.0"/>
+          <ColData value="290.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-11"/>
+          <ColData value="Invoice" id="71"/>
+          <ColData value="1025"/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="120.0"/>
+          <ColData value="410.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-20"/>
+          <ColData value="Invoice" id="14"/>
+          <ColData value="1006"/>
+          <ColData value="Freeman Sporting Goods:55 Twin Lane" id="9"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="80.0"/>
+          <ColData value="490.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-08"/>
+          <ColData value="Invoice" id="68"/>
+          <ColData value="1022"/>
+          <ColData value="Jeff's Jalopies" id="12"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="75.0"/>
+          <ColData value="565.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-14"/>
+          <ColData value="Invoice" id="63"/>
+          <ColData value="1017"/>
+          <ColData value="Sushi by Katsuyuki" id="25"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="80.0"/>
+          <ColData value="645.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-18"/>
+          <ColData value="Invoice" id="42"/>
+          <ColData value="1013"/>
+          <ColData value="Travis Waldron" id="26"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="75.0"/>
+          <ColData value="720.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-21"/>
+          <ColData value="Invoice" id="13"/>
+          <ColData value="1005"/>
+          <ColData value="Freeman Sporting Goods:55 Twin Lane" id="9"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="50.0"/>
+          <ColData value="770.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-21"/>
+          <ColData value="Invoice" id="64"/>
+          <ColData value="1018"/>
+          <ColData value="Sushi by Katsuyuki" id="25"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="80.0"/>
+          <ColData value="850.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-26"/>
+          <ColData value="Sales Receipt" id="47"/>
+          <ColData value="1014"/>
+          <ColData value="Diego Rodriguez" id="4"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Undeposited Funds" id="4"/>
+          <ColData value="140.0"/>
+          <ColData value="990.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Invoice" id="9"/>
+          <ColData value="1001"/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="100.0"/>
+          <ColData value="1090.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Invoice" id="65"/>
+          <ColData value="1019"/>
+          <ColData value="Sushi by Katsuyuki" id="25"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="80.0"/>
+          <ColData value="1170.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Invoice" id="106"/>
+          <ColData value="1034"/>
+          <ColData value="Rondonuwu Fruit and Vegi" id="21"/>
+          <ColData value="Tree and Shrub Trimming"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="30.0"/>
+          <ColData value="1200.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="129"/>
+          <ColData value="1036"/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value="Weekly Gardening Service"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="87.5"/>
+          <ColData value="1287.5"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Landscaping Services"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="1287.5"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Job Materials" id="48"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Section">
+          <Header>
+            <ColData value="Fountains and Garden Lighting"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+          </Header>
+          <Rows>
+            <Row type="Data">
+              <ColData value="2016-01-14"/>
+              <ColData value="Invoice" id="96"/>
+              <ColData value="1031"/>
+              <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+              <ColData value="Rock Fountain"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="275.0"/>
+              <ColData value="275.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-01-21"/>
+              <ColData value="Invoice" id="70"/>
+              <ColData value="1024"/>
+              <ColData value="Red Rock Diner" id="20"/>
+              <ColData value="Garden Rocks"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="48.0"/>
+              <ColData value="323.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-02-11"/>
+              <ColData value="Invoice" id="93"/>
+              <ColData value="1029"/>
+              <ColData value="Dukes Basketball Camp" id="5"/>
+              <ColData value="Garden Rocks"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="72.0"/>
+              <ColData value="395.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-02-11"/>
+              <ColData value="Invoice" id="93"/>
+              <ColData value="1029"/>
+              <ColData value="Dukes Basketball Camp" id="5"/>
+              <ColData value="Concrete for fountain installation"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="75.0"/>
+              <ColData value="470.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-02-11"/>
+              <ColData value="Invoice" id="93"/>
+              <ColData value="1029"/>
+              <ColData value="Dukes Basketball Camp" id="5"/>
+              <ColData value="Rock Fountain"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="275.0"/>
+              <ColData value="745.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-08"/>
+              <ColData value="Invoice" id="67"/>
+              <ColData value="1021"/>
+              <ColData value="Amy's Bird Sanctuary" id="1"/>
+              <ColData value="Rock Fountain"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="275.0"/>
+              <ColData value="1020.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-16"/>
+              <ColData value="Invoice" id="39"/>
+              <ColData value="1012"/>
+              <ColData value="Shara Barnett:Barnett Design" id="23"/>
+              <ColData value="Rock Fountain"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="275.0"/>
+              <ColData value="1295.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-27"/>
+              <ColData value="Invoice" id="99"/>
+              <ColData value="1032"/>
+              <ColData value="Travis Waldron" id="26"/>
+              <ColData value="Garden Rocks"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="84.0"/>
+              <ColData value="1379.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-28"/>
+              <ColData value="Invoice" id="49"/>
+              <ColData value="1015"/>
+              <ColData value="Paulsen Medical Supplies" id="18"/>
+              <ColData value="Garden Rocks"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="180.0"/>
+              <ColData value="1559.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-28"/>
+              <ColData value="Invoice" id="49"/>
+              <ColData value="1015"/>
+              <ColData value="Paulsen Medical Supplies" id="18"/>
+              <ColData value="Rock Fountain"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="275.0"/>
+              <ColData value="1834.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-29"/>
+              <ColData value="Invoice" id="106"/>
+              <ColData value="1034"/>
+              <ColData value="Rondonuwu Fruit and Vegi" id="21"/>
+              <ColData value="Garden Lighting"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="45.0"/>
+              <ColData value="1879.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-29"/>
+              <ColData value="Invoice" id="103"/>
+              <ColData value="1033"/>
+              <ColData value="Geeta Kalapatapu" id="10"/>
+              <ColData value="Fountain Pump"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="45.0"/>
+              <ColData value="1924.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-29"/>
+              <ColData value="Invoice" id="103"/>
+              <ColData value="1033"/>
+              <ColData value="Geeta Kalapatapu" id="10"/>
+              <ColData value="Rock Fountain"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="275.0"/>
+              <ColData value="2199.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-30"/>
+              <ColData value="Invoice" id="130"/>
+              <ColData value="1037"/>
+              <ColData value="Sonnenschein Family Store" id="24"/>
+              <ColData value="Concrete for fountain installation"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="47.5"/>
+              <ColData value="2246.5"/>
+            </Row>
+          </Rows>
+          <Summary>
+            <ColData value="Total for Fountains and Garden Lighting"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value="2246.5"/>
+            <ColData value=""/>
+          </Summary>
+        </Row>
+        <Row type="Section">
+          <Header>
+            <ColData value="Plants and Soil" id="49"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+          </Header>
+          <Rows>
+            <Row type="Data">
+              <ColData value="2016-03-08"/>
+              <ColData value="Invoice" id="67"/>
+              <ColData value="1021"/>
+              <ColData value="Amy's Bird Sanctuary" id="1"/>
+              <ColData value="2 cubic ft. bag"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="150.0"/>
+              <ColData value="150.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-12"/>
+              <ColData value="Expense" id="80"/>
+              <ColData value="8"/>
+              <ColData value="Hicks Hardware" id="41"/>
+              <ColData value=""/>
+              <ColData value="Checking" id="35"/>
+              <ColData value="-24.36"/>
+              <ColData value="125.64"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-18"/>
+              <ColData value="Invoice" id="12"/>
+              <ColData value="1004"/>
+              <ColData value="Cool Cars" id="3"/>
+              <ColData value="Sod"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="1750.0"/>
+              <ColData value="1875.64"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-20"/>
+              <ColData value="Expense" id="88"/>
+              <ColData value="22"/>
+              <ColData value="Tania's Nursery" id="50"/>
+              <ColData value=""/>
+              <ColData value="Mastercard" id="41"/>
+              <ColData value="-54.92"/>
+              <ColData value="1820.72"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-27"/>
+              <ColData value="Invoice" id="99"/>
+              <ColData value="1032"/>
+              <ColData value="Travis Waldron" id="26"/>
+              <ColData value="Sod"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="300.0"/>
+              <ColData value="2120.72"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-30"/>
+              <ColData value="Invoice" id="129"/>
+              <ColData value="1036"/>
+              <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+              <ColData value="2 cubic ft. bag"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="50.0"/>
+              <ColData value="2170.72"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-30"/>
+              <ColData value="Invoice" id="129"/>
+              <ColData value="1036"/>
+              <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+              <ColData value="Sod"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="50.0"/>
+              <ColData value="2220.72"/>
+            </Row>
+          </Rows>
+          <Summary>
+            <ColData value="Total for Plants and Soil"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value="2220.72"/>
+            <ColData value=""/>
+          </Summary>
+        </Row>
+        <Row type="Section">
+          <Header>
+            <ColData value="Sprinklers and Drip Systems" id="50"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+          </Header>
+          <Rows>
+            <Row type="Data">
+              <ColData value="2016-01-21"/>
+              <ColData value="Invoice" id="70"/>
+              <ColData value="1024"/>
+              <ColData value="Red Rock Diner" id="20"/>
+              <ColData value="Sprinkler Pipes"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="60.0"/>
+              <ColData value="60.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-01-21"/>
+              <ColData value="Invoice" id="70"/>
+              <ColData value="1024"/>
+              <ColData value="Red Rock Diner" id="20"/>
+              <ColData value="Sprinkler Pipes"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="48.0"/>
+              <ColData value="108.0"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-16"/>
+              <ColData value="Invoice" id="39"/>
+              <ColData value="1012"/>
+              <ColData value="Shara Barnett:Barnett Design" id="23"/>
+              <ColData value="Sprinkler Heads"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="30.0"/>
+              <ColData value="138.0"/>
+            </Row>
+          </Rows>
+          <Summary>
+            <ColData value="Total for Sprinklers and Drip Systems"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value="138.0"/>
+            <ColData value=""/>
+          </Summary>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Job Materials"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="4605.22"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Labor" id="52"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Section">
+          <Header>
+            <ColData value="Installation"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+          </Header>
+          <Rows>
+            <Row type="Data">
+              <ColData value="2016-03-28"/>
+              <ColData value="Invoice" id="49"/>
+              <ColData value="1015"/>
+              <ColData value="Paulsen Medical Supplies" id="18"/>
+              <ColData value="Installation of landscape design"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="250.0"/>
+              <ColData value="250.0"/>
+            </Row>
+          </Rows>
+          <Summary>
+            <ColData value="Total for Installation"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value="250.0"/>
+            <ColData value=""/>
+          </Summary>
+        </Row>
+        <Row type="Section">
+          <Header>
+            <ColData value="Maintenance and Repair" id="53"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+          </Header>
+          <Rows>
+            <Row type="Data">
+              <ColData value="2016-02-11"/>
+              <ColData value="Invoice" id="71"/>
+              <ColData value="1025"/>
+              <ColData value="Amy's Bird Sanctuary" id="1"/>
+              <ColData value="Maintenance &amp; Repair"/>
+              <ColData value="Accounts Receivable (A/R)" id="84"/>
+              <ColData value="50.0"/>
+              <ColData value="50.0"/>
+            </Row>
+          </Rows>
+          <Summary>
+            <ColData value="Total for Maintenance and Repair"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value="50.0"/>
+            <ColData value=""/>
+          </Summary>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Labor"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="300.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Summary>
+        <ColData value="Total for Landscaping Services with sub-accounts"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="6192.72"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Pest Control Services" id="54"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-02-11"/>
+          <ColData value="Invoice" id="71"/>
+          <ColData value="1025"/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value="Pest Control Services"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="35.0"/>
+          <ColData value="35.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-11"/>
+          <ColData value="Invoice" id="75"/>
+          <ColData value="1027"/>
+          <ColData value="Bill's Windsurf Shop" id="2"/>
+          <ColData value="Pest Control Services"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="35.0"/>
+          <ColData value="70.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-13"/>
+          <ColData value="Credit Memo" id="73"/>
+          <ColData value="1026"/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value="Pest Control Services"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="-100.0"/>
+          <ColData value="-30.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Invoice" id="69"/>
+          <ColData value="1023"/>
+          <ColData value="Red Rock Diner" id="20"/>
+          <ColData value="Pest Control Services"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="70.0"/>
+          <ColData value="40.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Sales Receipt" id="38"/>
+          <ColData value="1011"/>
+          <ColData value="Pye's Cakes" id="15"/>
+          <ColData value="Pest Control Services"/>
+          <ColData value="Undeposited Funds" id="4"/>
+          <ColData value="87.5"/>
+          <ColData value="127.5"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Refund" id="66"/>
+          <ColData value="1020"/>
+          <ColData value="Pye's Cakes" id="15"/>
+          <ColData value="Refund - Pest control was ineffective"/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="-87.5"/>
+          <ColData value="40.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Pest Control Services"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="40.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Sales of Product Income" id="79"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-18"/>
+          <ColData value="Invoice" id="12"/>
+          <ColData value="1004"/>
+          <ColData value="Cool Cars" id="3"/>
+          <ColData value="Sprinkler Pipes"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="24.0"/>
+          <ColData value="24.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-18"/>
+          <ColData value="Invoice" id="12"/>
+          <ColData value="1004"/>
+          <ColData value="Cool Cars" id="3"/>
+          <ColData value="Sprinkler Heads"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="20.0"/>
+          <ColData value="44.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="130"/>
+          <ColData value="1037"/>
+          <ColData value="Sonnenschein Family Store" id="24"/>
+          <ColData value="Fountain Pump"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="12.75"/>
+          <ColData value="56.75"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="130"/>
+          <ColData value="1037"/>
+          <ColData value="Sonnenschein Family Store" id="24"/>
+          <ColData value="Rock Fountain"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="275.0"/>
+          <ColData value="331.75"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="129"/>
+          <ColData value="1036"/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value="Fountain Pump"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="15.0"/>
+          <ColData value="346.75"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="119"/>
+          <ColData value="1035"/>
+          <ColData value="Mark Cho" id="17"/>
+          <ColData value="Rock Fountain"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="275.0"/>
+          <ColData value="621.75"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="119"/>
+          <ColData value="1035"/>
+          <ColData value="Mark Cho" id="17"/>
+          <ColData value="Sprinkler Pipes"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="16.0"/>
+          <ColData value="637.75"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="129"/>
+          <ColData value="1036"/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value="Rock Fountain"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="275.0"/>
+          <ColData value="912.75"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Sales of Product Income"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="912.75"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Services" id="1"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-18"/>
+          <ColData value="Invoice" id="12"/>
+          <ColData value="1004"/>
+          <ColData value="Cool Cars" id="3"/>
+          <ColData value="Installation Hours"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="400.0"/>
+          <ColData value="400.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-27"/>
+          <ColData value="Invoice" id="27"/>
+          <ColData value="1009"/>
+          <ColData value="Travis Waldron" id="26"/>
+          <ColData value="Lumber"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="103.55"/>
+          <ColData value="503.55"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Services"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="503.55"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Cost of Goods Sold" id="80"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="129"/>
+          <ColData value="1036"/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value="Rock Fountain"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="125.0"/>
+          <ColData value="125.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="129"/>
+          <ColData value="1036"/>
+          <ColData value="Freeman Sporting Goods:0969 Ocean View Road" id="8"/>
+          <ColData value="Fountain Pump"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="10.0"/>
+          <ColData value="135.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="119"/>
+          <ColData value="1035"/>
+          <ColData value="Mark Cho" id="17"/>
+          <ColData value="Sprinkler Pipes"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="10.0"/>
+          <ColData value="145.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="130"/>
+          <ColData value="1037"/>
+          <ColData value="Sonnenschein Family Store" id="24"/>
+          <ColData value="Rock Fountain"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="125.0"/>
+          <ColData value="270.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="130"/>
+          <ColData value="1037"/>
+          <ColData value="Sonnenschein Family Store" id="24"/>
+          <ColData value="Fountain Pump"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="10.0"/>
+          <ColData value="280.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Invoice" id="119"/>
+          <ColData value="1035"/>
+          <ColData value="Mark Cho" id="17"/>
+          <ColData value="Rock Fountain"/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="125.0"/>
+          <ColData value="405.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Cost of Goods Sold"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="405.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Advertising" id="7"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Expense" id="55"/>
+          <ColData value=""/>
+          <ColData value="Lee Advertising" id="42"/>
+          <ColData value=""/>
+          <ColData value="Mastercard" id="41"/>
+          <ColData value="74.86"/>
+          <ColData value="74.86"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Advertising"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="74.86"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Automobile" id="55"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-21"/>
+          <ColData value="Cash Expense" id="136"/>
+          <ColData value=""/>
+          <ColData value="Squeaky Kleen Car Wash" id="57"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="19.99"/>
+          <ColData value="19.99"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Check" id="138"/>
+          <ColData value="Debit"/>
+          <ColData value="Squeaky Kleen Car Wash" id="57"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="19.99"/>
+          <ColData value="39.98"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-04-04"/>
+          <ColData value="Credit Card Expense" id="141"/>
+          <ColData value=""/>
+          <ColData value="Squeaky Kleen Car Wash" id="57"/>
+          <ColData value=""/>
+          <ColData value="Mastercard" id="41"/>
+          <ColData value="19.99"/>
+          <ColData value="59.97"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-04-11"/>
+          <ColData value="Credit Card Expense" id="142"/>
+          <ColData value=""/>
+          <ColData value="Squeaky Kleen Car Wash" id="57"/>
+          <ColData value=""/>
+          <ColData value="Mastercard" id="41"/>
+          <ColData value="19.99"/>
+          <ColData value="79.96"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-04-24"/>
+          <ColData value="Credit Card Expense" id="144"/>
+          <ColData value=""/>
+          <ColData value="" id=""/>
+          <ColData value=""/>
+          <ColData value="Mastercard" id="41"/>
+          <ColData value="34.0"/>
+          <ColData value="113.96"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Automobile"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="113.96"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Fuel" id="56"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-02-09"/>
+          <ColData value="Check" id="57"/>
+          <ColData value="4"/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="54.55"/>
+          <ColData value="54.55"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-02-24"/>
+          <ColData value="Check" id="58"/>
+          <ColData value="5"/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="62.01"/>
+          <ColData value="116.56"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-15"/>
+          <ColData value="Expense" id="59"/>
+          <ColData value="1"/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Mastercard" id="41"/>
+          <ColData value="65.0"/>
+          <ColData value="181.56"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-22"/>
+          <ColData value="Cash Expense" id="132"/>
+          <ColData value=""/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="52.14"/>
+          <ColData value="233.7"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Cash Expense" id="131"/>
+          <ColData value=""/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="63.15"/>
+          <ColData value="296.85"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Expense" id="122"/>
+          <ColData value="1"/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Mastercard" id="41"/>
+          <ColData value="52.56"/>
+          <ColData value="349.41"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Fuel"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="349.41"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Summary>
+        <ColData value="Total for Automobile with sub-accounts"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="463.37"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Equipment Rental" id="29"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Expense" id="51"/>
+          <ColData value="1"/>
+          <ColData value="Ellis Equipment Rental" id="38"/>
+          <ColData value="Equipment rental for 5 days"/>
+          <ColData value="Mastercard" id="41"/>
+          <ColData value="112.0"/>
+          <ColData value="112.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Equipment Rental"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="112.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Insurance" id="11"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-23"/>
+          <ColData value="Bill" id="19"/>
+          <ColData value=""/>
+          <ColData value="Brosnahan Insurance Agency" id="31"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="241.23"/>
+          <ColData value="241.23"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Insurance"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="241.23"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Job Expenses" id="58"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-02-25"/>
+          <ColData value="Expense" id="87"/>
+          <ColData value="15"/>
+          <ColData value="Tania's Nursery" id="50"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="108.09"/>
+          <ColData value="108.09"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-29"/>
+          <ColData value="Expense" id="89"/>
+          <ColData value="108"/>
+          <ColData value="Tania's Nursery" id="50"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="46.98"/>
+          <ColData value="155.07"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Job Expenses"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="155.07"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Job Materials" id="64"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Section">
+          <Header>
+            <ColData value="Decks and Patios"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+          </Header>
+          <Rows>
+            <Row type="Data">
+              <ColData value="2016-03-18"/>
+              <ColData value="Expense" id="81"/>
+              <ColData value="1"/>
+              <ColData value="Hicks Hardware" id="41"/>
+              <ColData value=""/>
+              <ColData value="Mastercard" id="41"/>
+              <ColData value="88.09"/>
+              <ColData value="88.09"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-27"/>
+              <ColData value="Bill" id="25"/>
+              <ColData value=""/>
+              <ColData value="Norton Lumber and Building Materials" id="46"/>
+              <ColData value="Lumber"/>
+              <ColData value="Accounts Payable (A/P)" id="33"/>
+              <ColData value="103.55"/>
+              <ColData value="191.64"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-04-05"/>
+              <ColData value="Credit Card Expense" id="143"/>
+              <ColData value=""/>
+              <ColData value="Hicks Hardware" id="41"/>
+              <ColData value=""/>
+              <ColData value="Mastercard" id="41"/>
+              <ColData value="42.4"/>
+              <ColData value="234.04"/>
+            </Row>
+          </Rows>
+          <Summary>
+            <ColData value="Total for Decks and Patios"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value="234.04"/>
+            <ColData value=""/>
+          </Summary>
+        </Row>
+        <Row type="Section">
+          <Header>
+            <ColData value="Plants and Soil" id="66"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+          </Header>
+          <Rows>
+            <Row type="Data">
+              <ColData value="2016-01-25"/>
+              <ColData value="Expense" id="85"/>
+              <ColData value="3"/>
+              <ColData value="Tania's Nursery" id="50"/>
+              <ColData value=""/>
+              <ColData value="Mastercard" id="41"/>
+              <ColData value="158.08"/>
+              <ColData value="158.08"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-02-18"/>
+              <ColData value="Expense" id="86"/>
+              <ColData value="9"/>
+              <ColData value="Tania's Nursery" id="50"/>
+              <ColData value="Morning Glories and Sod"/>
+              <ColData value="Checking" id="35"/>
+              <ColData value="89.09"/>
+              <ColData value="247.17"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-24"/>
+              <ColData value="Expense" id="56"/>
+              <ColData value="50"/>
+              <ColData value="Tania's Nursery" id="50"/>
+              <ColData value=""/>
+              <ColData value="Mastercard" id="41"/>
+              <ColData value="82.45"/>
+              <ColData value="329.62"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-04-02"/>
+              <ColData value="Cash Expense" id="134"/>
+              <ColData value=""/>
+              <ColData value="Tania's Nursery" id="50"/>
+              <ColData value=""/>
+              <ColData value="Checking" id="35"/>
+              <ColData value="23.5"/>
+              <ColData value="353.12"/>
+            </Row>
+          </Rows>
+          <Summary>
+            <ColData value="Total for Plants and Soil"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value="353.12"/>
+            <ColData value=""/>
+          </Summary>
+        </Row>
+        <Row type="Section">
+          <Header>
+            <ColData value="Sprinklers and Drip Systems" id="67"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+          </Header>
+          <Rows>
+            <Row type="Data">
+              <ColData value="2016-03-24"/>
+              <ColData value="Expense" id="83"/>
+              <ColData value="13"/>
+              <ColData value="Hicks Hardware" id="41"/>
+              <ColData value=""/>
+              <ColData value="Checking" id="35"/>
+              <ColData value="215.66"/>
+              <ColData value="215.66"/>
+            </Row>
+          </Rows>
+          <Summary>
+            <ColData value="Total for Sprinklers and Drip Systems"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value="215.66"/>
+            <ColData value=""/>
+          </Summary>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Job Materials"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="802.82"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Summary>
+        <ColData value="Total for Job Expenses with sub-accounts"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="957.89"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Legal &amp; Professional Fees" id="12"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Expense" id="127"/>
+          <ColData value="76"/>
+          <ColData value="Pam Seitz" id="47"/>
+          <ColData value="Counsel"/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="75.0"/>
+          <ColData value="75.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Legal &amp; Professional Fees"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="75.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Accounting" id="69"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-01-18"/>
+          <ColData value="Expense" id="107"/>
+          <ColData value="12"/>
+          <ColData value="Robertson &amp; Associates" id="49"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="250.0"/>
+          <ColData value="250.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-16"/>
+          <ColData value="Bill" id="18"/>
+          <ColData value=""/>
+          <ColData value="Books by Bessie" id="30"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="75.0"/>
+          <ColData value="325.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-30"/>
+          <ColData value="Bill" id="108"/>
+          <ColData value=""/>
+          <ColData value="Robertson &amp; Associates" id="49"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="315.0"/>
+          <ColData value="640.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Accounting"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="640.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Bookkeeper" id="70"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-02-18"/>
+          <ColData value="Check" id="109"/>
+          <ColData value="12"/>
+          <ColData value="Books by Bessie" id="30"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="55.0"/>
+          <ColData value="55.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Bookkeeper"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="55.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Lawyer" id="71"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-21"/>
+          <ColData value="Check" id="84"/>
+          <ColData value=""/>
+          <ColData value="Tony Rondonuwu" id="52"/>
+          <ColData value="Consulting"/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="100.0"/>
+          <ColData value="100.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Lawyer"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="100.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Summary>
+        <ColData value="Total for Legal &amp; Professional Fees with sub-accounts"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="870.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Maintenance and Repair" id="72"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-22"/>
+          <ColData value="Check" id="133"/>
+          <ColData value="70"/>
+          <ColData value="Chin's Gas and Oil" id="33"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="185.0"/>
+          <ColData value="185.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Maintenance and Repair"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="185.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Equipment Repairs" id="75"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-28"/>
+          <ColData value="Bill" id="44"/>
+          <ColData value=""/>
+          <ColData value="Diego's Road Warrior Bodyshop" id="36"/>
+          <ColData value="Repairs on the truck"/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="755.0"/>
+          <ColData value="755.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Equipment Repairs"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="755.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Summary>
+        <ColData value="Total for Maintenance and Repair with sub-accounts"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="940.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Meals and Entertainment" id="13"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-21"/>
+          <ColData value="Cash Expense" id="135"/>
+          <ColData value=""/>
+          <ColData value="Bob's Burger Joint" id="56"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="5.66"/>
+          <ColData value="5.66"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-26"/>
+          <ColData value="Cash Expense" id="137"/>
+          <ColData value=""/>
+          <ColData value="Bob's Burger Joint" id="56"/>
+          <ColData value=""/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="3.86"/>
+          <ColData value="9.52"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-04-04"/>
+          <ColData value="Credit Card Expense" id="140"/>
+          <ColData value=""/>
+          <ColData value="Bob's Burger Joint" id="56"/>
+          <ColData value=""/>
+          <ColData value="Mastercard" id="41"/>
+          <ColData value="18.97"/>
+          <ColData value="28.49"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Meals and Entertainment"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="28.49"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Office Expenses" id="15"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-24"/>
+          <ColData value="Check" id="36"/>
+          <ColData value="2"/>
+          <ColData value="Mahoney Mugs" id="43"/>
+          <ColData value="Office Supplies"/>
+          <ColData value="Checking" id="35"/>
+          <ColData value="18.08"/>
+          <ColData value="18.08"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Office Expenses"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="18.08"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Rent or Lease" id="17"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-14"/>
+          <ColData value="Bill" id="24"/>
+          <ColData value=""/>
+          <ColData value="Hall Properties" id="40"/>
+          <ColData value="Building Lease"/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="900.0"/>
+          <ColData value="900.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Rent or Lease"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="900.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Utilities" id="76"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Section">
+          <Header>
+            <ColData value="Gas and Electric"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+          </Header>
+          <Rows>
+            <Row type="Data">
+              <ColData value="2016-02-14"/>
+              <ColData value="Bill" id="78"/>
+              <ColData value=""/>
+              <ColData value="PG&amp;E" id="48"/>
+              <ColData value=""/>
+              <ColData value="Accounts Payable (A/P)" id="33"/>
+              <ColData value="86.44"/>
+              <ColData value="86.44"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-14"/>
+              <ColData value="Bill" id="35"/>
+              <ColData value=""/>
+              <ColData value="PG&amp;E" id="48"/>
+              <ColData value=""/>
+              <ColData value="Accounts Payable (A/P)" id="33"/>
+              <ColData value="114.09"/>
+              <ColData value="200.53"/>
+            </Row>
+          </Rows>
+          <Summary>
+            <ColData value="Total for Gas and Electric"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value="200.53"/>
+            <ColData value=""/>
+          </Summary>
+        </Row>
+        <Row type="Section">
+          <Header>
+            <ColData value="Telephone" id="77"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+          </Header>
+          <Rows>
+            <Row type="Data">
+              <ColData value="2016-02-13"/>
+              <ColData value="Bill" id="105"/>
+              <ColData value=""/>
+              <ColData value="Cal Telephone" id="32"/>
+              <ColData value=""/>
+              <ColData value="Accounts Payable (A/P)" id="33"/>
+              <ColData value="56.5"/>
+              <ColData value="56.5"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="2016-03-14"/>
+              <ColData value="Bill" id="21"/>
+              <ColData value=""/>
+              <ColData value="Cal Telephone" id="32"/>
+              <ColData value="Monthly Phone Bill"/>
+              <ColData value="Accounts Payable (A/P)" id="33"/>
+              <ColData value="74.36"/>
+              <ColData value="130.86"/>
+            </Row>
+          </Rows>
+          <Summary>
+            <ColData value="Total for Telephone"/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value=""/>
+            <ColData value="130.86"/>
+            <ColData value=""/>
+          </Summary>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Utilities"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="331.39"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Miscellaneous" id="14"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-02-22"/>
+          <ColData value="Bill" id="2"/>
+          <ColData value=""/>
+          <ColData value="Hicks Hardware" id="41"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="250.0"/>
+          <ColData value="250.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-15"/>
+          <ColData value="Bill" id="3"/>
+          <ColData value=""/>
+          <ColData value="Tim Philip Masonry" id="51"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="666.0"/>
+          <ColData value="916.0"/>
+        </Row>
+        <Row type="Data">
+          <ColData value="2016-03-23"/>
+          <ColData value="Bill" id="1"/>
+          <ColData value=""/>
+          <ColData value="Brosnahan Insurance Agency" id="31"/>
+          <ColData value=""/>
+          <ColData value="Accounts Payable (A/P)" id="33"/>
+          <ColData value="2000.0"/>
+          <ColData value="2916.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Miscellaneous"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="2916.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+    <Row type="Section">
+      <Header>
+        <ColData value="Not Specified"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="2016-03-13"/>
+          <ColData value="Payment" id="74"/>
+          <ColData value=""/>
+          <ColData value="Amy's Bird Sanctuary" id="1"/>
+          <ColData value="Created by QB Online to link credits to charges."/>
+          <ColData value="Accounts Receivable (A/R)" id="84"/>
+          <ColData value="0.0"/>
+          <ColData value="0.0"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total for Not Specified"/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value=""/>
+        <ColData value="0.0"/>
+        <ColData value=""/>
+      </Summary>
+    </Row>
+  </Rows>
+</Report>

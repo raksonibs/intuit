@@ -1,0 +1,627 @@
+------ QUICKBOOKS-RUBY REQUEST ------
+METHOD = get
+RESOURCE = https://sandbox-quickbooks.api.intuit.com/v3/company/123145759723942/query?query=SELECT+*+FROM+Payment+STARTPOSITION+1+MAXRESULTS+20
+REQUEST BODY:
+{}
+REQUEST HEADERS = {"Content-Type"=>"application/xml", "Accept"=>"application/xml", "Accept-Encoding"=>"gzip, deflate"}
+------ QUICKBOOKS-RUBY RESPONSE ------
+RESPONSE CODE = 200
+RESPONSE BODY:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<IntuitResponse xmlns="http://schema.intuit.com/finance/v3" time="2016-04-26T15:00:34.714-07:00">
+  <QueryResponse startPosition="1" maxResults="16">
+    <Payment domain="QBO" sparse="false">
+      <Id>128</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-30T13:13:33-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T13:13:33-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-30</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>387.00</Amount>
+        <LinkedTxn>
+          <TxnId>96</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>96</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>387.00</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1031</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Freeman Sporting Goods:0969 Ocean View Road">8</CustomerRef>
+      <DepositToAccountRef>4</DepositToAccountRef>
+      <TotalAmt>387.00</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>120</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-30T12:59:21-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T12:59:21-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-30</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>1675.52</Amount>
+        <LinkedTxn>
+          <TxnId>12</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>12</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>1675.52</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1004</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Cool Cars">3</CustomerRef>
+      <DepositToAccountRef>4</DepositToAccountRef>
+      <TotalAmt>1675.52</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>116</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-30T12:52:44-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T12:52:44-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-26</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>80.00</Amount>
+        <LinkedTxn>
+          <TxnId>63</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>63</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>80.00</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1017</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Sushi by Katsuyuki">25</CustomerRef>
+      <DepositToAccountRef>4</DepositToAccountRef>
+      <TotalAmt>80.00</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>101</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T13:39:32-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:39:32-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-29</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>220.00</Amount>
+        <LinkedTxn>
+          <TxnId>67</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>67</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>459.00</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1021</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Amy's Bird Sanctuary">1</CustomerRef>
+      <DepositToAccountRef>4</DepositToAccountRef>
+      <PaymentMethodRef>2</PaymentMethodRef>
+      <TotalAmt>220.00</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>98</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T13:35:42-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:35:42-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-29</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>81.00</Amount>
+        <LinkedTxn>
+          <TxnId>42</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>42</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>81.00</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1013</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Travis Waldron">26</CustomerRef>
+      <DepositToAccountRef>4</DepositToAccountRef>
+      <TotalAmt>81.00</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>97</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T13:31:45-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:31:45-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-01-04</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>226.75</Amount>
+        <LinkedTxn>
+          <TxnId>95</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>95</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>226.75</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1030</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Freeman Sporting Goods:0969 Ocean View Road">8</CustomerRef>
+      <DepositToAccountRef>4</DepositToAccountRef>
+      <TotalAmt>226.75</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>94</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T13:28:29-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:28:29-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-03</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>460.40</Amount>
+        <LinkedTxn>
+          <TxnId>93</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>93</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>460.40</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1029</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Dukes Basketball Camp">5</CustomerRef>
+      <DepositToAccountRef>4</DepositToAccountRef>
+      <TotalAmt>460.40</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>31</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-28T11:06:09-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:25:20-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-28</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>108.00</Amount>
+        <LinkedTxn>
+          <TxnId>9</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>9</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>108.00</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1001</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Amy's Bird Sanctuary">1</CustomerRef>
+      <DepositToAccountRef>4</DepositToAccountRef>
+      <PaymentMethodRef>2</PaymentMethodRef>
+      <PaymentRefNum>6552</PaymentRefNum>
+      <TotalAmt>108.00</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>33</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-28T11:07:19-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:24:04-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-28</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>50.00</Amount>
+        <LinkedTxn>
+          <TxnId>13</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>13</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>54.00</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1005</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Freeman Sporting Goods:55 Twin Lane">9</CustomerRef>
+      <DepositToAccountRef>35</DepositToAccountRef>
+      <PaymentMethodRef>2</PaymentMethodRef>
+      <TotalAmt>50.00</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>15</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T15:08:16-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:23:11-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-05</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>86.40</Amount>
+        <LinkedTxn>
+          <TxnId>14</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>14</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>86.40</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1006</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Freeman Sporting Goods:55 Twin Lane">9</CustomerRef>
+      <DepositToAccountRef>35</DepositToAccountRef>
+      <PaymentMethodRef>2</PaymentMethodRef>
+      <PaymentRefNum>5664</PaymentRefNum>
+      <TotalAmt>86.40</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>76</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T12:56:01-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T12:56:01-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-01-04</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>175.00</Amount>
+        <LinkedTxn>
+          <TxnId>10</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>10</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>175.00</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1002</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Bill's Windsurf Shop">2</CustomerRef>
+      <DepositToAccountRef>35</DepositToAccountRef>
+      <PaymentMethodRef>2</PaymentMethodRef>
+      <PaymentRefNum>1053</PaymentRefNum>
+      <TotalAmt>175.00</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>74</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T12:51:28-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T12:52:08-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-13</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <PrivateNote>Created by QB Online to link credits to charges.</PrivateNote>
+      <Line>
+        <Amount>100.00</Amount>
+        <LinkedTxn>
+          <TxnId>71</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>71</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>100.00</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1025</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <Line>
+        <Amount>100.00</Amount>
+        <LinkedTxn>
+          <TxnId>73</TxnId>
+          <TxnType>CreditMemo</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>73</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>100.00</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1026</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Amy's Bird Sanctuary">1</CustomerRef>
+      <TotalAmt>0</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>72</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T12:50:23-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T12:50:23-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-07</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <PrivateNote>Amy claims the pest control did not occur</PrivateNote>
+      <Line>
+        <Amount>105.00</Amount>
+        <LinkedTxn>
+          <TxnId>71</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>71</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>105.00</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1025</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Amy's Bird Sanctuary">1</CustomerRef>
+      <DepositToAccountRef>35</DepositToAccountRef>
+      <PaymentMethodRef>2</PaymentMethodRef>
+      <TotalAmt>105.00</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>61</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-28T15:21:23-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-28T15:21:23-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-23</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>694.00</Amount>
+        <LinkedTxn>
+          <TxnId>12</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>12</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>694.00</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1004</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Cool Cars">3</CustomerRef>
+      <DepositToAccountRef>35</DepositToAccountRef>
+      <PaymentMethodRef>2</PaymentMethodRef>
+      <PaymentRefNum>1886</PaymentRefNum>
+      <TotalAmt>694.00</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>40</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-28T11:17:33-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-28T11:17:33-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-28</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>103.55</Amount>
+        <LinkedTxn>
+          <TxnId>27</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>27</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>103.55</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1009</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="Travis Waldron">26</CustomerRef>
+      <DepositToAccountRef>35</DepositToAccountRef>
+      <PaymentMethodRef>2</PaymentMethodRef>
+      <PaymentRefNum>2064</PaymentRefNum>
+      <TotalAmt>103.55</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+    <Payment domain="QBO" sparse="false">
+      <Id>32</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-28T11:06:49-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-28T11:06:49-07:00</LastUpdatedTime>
+      </MetaData>
+      <TxnDate>2016-03-28</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Amount>300.00</Amount>
+        <LinkedTxn>
+          <TxnId>16</TxnId>
+          <TxnType>Invoice</TxnType>
+        </LinkedTxn>
+        <LineEx>
+          <NameValue>
+            <Name>txnId</Name>
+            <Value>16</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnOpenBalance</Name>
+            <Value>750.00</Value>
+          </NameValue>
+          <NameValue>
+            <Name>txnReferenceNumber</Name>
+            <Value>1007</Value>
+          </NameValue>
+        </LineEx>
+      </Line>
+      <CustomerRef name="John Melton">13</CustomerRef>
+      <DepositToAccountRef>4</DepositToAccountRef>
+      <PaymentMethodRef>2</PaymentMethodRef>
+      <PaymentRefNum>5421</PaymentRefNum>
+      <TotalAmt>300.00</TotalAmt>
+      <UnappliedAmt>0</UnappliedAmt>
+      <ProcessPayment>false</ProcessPayment>
+    </Payment>
+  </QueryResponse>
+</IntuitResponse>

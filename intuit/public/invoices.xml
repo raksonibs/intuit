@@ -1,0 +1,1960 @@
+------ QUICKBOOKS-RUBY REQUEST ------
+METHOD = get
+RESOURCE = https://sandbox-quickbooks.api.intuit.com/v3/company/123145759723942/query?query=SELECT+*+FROM+Invoice+STARTPOSITION+1+MAXRESULTS+20
+REQUEST BODY:
+{}
+REQUEST HEADERS = {"Content-Type"=>"application/xml", "Accept"=>"application/xml", "Accept-Encoding"=>"gzip, deflate"}
+------ QUICKBOOKS-RUBY RESPONSE ------
+RESPONSE CODE = 200
+RESPONSE BODY:
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<IntuitResponse xmlns="http://schema.intuit.com/finance/v3" time="2016-04-26T14:57:05.454-07:00">
+  <QueryResponse startPosition="1" maxResults="20" totalCount="20">
+    <Invoice domain="QBO" sparse="false">
+      <Id>130</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-30T13:16:17-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T13:16:17-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+        <StringValue>102</StringValue>
+      </CustomField>
+      <DocNumber>1037</DocNumber>
+      <TxnDate>2016-03-30</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <LinkedTxn>
+        <TxnId>100</TxnId>
+        <TxnType>Estimate</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Rock Fountain</Description>
+        <Amount>275.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Rock Fountain">5</ItemRef>
+          <UnitPrice>275</UnitPrice>
+          <Qty>1</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>2</Id>
+        <LineNum>2</LineNum>
+        <Description>Fountain Pump</Description>
+        <Amount>12.75</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Pump">11</ItemRef>
+          <UnitPrice>12.75</UnitPrice>
+          <Qty>1</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>3</Id>
+        <LineNum>3</LineNum>
+        <Description>Concrete for fountain installation</Description>
+        <Amount>47.50</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Concrete">3</ItemRef>
+          <UnitPrice>9.5</UnitPrice>
+          <Qty>5</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>335.25</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>26.82</TotalTax>
+        <TaxLine>
+          <Amount>26.82</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>335.25</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="Sonnenschein Family Store">24</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>95</Id>
+        <Line1>Russ Sonnenschein</Line1>
+        <Line2>Sonnenschein Family Store</Line2>
+        <Line3>5647 Cypress Hill Ave.</Line3>
+        <Line4>Middlefield, CA  94303</Line4>
+        <Lat>37.4238562</Lat>
+        <Long>-122.1141681</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>25</Id>
+        <Line1>5647 Cypress Hill Ave.</Line1>
+        <City>Middlefield</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94303</PostalCode>
+        <Lat>37.4238562</Lat>
+        <Long>-122.1141681</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-04-29</DueDate>
+      <TotalAmt>362.07</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Familiystore@intuit.com</Address>
+      </BillEmail>
+      <Balance>362.07</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>129</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-30T13:15:36-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T13:15:36-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+        <StringValue>105</StringValue>
+      </CustomField>
+      <DocNumber>1036</DocNumber>
+      <TxnDate>2016-03-30</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Sod</Description>
+        <Amount>50.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Sod">14</ItemRef>
+          <UnitPrice>10</UnitPrice>
+          <Qty>5</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>2</Id>
+        <LineNum>2</LineNum>
+        <Description>2 cubic ft. bag</Description>
+        <Amount>50.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Soil">15</ItemRef>
+          <UnitPrice>10</UnitPrice>
+          <Qty>5</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>3</Id>
+        <LineNum>3</LineNum>
+        <Description>Weekly Gardening Service</Description>
+        <Amount>87.50</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Gardening">6</ItemRef>
+          <UnitPrice>25</UnitPrice>
+          <Qty>3.5</Qty>
+          <TaxCodeRef>NON</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>4</Id>
+        <LineNum>4</LineNum>
+        <Description>Rock Fountain</Description>
+        <Amount>275.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Rock Fountain">5</ItemRef>
+          <UnitPrice>275</UnitPrice>
+          <Qty>1</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>5</Id>
+        <LineNum>5</LineNum>
+        <Description>Fountain Pump</Description>
+        <Amount>15.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Pump">11</ItemRef>
+          <UnitPrice>15</UnitPrice>
+          <Qty>1</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>477.50</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TotalTax>0</TotalTax>
+      </TxnTaxDetail>
+      <CustomerRef name="0969 Ocean View Road">8</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>94</Id>
+        <Line1>Sasha Tillou</Line1>
+        <Line2>Freeman Sporting Goods</Line2>
+        <Line3>370 Easy St.</Line3>
+        <Line4>Middlefield, CA  94482</Line4>
+        <Lat>INVALID</Lat>
+        <Long>INVALID</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>8</Id>
+        <Line1>370 Easy St.</Line1>
+        <City>Middlefield</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94482</PostalCode>
+        <Lat>37.4031672</Lat>
+        <Long>-122.0642815</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-04-29</DueDate>
+      <TotalAmt>477.50</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Sporting_goods@intuit.com</Address>
+      </BillEmail>
+      <Balance>477.50</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>96</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T13:30:49-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T13:13:33-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+        <StringValue>101</StringValue>
+      </CustomField>
+      <DocNumber>1031</DocNumber>
+      <TxnDate>2016-01-14</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <LinkedTxn>
+        <TxnId>128</TxnId>
+        <TxnType>Payment</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Weekly Gardening Service</Description>
+        <Amount>90.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Gardening">6</ItemRef>
+          <UnitPrice>30</UnitPrice>
+          <Qty>3</Qty>
+          <TaxCodeRef>NON</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>2</Id>
+        <LineNum>2</LineNum>
+        <Description>Rock Fountain</Description>
+        <Amount>275.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Rock Fountain">5</ItemRef>
+          <UnitPrice>275</UnitPrice>
+          <Qty>1</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>365.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>22.00</TotalTax>
+        <TaxLine>
+          <Amount>22.00</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>275.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="0969 Ocean View Road">8</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>84</Id>
+        <Line1>Sasha Tillou</Line1>
+        <Line2>Freeman Sporting Goods</Line2>
+        <Line3>370 Easy St.</Line3>
+        <Line4>Middlefield, CA  94482</Line4>
+        <Lat>INVALID</Lat>
+        <Long>INVALID</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>8</Id>
+        <Line1>370 Easy St.</Line1>
+        <City>Middlefield</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94482</PostalCode>
+        <Lat>37.4031672</Lat>
+        <Long>-122.0642815</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-02-13</DueDate>
+      <TotalAmt>387.00</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Sporting_goods@intuit.com</Address>
+      </BillEmail>
+      <Balance>0</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>12</Id>
+      <SyncToken>3</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T15:04:04-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T12:59:21-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+      </CustomField>
+      <DocNumber>1004</DocNumber>
+      <TxnDate>2016-03-18</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <LinkedTxn>
+        <TxnId>61</TxnId>
+        <TxnType>Payment</TxnType>
+      </LinkedTxn>
+      <LinkedTxn>
+        <TxnId>120</TxnId>
+        <TxnType>Payment</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Sprinkler Heads</Description>
+        <Amount>20.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Sprinkler Heads">16</ItemRef>
+          <UnitPrice>2</UnitPrice>
+          <Qty>10</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>2</Id>
+        <LineNum>2</LineNum>
+        <Description>Sprinkler Pipes</Description>
+        <Amount>24.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Sprinkler Pipes">17</ItemRef>
+          <UnitPrice>4</UnitPrice>
+          <Qty>6</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>3</Id>
+        <LineNum>3</LineNum>
+        <Description>Sod</Description>
+        <Amount>1750.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Sod">14</ItemRef>
+          <UnitPrice>35</UnitPrice>
+          <Qty>50</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>4</Id>
+        <LineNum>4</LineNum>
+        <Description>Installation Hours</Description>
+        <Amount>400.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Services">1</ItemRef>
+          <UnitPrice>50</UnitPrice>
+          <Qty>8</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>2194.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>175.52</TotalTax>
+        <TaxLine>
+          <Amount>175.52</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>2194.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="Cool Cars">3</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>50</Id>
+        <Line1>Grace Pariente</Line1>
+        <Line2>Cool Cars</Line2>
+        <Line3>65 Ocean Dr.</Line3>
+        <Line4>Half Moon Bay, CA  94213</Line4>
+        <Lat>INVALID</Lat>
+        <Long>INVALID</Long>
+      </BillAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-04-17</DueDate>
+      <TotalAmt>2369.52</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NotSet</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Cool_Cars@intuit.com</Address>
+      </BillEmail>
+      <Balance>0</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>119</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-30T12:57:24-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T12:57:24-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+        <StringValue>104</StringValue>
+      </CustomField>
+      <DocNumber>1035</DocNumber>
+      <TxnDate>2016-03-30</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Rock Fountain</Description>
+        <Amount>275.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Rock Fountain">5</ItemRef>
+          <UnitPrice>275</UnitPrice>
+          <Qty>1</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>2</Id>
+        <LineNum>2</LineNum>
+        <Description>Sprinkler Pipes</Description>
+        <Amount>16.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Sprinkler Pipes">17</ItemRef>
+          <UnitPrice>4</UnitPrice>
+          <Qty>4</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>291.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>23.28</TotalTax>
+        <TaxLine>
+          <Amount>23.28</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>291.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="Mark Cho">17</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>91</Id>
+        <Line1>Mark Cho</Line1>
+        <Line2>36 Willow Rd</Line2>
+        <Line3>Menlo Park, CA  94304</Line3>
+        <Lat>37.3813444</Lat>
+        <Long>-122.1802812</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>17</Id>
+        <Line1>36 Willow Rd</Line1>
+        <City>Menlo Park</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94304</PostalCode>
+        <Lat>37.450412</Lat>
+        <Long>-122.170593</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-04-29</DueDate>
+      <TotalAmt>314.28</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Mark@Cho.com</Address>
+      </BillEmail>
+      <Balance>314.28</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>63</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-28T15:28:08-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-30T12:52:44-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+      </CustomField>
+      <DocNumber>1017</DocNumber>
+      <TxnDate>2016-03-14</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <LinkedTxn>
+        <TxnId>116</TxnId>
+        <TxnType>Payment</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Weekly Gardening Service</Description>
+        <Amount>80.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Gardening">6</ItemRef>
+          <UnitPrice>20</UnitPrice>
+          <Qty>4</Qty>
+          <TaxCodeRef>NON</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>80.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TotalTax>0</TotalTax>
+      </TxnTaxDetail>
+      <CustomerRef name="Sushi by Katsuyuki">25</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>70</Id>
+        <Line1>Katsuyuki Yanagawa</Line1>
+        <Line2>Sushi by Katsuyuki</Line2>
+        <Line3>898 Elm St.</Line3>
+        <Line4>Maplewood, NJ  07040</Line4>
+        <Lat>40.7312956</Lat>
+        <Long>-74.2707509</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>26</Id>
+        <Line1>898 Elm St.</Line1>
+        <City>Maplewood</City>
+        <CountrySubDivisionCode>NJ</CountrySubDivisionCode>
+        <PostalCode>07040</PostalCode>
+        <Lat>40.7312816</Lat>
+        <Long>-74.2652908</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-04-13</DueDate>
+      <TotalAmt>80.00</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Sushi@intuit.com</Address>
+      </BillEmail>
+      <Balance>0</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>106</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T13:45:12-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:45:12-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+      </CustomField>
+      <DocNumber>1034</DocNumber>
+      <TxnDate>2016-03-29</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <LinkedTxn>
+        <TxnId>4</TxnId>
+        <TxnType>TimeActivity</TxnType>
+      </LinkedTxn>
+      <LinkedTxn>
+        <TxnId>5</TxnId>
+        <TxnType>TimeActivity</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Tree and Shrub Trimming</Description>
+        <Amount>30.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Trimming">18</ItemRef>
+          <UnitPrice>15</UnitPrice>
+          <Qty>2</Qty>
+          <TaxCodeRef>NON</TaxCodeRef>
+          <ServiceDate>2016-03-28</ServiceDate>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>2</Id>
+        <LineNum>2</LineNum>
+        <Description>Garden Lighting</Description>
+        <Amount>45.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Lighting">8</ItemRef>
+          <UnitPrice>15</UnitPrice>
+          <Qty>3</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+          <ServiceDate>2016-03-28</ServiceDate>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>75.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>3.60</TotalTax>
+        <TaxLine>
+          <Amount>3.60</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>45.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="Rondonuwu Fruit and Vegi">21</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>88</Id>
+        <Line1>Rondonuwu Fruit and Vegi</Line1>
+        <Line2>847 California Ave.</Line2>
+        <Line3>San Jose, CA  95021</Line3>
+        <Lat>37.01</Lat>
+        <Long>-121.57</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>22</Id>
+        <Line1>847 California Ave.</Line1>
+        <City>San Jose</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>95021</PostalCode>
+        <Lat>37.3313585</Lat>
+        <Long>-121.911372</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-04-28</DueDate>
+      <TotalAmt>78.60</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Tony@Rondonuwu.com</Address>
+      </BillEmail>
+      <Balance>78.60</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>103</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T13:41:59-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:42:08-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+      </CustomField>
+      <DocNumber>1033</DocNumber>
+      <TxnDate>2016-03-29</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <LinkedTxn>
+        <TxnId>41</TxnId>
+        <TxnType>Estimate</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Rock Fountain</Description>
+        <Amount>275.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Rock Fountain">5</ItemRef>
+          <UnitPrice>275</UnitPrice>
+          <Qty>1</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>2</Id>
+        <LineNum>2</LineNum>
+        <Description>Custom Design</Description>
+        <Amount>262.50</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Design">4</ItemRef>
+          <UnitPrice>75</UnitPrice>
+          <Qty>3.5</Qty>
+          <TaxCodeRef>NON</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>3</Id>
+        <LineNum>3</LineNum>
+        <Description>Fountain Pump</Description>
+        <Amount>45.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Pump">11</ItemRef>
+          <UnitPrice>22.5</UnitPrice>
+          <Qty>2</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>582.50</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>46.60</TotalTax>
+        <TaxLine>
+          <Amount>46.60</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>582.50</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="Geeta Kalapatapu">10</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>87</Id>
+        <Line1>Geeta Kalapatapu</Line1>
+        <Line2>1987 Main St.</Line2>
+        <Line3>Middlefield, CA  94303</Line3>
+        <Lat>37.4530553</Lat>
+        <Long>-122.1178261</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>10</Id>
+        <Line1>1987 Main St.</Line1>
+        <City>Middlefield</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94303</PostalCode>
+        <Lat>37.445013</Lat>
+        <Long>-122.1391443</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-04-28</DueDate>
+      <TotalAmt>629.10</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Geeta@Kalapatapu.com</Address>
+      </BillEmail>
+      <Balance>629.10</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>67</Id>
+      <SyncToken>2</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T12:40:06-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:39:32-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+      </CustomField>
+      <DocNumber>1021</DocNumber>
+      <TxnDate>2016-03-08</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <LinkedTxn>
+        <TxnId>101</TxnId>
+        <TxnType>Payment</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>2 cubic ft. bag</Description>
+        <Amount>150.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Soil">15</ItemRef>
+          <UnitPrice>10</UnitPrice>
+          <Qty>15</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>2</Id>
+        <LineNum>2</LineNum>
+        <Description>Rock Fountain</Description>
+        <Amount>275.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Rock Fountain">5</ItemRef>
+          <UnitPrice>275</UnitPrice>
+          <Qty>1</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>425.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>34.00</TotalTax>
+        <TaxLine>
+          <Amount>34.00</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>425.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="Amy's Bird Sanctuary">1</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>74</Id>
+        <Line1>Amy Lauterbach</Line1>
+        <Line2>Amy's Bird Sanctuary</Line2>
+        <Line3>4581 Finch St.</Line3>
+        <Line4>Bayshore, CA  94326</Line4>
+        <Lat>INVALID</Lat>
+        <Long>INVALID</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>2</Id>
+        <Line1>4581 Finch St.</Line1>
+        <City>Bayshore</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94326</PostalCode>
+        <Lat>INVALID</Lat>
+        <Long>INVALID</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-04-07</DueDate>
+      <TotalAmt>459.00</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NotSet</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Birds@Intuit.com</Address>
+      </BillEmail>
+      <Balance>239.00</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>99</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T13:36:31-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:36:31-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+        <StringValue>102</StringValue>
+      </CustomField>
+      <DocNumber>1032</DocNumber>
+      <TxnDate>2016-03-27</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Sod</Description>
+        <Amount>300.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Sod">14</ItemRef>
+          <UnitPrice>15</UnitPrice>
+          <Qty>20</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>2</Id>
+        <LineNum>2</LineNum>
+        <Description>Garden Rocks</Description>
+        <Amount>84.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Rocks">13</ItemRef>
+          <UnitPrice>12</UnitPrice>
+          <Qty>7</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>384.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>30.72</TotalTax>
+        <TaxLine>
+          <Amount>30.72</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>384.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="Travis Waldron">26</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>85</Id>
+        <Line1>Travis Waldron</Line1>
+        <Line2>78 First St.</Line2>
+        <Line3>Monlo Park, CA  94304</Line3>
+        <Lat>37.3813444</Lat>
+        <Long>-122.1802812</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>27</Id>
+        <Line1>78 First St.</Line1>
+        <City>Monlo Park</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94304</PostalCode>
+        <Lat>37.4585825</Lat>
+        <Long>-122.1352789</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-04-26</DueDate>
+      <TotalAmt>414.72</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Travis@Waldron.com</Address>
+      </BillEmail>
+      <Balance>414.72</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>42</Id>
+      <SyncToken>2</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-28T11:24:29-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:35:42-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+      </CustomField>
+      <DocNumber>1013</DocNumber>
+      <TxnDate>2016-03-18</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <LinkedTxn>
+        <TxnId>29</TxnId>
+        <TxnType>StatementCharge</TxnType>
+      </LinkedTxn>
+      <LinkedTxn>
+        <TxnId>98</TxnId>
+        <TxnType>Payment</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Amount>75.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>6.00</TotalTax>
+        <TaxLine>
+          <Amount>6.00</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>75.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="Travis Waldron">26</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>60</Id>
+        <Line1>Travis Waldron</Line1>
+        <Line2>78 First St.</Line2>
+        <Line3>Monlo Park, CA  94304</Line3>
+        <Lat>37.3813444</Lat>
+        <Long>-122.1802812</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>27</Id>
+        <Line1>78 First St.</Line1>
+        <City>Monlo Park</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94304</PostalCode>
+        <Lat>37.4585825</Lat>
+        <Long>-122.1352789</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-04-17</DueDate>
+      <TotalAmt>81.00</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Travis@Waldron.com</Address>
+      </BillEmail>
+      <Balance>0</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>95</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T13:29:56-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:31:45-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+        <StringValue>103</StringValue>
+      </CustomField>
+      <DocNumber>1030</DocNumber>
+      <TxnDate>2015-12-14</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <LinkedTxn>
+        <TxnId>97</TxnId>
+        <TxnType>Payment</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Weekly Gardening Service</Description>
+        <Amount>50.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Gardening">6</ItemRef>
+          <UnitPrice>25</UnitPrice>
+          <Qty>2</Qty>
+          <TaxCodeRef>NON</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>2</Id>
+        <LineNum>2</LineNum>
+        <Description>Pest Control Services</Description>
+        <Amount>35.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Pest Control">10</ItemRef>
+          <UnitPrice>35</UnitPrice>
+          <Qty>1</Qty>
+          <TaxCodeRef>NON</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>3</Id>
+        <LineNum>3</LineNum>
+        <Description>Sod</Description>
+        <Amount>131.25</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Sod">14</ItemRef>
+          <UnitPrice>8.75</UnitPrice>
+          <Qty>15</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>216.25</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>10.50</TotalTax>
+        <TaxLine>
+          <Amount>10.50</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>131.25</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="0969 Ocean View Road">8</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>83</Id>
+        <Line1>Sasha Tillou</Line1>
+        <Line2>Freeman Sporting Goods</Line2>
+        <Line3>370 Easy St.</Line3>
+        <Line4>Middlefield, CA  94482</Line4>
+        <Lat>INVALID</Lat>
+        <Long>INVALID</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>8</Id>
+        <Line1>370 Easy St.</Line1>
+        <City>Middlefield</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94482</PostalCode>
+        <Lat>37.4031672</Lat>
+        <Long>-122.0642815</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-01-13</DueDate>
+      <TotalAmt>226.75</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Sporting_goods@intuit.com</Address>
+      </BillEmail>
+      <Balance>0</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>93</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T13:27:49-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:28:29-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+      </CustomField>
+      <DocNumber>1029</DocNumber>
+      <TxnDate>2016-02-11</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <LinkedTxn>
+        <TxnId>94</TxnId>
+        <TxnType>Payment</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Concrete for fountain installation</Description>
+        <Amount>75.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Concrete">3</ItemRef>
+          <UnitPrice>15</UnitPrice>
+          <Qty>5</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>2</Id>
+        <LineNum>2</LineNum>
+        <Description>Garden Rocks</Description>
+        <Amount>72.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Rocks">13</ItemRef>
+          <UnitPrice>12</UnitPrice>
+          <Qty>6</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>3</Id>
+        <LineNum>3</LineNum>
+        <Description>Rock Fountain</Description>
+        <Amount>275.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Rock Fountain">5</ItemRef>
+          <UnitPrice>275</UnitPrice>
+          <Qty>1</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>422.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>3</TxnTaxCodeRef>
+        <TotalTax>38.40</TotalTax>
+        <TaxLine>
+          <Amount>29.96</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>1</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>7.1</TaxPercent>
+            <NetAmountTaxable>422.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+        <TaxLine>
+          <Amount>8.44</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>2</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>2</TaxPercent>
+            <NetAmountTaxable>422.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="Dukes Basketball Camp">5</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>82</Id>
+        <Line1>Peter Dukes</Line1>
+        <Line2>Dukes Basketball Camp</Line2>
+        <Line3>25 Court St.</Line3>
+        <Line4>Tucson, AZ  85719</Line4>
+        <Lat>32.2546522</Lat>
+        <Long>-110.9447027</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>6</Id>
+        <Line1>25 Court St.</Line1>
+        <City>Tucson</City>
+        <CountrySubDivisionCode>AZ</CountrySubDivisionCode>
+        <PostalCode>85719</PostalCode>
+        <Lat>32.2841116</Lat>
+        <Long>-110.9744298</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-03-12</DueDate>
+      <TotalAmt>460.40</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Dukes_bball@intuit.com</Address>
+      </BillEmail>
+      <Balance>0</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>68</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T12:41:24-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:25:43-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+      </CustomField>
+      <DocNumber>1022</DocNumber>
+      <TxnDate>2016-03-08</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Weekly Gardening Service</Description>
+        <Amount>75.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Gardening">6</ItemRef>
+          <UnitPrice>25</UnitPrice>
+          <Qty>3</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>75.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>6.00</TotalTax>
+        <TaxLine>
+          <Amount>6.00</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>75.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="Jeff's Jalopies">12</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>75</Id>
+        <Line1>Jeff Chin</Line1>
+        <Line2>Jeff's Jalopies</Line2>
+        <Line3>12 Willow Rd.</Line3>
+        <Line4>Menlo Park, CA  94305</Line4>
+        <Lat>37.4135757</Lat>
+        <Long>-122.1689284</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>12</Id>
+        <Line1>12 Willow Rd.</Line1>
+        <City>Menlo Park</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94305</PostalCode>
+        <Lat>37.4495308</Lat>
+        <Long>-122.1726923</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-04-07</DueDate>
+      <TotalAmt>81.00</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Jalopies@intuit.com</Address>
+      </BillEmail>
+      <Balance>81.00</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>9</Id>
+      <SyncToken>3</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T14:49:30-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:25:20-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+      </CustomField>
+      <DocNumber>1001</DocNumber>
+      <TxnDate>2016-03-27</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <PrivateNote>Front yard, hedges, and sidewalks</PrivateNote>
+      <LinkedTxn>
+        <TxnId>31</TxnId>
+        <TxnType>Payment</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Weekly Gardening Service</Description>
+        <Amount>100.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Gardening">6</ItemRef>
+          <UnitPrice>25</UnitPrice>
+          <Qty>4</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>100.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>8.00</TotalTax>
+        <TaxLine>
+          <Amount>8.00</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>100.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="Amy's Bird Sanctuary">1</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>47</Id>
+        <Line1>Amy Lauterbach</Line1>
+        <Line2>Amy's Bird Sanctuary</Line2>
+        <Line3>4581 Finch St.</Line3>
+        <Line4>Bayshore, CA  94326</Line4>
+        <Lat>INVALID</Lat>
+        <Long>INVALID</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>2</Id>
+        <Line1>4581 Finch St.</Line1>
+        <City>Bayshore</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94326</PostalCode>
+        <Lat>INVALID</Lat>
+        <Long>INVALID</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-04-26</DueDate>
+      <TotalAmt>108.00</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NotSet</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Birds@Intuit.com</Address>
+      </BillEmail>
+      <Balance>0</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>13</Id>
+      <SyncToken>2</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T15:05:48-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:23:52-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+      </CustomField>
+      <DocNumber>1005</DocNumber>
+      <TxnDate>2016-03-21</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <LinkedTxn>
+        <TxnId>33</TxnId>
+        <TxnType>Payment</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Weekly Gardening Service</Description>
+        <Amount>50.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Gardening">6</ItemRef>
+          <UnitPrice>25</UnitPrice>
+          <Qty>2</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>50.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>4.00</TotalTax>
+        <TaxLine>
+          <Amount>4.00</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>50.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="55 Twin Lane">9</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>51</Id>
+        <Line1>Amelia</Line1>
+        <Line2>Freeman Sporting Goods</Line2>
+        <Line3>370 Easy St.</Line3>
+        <Line4>Middlefield, CA  94482</Line4>
+        <Lat>INVALID</Lat>
+        <Long>INVALID</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>9</Id>
+        <Line1>370 Easy St.</Line1>
+        <City>Middlefield</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94482</PostalCode>
+        <Lat>37.4031672</Lat>
+        <Long>-122.0642815</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-04-20</DueDate>
+      <TotalAmt>54.00</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Sporting_goods@intuit.com</Address>
+      </BillEmail>
+      <Balance>4.00</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>14</Id>
+      <SyncToken>3</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T15:06:59-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:23:11-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+      </CustomField>
+      <DocNumber>1006</DocNumber>
+      <TxnDate>2016-02-20</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <LinkedTxn>
+        <TxnId>15</TxnId>
+        <TxnType>Payment</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Weekly Gardening Service</Description>
+        <Amount>80.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Gardening">6</ItemRef>
+          <UnitPrice>20</UnitPrice>
+          <Qty>4</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>80.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>6.40</TotalTax>
+        <TaxLine>
+          <Amount>6.40</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>80.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="55 Twin Lane">9</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>52</Id>
+        <Line1>Amelia</Line1>
+        <Line2>Freeman Sporting Goods</Line2>
+        <Line3>370 Easy St.</Line3>
+        <Line4>Middlefield, CA  94482</Line4>
+        <Lat>INVALID</Lat>
+        <Long>INVALID</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>9</Id>
+        <Line1>370 Easy St.</Line1>
+        <City>Middlefield</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94482</PostalCode>
+        <Lat>37.4031672</Lat>
+        <Long>-122.0642815</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-03-21</DueDate>
+      <TotalAmt>86.40</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Sporting_goods@intuit.com</Address>
+      </BillEmail>
+      <Balance>0</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>92</Id>
+      <SyncToken>1</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T13:22:13-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T13:22:27-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+        <StringValue>101</StringValue>
+      </CustomField>
+      <DocNumber>1028</DocNumber>
+      <TxnDate>2016-02-11</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Weekly Gardening Service</Description>
+        <Amount>75.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Gardening">6</ItemRef>
+          <UnitPrice>25</UnitPrice>
+          <Qty>3</Qty>
+          <TaxCodeRef>TAX</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>75.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TxnTaxCodeRef>2</TxnTaxCodeRef>
+        <TotalTax>6.00</TotalTax>
+        <TaxLine>
+          <Amount>6.00</Amount>
+          <DetailType>TaxLineDetail</DetailType>
+          <TaxLineDetail>
+            <TaxRateRef>3</TaxRateRef>
+            <PercentBased>true</PercentBased>
+            <TaxPercent>8</TaxPercent>
+            <NetAmountTaxable>75.00</NetAmountTaxable>
+          </TaxLineDetail>
+        </TaxLine>
+      </TxnTaxDetail>
+      <CustomerRef name="55 Twin Lane">9</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>81</Id>
+        <Line1>Amelia</Line1>
+        <Line2>Freeman Sporting Goods</Line2>
+        <Line3>370 Easy St.</Line3>
+        <Line4>Middlefield, CA  94482</Line4>
+        <Lat>INVALID</Lat>
+        <Long>INVALID</Long>
+      </BillAddr>
+      <ShipAddr>
+        <Id>9</Id>
+        <Line1>370 Easy St.</Line1>
+        <City>Middlefield</City>
+        <CountrySubDivisionCode>CA</CountrySubDivisionCode>
+        <PostalCode>94482</PostalCode>
+        <Lat>37.4031672</Lat>
+        <Long>-122.0642815</Long>
+      </ShipAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-03-12</DueDate>
+      <TotalAmt>81.00</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Sporting_goods@intuit.com</Address>
+      </BillEmail>
+      <Balance>81.00</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>10</Id>
+      <SyncToken>2</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-27T14:57:16-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T12:56:01-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+        <StringValue>103</StringValue>
+      </CustomField>
+      <DocNumber>1002</DocNumber>
+      <TxnDate>2015-12-14</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <LinkedTxn>
+        <TxnId>76</TxnId>
+        <TxnType>Payment</TxnType>
+      </LinkedTxn>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Weekly Gardening Service</Description>
+        <Amount>140.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Gardening">6</ItemRef>
+          <UnitPrice>35</UnitPrice>
+          <Qty>4</Qty>
+          <TaxCodeRef>NON</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>2</Id>
+        <LineNum>2</LineNum>
+        <Description>Pest Control Services</Description>
+        <Amount>35.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Pest Control">10</ItemRef>
+          <UnitPrice>35</UnitPrice>
+          <Qty>1</Qty>
+          <TaxCodeRef>NON</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>175.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TotalTax>0</TotalTax>
+      </TxnTaxDetail>
+      <CustomerRef name="Bill's Windsurf Shop">2</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>48</Id>
+        <Line1>Bill Lucchini</Line1>
+        <Line2>Bill's Windsurf Shop</Line2>
+        <Line3>12 Ocean Dr.</Line3>
+        <Line4>Half Moon Bay, CA  94213</Line4>
+        <Lat>INVALID</Lat>
+        <Long>INVALID</Long>
+      </BillAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-01-13</DueDate>
+      <TotalAmt>175.00</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NotSet</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Surf@Intuit.com</Address>
+      </BillEmail>
+      <Balance>0</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+    <Invoice domain="QBO" sparse="false">
+      <Id>75</Id>
+      <SyncToken>0</SyncToken>
+      <MetaData>
+        <CreateTime>2016-03-29T12:54:08-07:00</CreateTime>
+        <LastUpdatedTime>2016-03-29T12:54:08-07:00</LastUpdatedTime>
+      </MetaData>
+      <CustomField>
+        <DefinitionId>1</DefinitionId>
+        <Name>Crew #</Name>
+        <Type>StringType</Type>
+      </CustomField>
+      <DocNumber>1027</DocNumber>
+      <TxnDate>2016-02-11</TxnDate>
+      <CurrencyRef name="United States Dollar">USD</CurrencyRef>
+      <Line>
+        <Id>1</Id>
+        <LineNum>1</LineNum>
+        <Description>Weekly Gardening Service</Description>
+        <Amount>50.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Gardening">6</ItemRef>
+          <UnitPrice>25</UnitPrice>
+          <Qty>2</Qty>
+          <TaxCodeRef>NON</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Id>2</Id>
+        <LineNum>2</LineNum>
+        <Description>Pest Control Services</Description>
+        <Amount>35.00</Amount>
+        <DetailType>SalesItemLineDetail</DetailType>
+        <SalesItemLineDetail>
+          <ItemRef name="Pest Control">10</ItemRef>
+          <UnitPrice>35</UnitPrice>
+          <Qty>1</Qty>
+          <TaxCodeRef>NON</TaxCodeRef>
+        </SalesItemLineDetail>
+      </Line>
+      <Line>
+        <Amount>85.00</Amount>
+        <DetailType>SubTotalLineDetail</DetailType>
+        <SubTotalLineDetail/>
+      </Line>
+      <TxnTaxDetail>
+        <TotalTax>0</TotalTax>
+      </TxnTaxDetail>
+      <CustomerRef name="Bill's Windsurf Shop">2</CustomerRef>
+      <CustomerMemo>Thank you for your business and have a great day!</CustomerMemo>
+      <BillAddr>
+        <Id>80</Id>
+        <Line1>Bill Lucchini</Line1>
+        <Line2>Bill's Windsurf Shop</Line2>
+        <Line3>12 Ocean Dr.</Line3>
+        <Line4>Half Moon Bay, CA  94213</Line4>
+        <Lat>INVALID</Lat>
+        <Long>INVALID</Long>
+      </BillAddr>
+      <SalesTermRef>3</SalesTermRef>
+      <DueDate>2016-03-12</DueDate>
+      <TotalAmt>85.00</TotalAmt>
+      <ApplyTaxAfterDiscount>false</ApplyTaxAfterDiscount>
+      <PrintStatus>NeedToPrint</PrintStatus>
+      <EmailStatus>NotSet</EmailStatus>
+      <BillEmail>
+        <Address>Surf@Intuit.com</Address>
+      </BillEmail>
+      <Balance>85.00</Balance>
+      <Deposit>0</Deposit>
+      <AllowIPNPayment>false</AllowIPNPayment>
+      <AllowOnlinePayment>false</AllowOnlinePayment>
+      <AllowOnlineCreditCardPayment>false</AllowOnlineCreditCardPayment>
+      <AllowOnlineACHPayment>false</AllowOnlineACHPayment>
+    </Invoice>
+  </QueryResponse>
+</IntuitResponse>

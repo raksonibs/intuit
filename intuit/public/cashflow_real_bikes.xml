@@ -1,0 +1,119 @@
+<Report xmlns="http://schema.intuit.com/finance/v3">
+  <Header>
+    <Time>2016-04-26T16:05:00-07:00</Time>
+    <ReportName>CashFlow</ReportName>
+    <DateMacro>this calendar year-to-date</DateMacro>
+    <StartPeriod>2016-01-01</StartPeriod>
+    <EndPeriod>2016-04-26</EndPeriod>
+    <SummarizeColumnsBy>Total</SummarizeColumnsBy>
+    <Currency>CAD</Currency>
+    <Option>
+      <Name>NoReportData</Name>
+      <Value>false</Value>
+    </Option>
+  </Header>
+  <Columns>
+    <Column>
+      <ColTitle/>
+      <ColType>Account</ColType>
+    </Column>
+    <Column>
+      <ColTitle>Total</ColTitle>
+      <ColType>Money</ColType>
+    </Column>
+  </Columns>
+  <Rows>
+    <Row type="Section" group="OperatingActivities">
+      <Header>
+        <ColData value="OPERATING ACTIVITIES"/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data" group="NetIncome">
+          <ColData value="Net Income"/>
+          <ColData value="-3492.92"/>
+        </Row>
+        <Row type="Section" group="OperatingAdjustments">
+          <Header>
+            <ColData value="Adjustments to reconcile Net Income to Net Cash provided by operations:"/>
+            <ColData value=""/>
+          </Header>
+          <Rows>
+            <Row type="Data">
+              <ColData value="Inventory" id="61"/>
+              <ColData value="-9723.07"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="Accounts Payable (A/P)" id="81"/>
+              <ColData value="0.00"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="GST/HST Payable" id="69"/>
+              <ColData value="1903.17"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="Payroll Liabilities:Federal Taxes" id="79"/>
+              <ColData value="710.48"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="BDC Loan" id="62"/>
+              <ColData value="14950.00"/>
+            </Row>
+            <Row type="Data">
+              <ColData value="Futureprenur Loan" id="63"/>
+              <ColData value="7450.00"/>
+            </Row>
+          </Rows>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Total Adjustments to reconcile Net Income to Net Cash provided by operations:"/>
+        <ColData value="15290.58"/>
+      </Summary>
+    </Row>
+    <Row type="Section" group="InvestingActivities">
+      <Header>
+        <ColData value="INVESTING ACTIVITIES"/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="Goodwill" id="60"/>
+          <ColData value="-10000.00"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Net cash provided by investing activities"/>
+        <ColData value="-10000.00"/>
+      </Summary>
+    </Row>
+    <Row type="Section" group="FinancingActivities">
+      <Header>
+        <ColData value="FINANCING ACTIVITIES"/>
+        <ColData value=""/>
+      </Header>
+      <Rows>
+        <Row type="Data">
+          <ColData value="Opening Balance Equity" id="53"/>
+          <ColData value="19998.50"/>
+        </Row>
+      </Rows>
+      <Summary>
+        <ColData value="Net cash provided by financing activities"/>
+        <ColData value="19998.50"/>
+      </Summary>
+    </Row>
+    <Row type="Section" group="CashIncrease">
+      <Summary>
+        <ColData value="Net cash increase for period"/>
+        <ColData value="21796.16"/>
+      </Summary>
+    </Row>
+    <Row type="Section" group="EndingCash">
+      <Summary>
+        <ColData value="Cash at end of period"/>
+        <ColData value="21796.16"/>
+      </Summary>
+    </Row>
+  </Rows>
+</Report>
